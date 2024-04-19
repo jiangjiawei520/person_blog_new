@@ -1,0 +1,26 @@
+name: 部署 Hexo 到 源码仓库[自动构建并发布到另一仓库]
+
+on:
+  push:
+    branches: [ "master" ]
+jobs:
+  build:
+    name: build
+    runs-on: ubuntu-latest    
+    steps:    
+    - uses: actions/checkout@v2    
+    - name: npm install
+      run: |
+        npm install
+        npm ci
+    - name: npm build
+      run: |
+       npm run build
+
+    - name: publish
+      uses: s0/git-publish-subdir-action@master
+      env:
+        REPO: git@github.com:jiangjiawei520/person_blog_new.git
+        BRANCH: master
+        FOLDER: public        
+        SSH_PRIVATE_KEY: ${{ secrets.ACCESS_TOKEN_SOURCE }}

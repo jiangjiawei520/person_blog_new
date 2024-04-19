@@ -1,0 +1,20 @@
+.DS_Store
+.git
+Thumbs.db
+db.json
+*.log
+node_modules/
+public/
+.deploy*/
+_multiconfig.yml
+<<<<<<< HEAD
+.vscode
+.vs
+*.code-workspace
+.history
+.vscode
+=======
+.vs
+*.code-workspace
+.history
+>>>>>>> 3b9628f (新增vs查看文件的本地保存历史)

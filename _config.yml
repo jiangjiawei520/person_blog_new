@@ -1,0 +1,283 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site 网站
+title: 蒋家威的博客
+#subtitle: subtitle
+#description: description
+author: JiaWei Jiang
+#email: 2314857815@qq.com
+#keywords: "linux、oracle"
+
+# URL
+## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
+# 左下角© 2020-2024 JiaWei Jiang 跳转设置
+url: https://github.com/jiangjiawei520
+root: /
+# permalink: :year/:month/:day/:title/
+permalink: post/:abbrlink.html
+abbrlink:
+  alg: crc32  # 算法
+  rep: hex    # 进制
+  
+permalink_defaults:
+pretty_urls:
+  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
+  trailing_html: true # Set to false to remove trailing '.html' from permalinks
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+# hexo部署页面的时候会默认把source目录下的.md文件渲染成html
+# 跳过渲染
+skip_render:
+  - "README.md"
+  - "404/**"
+  - "*.html"
+  #- "文件夹名/**"  #跳过文件夹下所有子文件夹和文件
+  #- "文件夹名/*"   #跳过文件夹下所有文件
+
+# Writing
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link:
+  enable: true # Open external links in new tab
+  field: site # Apply to the whole site
+  exclude: ''
+filename_case: 0
+render_drafts: false
+# 自动为文章中的图片提供绝对路径，比如新建一片博客名为 hexo-plugin，那么在创建文章 md 文件的同时会创建一个 hexo-plugin 的目录，文章对应的图片放入这个目录就行，Typora 可以将图像设为 ./${filename} 便可自动适配
+post_asset_folder: false
+relative_link: false
+future: true
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace: ''
+  wrap: true
+  hljs: false
+prismjs:
+  enable: false
+  preprocess: true
+  line_number: true
+  tab_replace: ''
+
+# Home page setting
+# path: Root path for your blogs index page. (default = '')
+# per_page: Posts displayed per page. (0 = disable pagination)
+# order_by: Posts order. (Order by date descending by default)
+index_generator:
+  path: ''
+  per_page: 10
+  #order_by: -date
+  # top值-1表示根据top值倒序（正序设置为1即可），同样date也是根据创建日期倒序。
+  order_by:
+    top: -1
+    date: -1
+
+# Category & Tag
+default_category: uncategorized
+category_map:
+tag_map:
+
+# Metadata elements
+## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
+meta_generator: true
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+## updated_option supports 'mtime', 'date', 'empty'
+updated_option: 'mtime'
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 10
+pagination_dir: page
+
+# Include / Exclude file(s)
+## include:/exclude: options only apply to the 'source/' folder
+include:
+exclude:
+ignore:
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+# theme: landscape  # 默认主题
+theme: new-yilia # yilia
+
+# jsonContent
+jsonContent:
+  meta: false
+  pages: false
+  posts:
+    title: true
+    date: true
+    path: true
+    text: false
+    raw: false
+    content: false
+    slug: false
+    updated: false
+    comments: false
+    link: false
+    permalink: false
+    excerpt: false
+    categories: false
+    tags: true
+    
+    
+# live2d宠物
+## https://github.com/EYHN/hexo-helper-live2d
+## https://l2dwidget.js.org/docs/class/src/index.js~L2Dwidget.html#instance-method-init
+# npm install --save hexo-helper-live2d
+# npm install live2d-widget-model-hibiki
+live2d:
+  enable: false
+  scriptFrom: local # 默认
+  pluginRootPath: live2dw/ # 插件在站点上的根目录(相对路径)
+  pluginJsPath: lib/ # 脚本文件相对与插件根目录路径
+  pluginModelPath: assets/ # 模型文件相对与插件根目录路径
+  tagMode: false # 标签模式, 是否仅替换 live2d tag标签而非插入到所有页面中
+  debug: false # 调试, 是否在控制台输出日志
+  model:
+    # 通过修改use来确定使用哪种model
+    use: live2d-widget-model-hibiki # hibiki 是一个御姐
+    # use: live2d-widget-model-hijiki # 黑色的猫
+    # use: live2d-widget-model-miku # 初音
+    # use: live2d-widget-model-wanko # 一只趴在碗里的狗狗
+    scale: 0.6 # 模型与canvas的缩放 default: 1
+  display:
+    superSample: 2 # 超采样等级 default: 2
+    position: left # 显示位置：left/right(default: 'right')
+    width: 145 # 模型的宽度(default: 150)
+    height: 320 # 模型的高度(default: 300)
+    # 一个比较可爱的位置
+    hOffset: 200  # 水平偏移(default: 0)
+    vOffset: -100 # 垂直偏移(default: -20)
+    # 第二个位置配置，这个在左侧边栏位置很居中
+    # hOffset: 80  # 调节水平位置
+    # vOffset: -50  # 调节垂直位置
+  dialog:
+    enable: false # 显示人物对话框
+    hitokoto: false # 使用一言API
+  mobile:
+    show: true # 是否在移动设备上显示
+    scale: 0.5 # 移动设备上的缩放
+  react:
+    opacity: 0.7 # 模型透明度(default: 0.7)
+    
+# rss
+plugins: hexo-generater-feed
+
+
+# SEO
+# 自动生成sitemap
+sitemap:
+  path: sitemap.xml
+baidusitemap:
+  path: baidusitemap.xml
+  
+# 百度主动推送
+baidu_url_submit:
+  count: 0  # 提交最新的两个链接
+  host: ''  # 在百度站长平台中注册的域名
+  token: ''  # 请注意这是您的秘钥， 所以请不要把博客源代码发布在公众仓库里!
+  path: baidu_urls.txt  # 文本文档的地址， 新链接会保存在此文本文档里
+  
+# Deployment
+## Docs: https://hexo.io/docs/one-command-deployment
+deploy:
+- type: 'git'
+  repo: git@github.com:jiangjiawei520/person_blog_new.git #这里写github ssh地址, 不要写https地址
+  branch: master
+  # 发布时，同时进行百度推送
+#- type: baidu_url_submitter
+
+
+backup:
+  type: git
+  theme: new-yilia
+  message: Back up my blog
+  repository:
+    #github: git@github.com:jiangjiawei520/person_blog_new.git,backup #这里写github ssh地址, 不要写https地址，使用私有仓库备份，暂不启用
+    github_source: git@github.com:jiangjiawei520/person_blog_new_source.git #这里写github ssh地址, 不要写https地址
+    gitee: git@gitee.com:jiangjiawei520172/person_blog_new.git #这里写github ssh地址, 不要写https地址
+    
+    
+# 文章加密
+encrypt: # hexo-blog-encrypt
+  abstract: 这里有东西被加密了，需要输入密码查看哦。
+  message: 您好, 这里需要密码.
+  tags:
+  - {name: tagName, password: 密码A}
+  - {name: tagName, password: 密码B}
+  template: <div id="hexo-blog-encrypt" data-wpm="{{hbeWrongPassMessage}}" data-whm="{{hbeWrongHashMessage}}"><div class="hbe-input-container"><input type="password" id="hbePass" placeholder="{{hbeMessage}}" /><label>{{hbeMessage}}</label><div class="bottom-line"></div></div><script id="hbeData" type="hbeData" data-hmacdigest="{{hbeHmacDigest}}">{{hbeEncryptedData}}</script></div>
+  wrong_pass_message: 抱歉, 这个密码看着不太对, 请再试试.
+  wrong_hash_message: 抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.
+  
+  
+#七牛云存储设置
+#1、下载qshell下载,https://github.com/qiniu/qshell/releases/download/v2.13.0/qshell-v2.13.0-windows-386.zip
+#2、配置qshell环境变量
+#3、执行qshell account <Your AccessKey> <Your SecretKey> <Your Name> -->qshell account a324Cx4aHIyDTBJ_wTi6HRf9ajKUxDJdhId9ABiY XHtapJOJdCTIp56QlX5iIK8zv_SV2w1sgM-grIt4 person-blog-new-hw
+#4、Hexo项目的根目录下创建upload.conf文件
+#5、配置
+#{
+#  // 这个地址是根目录地址，不可使用相对路径
+#  "src_dir": "E:\\OneDrive - shjd\\github\\person_blog_new\\public",
+#  // 储存空间名称
+#  "bucket": "person-blog-new-hw",
+#  // 是否覆盖
+#  "overwrite" : true,
+#  // 检查新增文件
+#  "rescan_local" : true
+#}
+#6、上传 qshell qupload upload.conf
+#7、一键部署，打开Hexo下的package.json，npm run publish 就可实现一键打包部署到七牛云
+#"scripts":{
+#    "publish": "hexo generate && qshell qupload upload.conf"
+#  }
+#https://juejin.cn/post/6844903983857811469
+
+# hexo-admin 账号 密码 秘钥
+admin:
+  username: jiangjiawei
+  password_hash: $2a$10$MoLoom5mz76rmQNI0./t/OLJhFDd8QkRUWJR8IazdebvUL8rxVYDe
+  secret: $2a$10$UNZyJR.bXmV5hEpUdrSxXuA/VB5.0Yp9VbY7WW2xgdZBB5/cH4Ime
+  deployCommand: '.\\tools\\hexo-deploy.bat'
+
+# hexo-neat 静态资源压缩
+# 博文压缩
+neat_enable: true
+# 压缩html
+neat_html:
+  enable: true
+  exclude:
+# 压缩css  
+neat_css:
+  enable: true
+  exclude:
+    - '**/*.min.css'
+# 压缩js
+neat_js:
+  enable: true
+  mangle: true
+  output:
+  compress:
+  exclude:
+    - '**/*.min.js'
+    - '**/jquery.fancybox.pack.js'
+    - '**/index.js'
