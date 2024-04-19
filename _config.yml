@@ -281,3 +281,11 @@ neat_js:
     - '**/*.min.js'
     - '**/jquery.fancybox.pack.js'
     - '**/index.js'
+
+# 图片懒加载
+lazyload:
+  enable: false
+  onlypost: false # optional
+  loadingImg: # optional eg ./images/loading.gif
+  isSPA: true # optional
+  preloadRatio: 3 # optional, default is 1
