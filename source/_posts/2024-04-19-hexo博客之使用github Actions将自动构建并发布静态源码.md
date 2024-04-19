@@ -4,7 +4,8 @@ tag:
   - hexo
   - github
 categories:
-  - [博客,hexo]
+  - - 博客
+    - hexo
 article_type: 0
 no_word_count: false
 no_toc: false
@@ -16,7 +17,7 @@ no_share: false
 no_footer: false
 mathjax: false
 typora-root-url: ./..
-abbrlink: 2af8072d
+abbrlink: 912f3dbd
 date: 2024-04-19 14:16:26
 top:
 ---
