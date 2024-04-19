@@ -9,8 +9,8 @@
     "server": "hexo server",
     "publish": "hexo generate && qshell qupload upload.conf",
     "publish_tsj": "hexo generate && qshell qupload upload_tsj.conf",
-	"qd": "hexo generate && hexo b && hexo deploy && npm run publish",
-	"qd_tsj": "hexo generate && hexo b && hexo deploy && npm run publish_tsj"
+    "qd": "hexo b && hexo deploy && npm run publish",
+    "qd_tsj": "hexo b && hexo deploy && npm run publish_tsj"
   },
   "hexo": {
     "version": "6.3.0"
