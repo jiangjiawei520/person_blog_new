@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://github.com/jiangjiawei520/photos/video.html</loc>
+    
+    <lastmod>2024-04-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://github.com/jiangjiawei520/music/index.html</loc>
     
     <lastmod>2024-04-20</lastmod>
@@ -30,15 +39,6 @@
   
   <url>
     <loc>https://github.com/jiangjiawei520/photos/index.html</loc>
-    
-    <lastmod>2024-04-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://github.com/jiangjiawei520/photos/video.html</loc>
     
     <lastmod>2024-04-20</lastmod>
     
@@ -200,7 +200,7 @@
   </url>
   
   <url>
-    <loc>https://github.com/jiangjiawei520/post/a8dc1525.html</loc>
+    <loc>https://github.com/jiangjiawei520/post/ece3b4be.html</loc>
     
     <lastmod>2024-04-20</lastmod>
     
@@ -209,7 +209,34 @@
   </url>
   
   <url>
-    <loc>https://github.com/jiangjiawei520/post/ece3b4be.html</loc>
+    <loc>https://github.com/jiangjiawei520/about/index.html</loc>
+    
+    <lastmod>2024-04-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://github.com/jiangjiawei520/archives/index.html</loc>
+    
+    <lastmod>2024-04-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://github.com/jiangjiawei520/categories/index.html</loc>
+    
+    <lastmod>2024-04-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://github.com/jiangjiawei520/post/a8dc1525.html</loc>
     
     <lastmod>2024-04-20</lastmod>
     
@@ -471,33 +498,6 @@
   
   <url>
     <loc>https://github.com/jiangjiawei520/post/5c941858.html</loc>
-    
-    <lastmod>2024-04-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://github.com/jiangjiawei520/about/index.html</loc>
-    
-    <lastmod>2024-04-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://github.com/jiangjiawei520/archives/index.html</loc>
-    
-    <lastmod>2024-04-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://github.com/jiangjiawei520/categories/index.html</loc>
     
     <lastmod>2024-04-20</lastmod>
     
