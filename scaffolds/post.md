@@ -10,7 +10,7 @@ tag:
 - 
 # 所属分类
 categories:
-- []
+- 
 # 0原创; 1转载
 article_type: 0
 # 字数统计
