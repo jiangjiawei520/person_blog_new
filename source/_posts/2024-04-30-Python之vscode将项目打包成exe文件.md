@@ -22,6 +22,8 @@ top:
 
 #### 操作步骤
 
+环境：python 3.8(否则无法下载安装PySide2)
+
 ##### 1、打开VSCode并打开你的Python项目。
 
 ##### 2、在VSCode终端中安装`pyinstaller`：
