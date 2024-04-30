@@ -576,7 +576,7 @@
 	    <i class="fa fa-bar-chart" aria-hidden="true"></i>
         <!-- <i class="fa fa-keyboard-o" aria-hidden="true"></i> -->
         <span class="post-meta-item-text">字数统计: </span>
-        <span class="post-count">307字</span>
+        <span class="post-count">317字</span>
       </span>
     </span>
 
@@ -602,9 +602,9 @@
 		  
 			<h4 id="操作步骤"><a href="#操作步骤" class="headerlink" title="操作步骤"></a>操作步骤</h4><h5 id="1、打开VSCode并打开你的Python项目。"><a href="#1、打开VSCode并打开你的Python项目。" class="headerlink" title="1、打开VSCode并打开你的Python项目。"></a>1、打开VSCode并打开你的Python项目。</h5><h5 id="2、在VSCode终端中安装pyinstaller："><a href="#2、在VSCode终端中安装pyinstaller：" class="headerlink" title="2、在VSCode终端中安装pyinstaller："></a>2、在VSCode终端中安装<code>pyinstaller</code>：</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install pyinstaller</span><br></pre></td></tr></table></figure>
 
-<h5 id="3、运行以下命令使用pyinstaller将Python项目打包成exe文件："><a href="#3、运行以下命令使用pyinstaller将Python项目打包成exe文件：" class="headerlink" title="3、运行以下命令使用pyinstaller将Python项目打包成exe文件："></a>3、运行以下命令使用<code>pyinstaller</code>将Python项目打包成exe文件：</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pyinstaller -F your_script.py</span><br></pre></td></tr></table></figure>
+<h5 id="3、运行以下命令使用pyinstaller将Python项目打包成exe文件："><a href="#3、运行以下命令使用pyinstaller将Python项目打包成exe文件：" class="headerlink" title="3、运行以下命令使用pyinstaller将Python项目打包成exe文件："></a>3、运行以下命令使用<code>pyinstaller</code>将Python项目打包成exe文件：</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pyinstaller -F your_script.py --name=my_program</span><br></pre></td></tr></table></figure>
 
-<h5 id="其中your-script-py是你的Python脚本的文件名。"><a href="#其中your-script-py是你的Python脚本的文件名。" class="headerlink" title="其中your_script.py是你的Python脚本的文件名。"></a>其中<code>your_script.py</code>是你的Python脚本的文件名。</h5><h5 id="4、打包完成后，在你的项目目录中会生成一个dist文件夹，里面包含了打包后的可执行文件。"><a href="#4、打包完成后，在你的项目目录中会生成一个dist文件夹，里面包含了打包后的可执行文件。" class="headerlink" title="4、打包完成后，在你的项目目录中会生成一个dist文件夹，里面包含了打包后的可执行文件。"></a>4、打包完成后，在你的项目目录中会生成一个<code>dist</code>文件夹，里面包含了打包后的可执行文件。</h5><blockquote>
+<h5 id="其中your-script-py是你的Python脚本的文件名；my-program为生成的应用名称"><a href="#其中your-script-py是你的Python脚本的文件名；my-program为生成的应用名称" class="headerlink" title="其中your_script.py是你的Python脚本的文件名；my_program为生成的应用名称"></a>其中<code>your_script.py</code>是你的Python脚本的文件名；my_program为生成的应用名称</h5><h5 id="4、打包完成后，在你的项目目录中会生成一个dist文件夹，里面包含了打包后的可执行文件。"><a href="#4、打包完成后，在你的项目目录中会生成一个dist文件夹，里面包含了打包后的可执行文件。" class="headerlink" title="4、打包完成后，在你的项目目录中会生成一个dist文件夹，里面包含了打包后的可执行文件。"></a>4、打包完成后，在你的项目目录中会生成一个<code>dist</code>文件夹，里面包含了打包后的可执行文件。</h5><blockquote>
 <p>  <strong><strong>请注意，使用<code>pyinstaller</code>打包成exe文件时可能会遇到一些依赖项缺失或路径问题，你可能需要进行一些额外的配置。另外，如果你的项目有一些特殊的资源文件（如图片、配置文件等），你也需要确保这些资源文件能够被正确地打包进exe文件中。</strong></strong> </p>
 </blockquote>
 		  
