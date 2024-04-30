@@ -76,7 +76,6 @@ pyinstaller -F your_script.py
 
 >   **打包完成 ** 
 
-
 <img alt="" height="1200" src="/imgs/5969cef4ca4b49b1a4926b6925a54546.png" width="1200">
 
 <img alt="" height="136" src="/imgs/22b6e1d144724b49be931c552ff5ad3c.png" width="706">
