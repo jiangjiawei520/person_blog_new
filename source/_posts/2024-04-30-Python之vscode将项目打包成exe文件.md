@@ -33,10 +33,10 @@ pip install pyinstaller
 ##### 3、运行以下命令使用`pyinstaller`将Python项目打包成exe文件：
 
 ```
-pyinstaller -F your_script.py
+pyinstaller -F your_script.py --name=my_program
 ```
 
-##### 其中`your_script.py`是你的Python脚本的文件名。
+##### 其中`your_script.py`是你的Python脚本的文件名；my_program为生成的应用名称
 
 ##### 4、打包完成后，在你的项目目录中会生成一个`dist`文件夹，里面包含了打包后的可执行文件。
 
