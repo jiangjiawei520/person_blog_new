@@ -310,26 +310,26 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-2024-04-08-Hexo教程" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-语雀/综合管理平台/2024-05-23-neo4j安装部署" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h2 itemprop="name">
-      <a class="article-title_code_ant" href="/post/d3f2095d.html">Hexo教程</a>
+      <a class="article-title_code_ant" href="/post/a9024b3b.html">neo4j安装部署</a>
     </h2>
   
 
         
 		
-		  <a href="/post/d3f2095d.html" class="archive-article-date">
-  	<time datetime="2024-04-08T13:40:04.000Z" itemprop="datePublished">
+		  <a href="/post/a9024b3b.html" class="archive-article-date">
+  	<time datetime="2024-05-23T16:24:16.000Z" itemprop="datePublished">
 	<!-- <i class="icon-calendar icon"></i> -->
 
 	<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
 	&nbsp;
-	2024-04-08</time>
+	2024-05-23</time>
 	
 	<!-- busuanzi阅读量统计
 	
@@ -356,610 +356,7 @@
 	    <i class="fa fa-bar-chart" aria-hidden="true"></i>
         <!-- <i class="fa fa-keyboard-o" aria-hidden="true"></i> -->
         <span class="post-meta-item-text">字数统计: </span>
-        <span class="post-count">8k字</span>
-      </span>
-    </span>
-
-    <span class="post-time">
-      &nbsp; | &nbsp;
-      <span class="post-meta-item-icon">
-	    <i class="fa fa-pagelines" aria-hidden="true"></i>
-        <span class="post-meta-item-text">阅读时长: </span>
-        <span class="post-count">31min</span>
-      </span>
-    </span>
-	
-
-</div>
-<!-- 添加标题栏文字统计效果结束 -->
-		
-      </header>
-    
-	
-    <div class="article-entry" itemprop="articleBody">
-	  <!-- 添加分类与标签 -->
-	  
-		  
-			<hr>
-<h2 id="读者先看这里"><a href="#读者先看这里" class="headerlink" title="读者先看这里"></a>读者先看这里</h2><p><strong>这篇文章是给Windows用户的，macOS也可以看哦，我就是三种系统都用滴，基本都没有问题</strong></p>
-<hr>
-<h2 id="Bayi使用的软件版本："><a href="#Bayi使用的软件版本：" class="headerlink" title="Bayi使用的软件版本："></a>Bayi使用的软件版本：</h2><p>OS：Windows11 22H2</p>
-<p>Node.js：18.13.0 64-bit for windows</p>
-<p>Git：2.39.1 for Windows x64</p>
-<p>hexo-cli: 4.3.0</p>
-<p>Visual Studio Code：1.74.3 for Windows8,10,11 x64（VS Code的官网： <a target="_blank" rel="noopener" href="https://code.visualstudio.com/%EF%BC%89">https://code.visualstudio.com/）</a></p>
-<hr>
-<h2 id="Hexo是什么"><a href="#Hexo是什么" class="headerlink" title="Hexo是什么"></a>Hexo是什么</h2><blockquote>
-<p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 <a target="_blank" rel="noopener" href="http://daringfireball.net/projects/markdown/" title="Markdown">Markdown</a>（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页</p>
-<p>——<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/" title="Hexo官网">Hexo官网</a></p>
-</blockquote>
-<p>Hexo可以简单快速的搭建你的个人Blog并部署到你的域名或折到<a target="_blank" rel="noopener" href="https://pages.github.com/" title="Github Pages">Github Pages</a>当然，也可以是<a target="_blank" rel="noopener" href="https://about.gitlab.com/stages-devops-lifecycle/pages/" title="Gitlab Pages">Gitlab Pages</a></p>
-<p>具体可以参照<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/" title="Hexo官网">Hexo官网</a></p>
-<hr>
-<p><a target="_blank" rel="noopener" href="https://about.gitlab.com/stages-devops-lifecycle/pages/" title="Gitlab Pages">Gitlab Pages</a></p>
-		  
-				  
-	  
-      
-	  <!-- 添加打赏 -->
-	  
-	
-	  <!-- 添加版权声明 -->
-      
-	  
-	</div>
-	
-	<!-- 添加置顶 -->
-    <div class="article-info article-info-index">
-      
-	  
-	  <!-- 分类页 -->
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/博客/" class="article-tag-list-link color3">博客</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/博客/hexo/" class="article-tag-list-link color5">hexo</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-	  
-	  <!-- 添加展开全文 -->
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/post/d3f2095d.html">展开全文 >></a>
-        </p>
-      
-	  
-	  <!-- 添加分享 -->
-      
-	  
-      <div class="clearfix"></div>
-	  
-    </div>
-  </div>
-</article>
-
-
-
-<!-- 添加回到顶部和文章目录 -->
-<aside class="wrap-side-operation">
-  <div class="mod-side-operation">
-    
-      <div class="jump-container" id="js-jump-container" style="display:none;">
-        <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-          <i class="icon-font icon-back"></i>
-        </a>
-      </div>
-    
-    
-  </div>
-</aside>
-
-<!-- 添加评论 -->
-
-
-<!-- valine评论
-  
-  <section id="comments" style="margin:10px;padding:10px;background:#fff;">
-    <div id="vcomment" class="comment"></div> 
-<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
-<script>
-   var notify = 'true' == true ? true : false;
-   var verify = 'true' == true ? true : false;
-    window.onload = function() {
-        new Valine({
-            el: '.comment',
-            notify: notify,
-            verify: verify,
-            app_id: "oaNIM7WrQSG7UOdJT8sGT8Ap-gzGzoHsz",
-            app_key: "CnYOpc2uW5oBwt6wgLB1ggYh",
-            placeholder: "ヾﾉ≧∀≦)o来啊，快活啊!",
-            avatar:"wavatar"
-        });
-    }
-</script>
-  </section>
-
--->
-<!-- valine评论 -->
-
-
-
-
-<!-- 文章页添加mathjax公式 -->
-
-  
-
-<!-- 文章页添加mathjax公式 -->
-
-
-  
-    <article id="post-2024-04-08-centos防火墙" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h2 itemprop="name">
-      <a class="article-title_code_ant" href="/post/da8e3e0.html">iptables和firewalld防火墙使用整理</a>
-    </h2>
-  
-
-        
-		
-		  <a href="/post/da8e3e0.html" class="archive-article-date">
-  	<time datetime="2024-04-08T09:30:11.000Z" itemprop="datePublished">
-	<!-- <i class="icon-calendar icon"></i> -->
-
-	<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
-	&nbsp;
-	2024-04-08</time>
-	
-	<!-- busuanzi阅读量统计
-	
-	-->
-	<!-- busuanzi阅读量统计 -->
-	
-	
-	
-    <!-- waline阅读量统计 
-	
-	-->
-</a>
-
-
-        
-		
-		
-		  <!-- 添加标题栏文字统计效果 -->
-<div class="word-count">
-	
-	
-    <span class="post-time">
-      <span class="post-meta-item-icon">
-	    <i class="fa fa-bar-chart" aria-hidden="true"></i>
-        <!-- <i class="fa fa-keyboard-o" aria-hidden="true"></i> -->
-        <span class="post-meta-item-text">字数统计: </span>
-        <span class="post-count">3.8k字</span>
-      </span>
-    </span>
-
-    <span class="post-time">
-      &nbsp; | &nbsp;
-      <span class="post-meta-item-icon">
-	    <i class="fa fa-pagelines" aria-hidden="true"></i>
-        <span class="post-meta-item-text">阅读时长: </span>
-        <span class="post-count">17min</span>
-      </span>
-    </span>
-	
-
-</div>
-<!-- 添加标题栏文字统计效果结束 -->
-		
-      </header>
-    
-	
-    <div class="article-entry" itemprop="articleBody">
-	  <!-- 添加分类与标签 -->
-	  
-		  
-			<h1 id="一、iptables"><a href="#一、iptables" class="headerlink" title="一、iptables"></a>一、iptables</h1><h2 id="0、基础知识"><a href="#0、基础知识" class="headerlink" title="0、基础知识"></a>0、基础知识</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">添加规则时需要配置ip或者ip端，需要了解相关知识</span><br><span class="line">1、需要配置掩码的位数，</span><br><span class="line">173.16.33.171--&gt;173.16.33.171</span><br><span class="line">173.16.33.0--&gt;173.16.33.0/24</span><br><span class="line">173.16.0.0--&gt;173.16.0.0/16</span><br><span class="line">173.0.0.0--&gt;173.0.0.0/8</span><br><span class="line">0.0.0.0--&gt;0.0.0.0/0</span><br></pre></td></tr></table></figure>
-
-<h2 id="1、简介"><a href="#1、简介" class="headerlink" title="1、简介"></a>1、简介</h2><p><strong>iptables 可以检测、修改、转发、重定向和丢弃 IPv4 数据包</strong>。<br>过滤 IPv4 数据包的代码已经内置于内核中，并且按照不同的目的被组织成 <strong>表</strong> 的集合。<strong>表</strong> 由一组预先定义的 <strong>链</strong> 组成，<strong>链</strong>包含遍历顺序规则。每一条规则包含一个谓词的潜在匹配和相应的动作（称为 <strong>目标</strong>），如果谓词为真，该动作会被执行。也就是说条件匹配</p>
-<h2 id="2、安装Iptables"><a href="#2、安装Iptables" class="headerlink" title="2、安装Iptables"></a>2、安装Iptables</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">（1）禁用 firewalld</span><br><span class="line">CentOS 7 上默认安装了 firewalld 作为防火墙，使用 iptables 建议关闭并禁用 firewalld。</span><br><span class="line">systemctl stop firewalld</span><br><span class="line">systemctl disable firewalld</span><br><span class="line"></span><br><span class="line">（2）安装 iptables</span><br><span class="line">yum install iptables-services</span><br><span class="line"></span><br><span class="line">（3）服务管理</span><br><span class="line">systemctl enable iptables</span><br><span class="line">systemctl start iptables</span><br><span class="line">systemctl status iptables</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">查看服务状态：systemctl status iptables</span><br><span class="line">自启用服务：systemctl enable iptables</span><br><span class="line">禁用服务：systemctl disable iptables</span><br><span class="line">启动服务：systemctl start iptables</span><br><span class="line">重启服务：systemctl restart iptables</span><br><span class="line">关闭服务: systemctl stop iptables</span><br></pre></td></tr></table></figure>
-		  
-				  
-	  
-      
-	  <!-- 添加打赏 -->
-	  
-	
-	  <!-- 添加版权声明 -->
-      
-	  
-	</div>
-	
-	<!-- 添加置顶 -->
-    <div class="article-info article-info-index">
-      
-	  
-	  <!-- 分类页 -->
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">firewalld</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">iptables</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/linux/" class="article-tag-list-link color1">linux</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/linux/firewalld/" class="article-tag-list-link color5">firewalld</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/linux/iptables/" class="article-tag-list-link color4">iptables</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-	  
-	  <!-- 添加展开全文 -->
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/post/da8e3e0.html">展开全文 >></a>
-        </p>
-      
-	  
-	  <!-- 添加分享 -->
-      
-	  
-      <div class="clearfix"></div>
-	  
-    </div>
-  </div>
-</article>
-
-
-
-<!-- 添加回到顶部和文章目录 -->
-<aside class="wrap-side-operation">
-  <div class="mod-side-operation">
-    
-      <div class="jump-container" id="js-jump-container" style="display:none;">
-        <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-          <i class="icon-font icon-back"></i>
-        </a>
-      </div>
-    
-    
-  </div>
-</aside>
-
-<!-- 添加评论 -->
-
-
-<!-- valine评论
-  
-  <section id="comments" style="margin:10px;padding:10px;background:#fff;">
-    <div id="vcomment" class="comment"></div> 
-<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
-<script>
-   var notify = 'true' == true ? true : false;
-   var verify = 'true' == true ? true : false;
-    window.onload = function() {
-        new Valine({
-            el: '.comment',
-            notify: notify,
-            verify: verify,
-            app_id: "oaNIM7WrQSG7UOdJT8sGT8Ap-gzGzoHsz",
-            app_key: "CnYOpc2uW5oBwt6wgLB1ggYh",
-            placeholder: "ヾﾉ≧∀≦)o来啊，快活啊!",
-            avatar:"wavatar"
-        });
-    }
-</script>
-  </section>
-
--->
-<!-- valine评论 -->
-
-
-
-
-<!-- 文章页添加mathjax公式 -->
-
-  
-
-<!-- 文章页添加mathjax公式 -->
-
-
-  
-    <article id="post-2024-04-07-等保测评漏洞修复2" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h2 itemprop="name">
-      <a class="article-title_code_ant" href="/post/b7b6dca9.html">等保测评漏洞修复2</a>
-    </h2>
-  
-
-        
-		
-		  <a href="/post/b7b6dca9.html" class="archive-article-date">
-  	<time datetime="2024-04-07T10:14:53.000Z" itemprop="datePublished">
-	<!-- <i class="icon-calendar icon"></i> -->
-
-	<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
-	&nbsp;
-	2024-04-07</time>
-	
-	<!-- busuanzi阅读量统计
-	
-	-->
-	<!-- busuanzi阅读量统计 -->
-	
-	
-	
-    <!-- waline阅读量统计 
-	
-	-->
-</a>
-
-
-        
-		
-		
-		  <!-- 添加标题栏文字统计效果 -->
-<div class="word-count">
-	
-	
-    <span class="post-time">
-      <span class="post-meta-item-icon">
-	    <i class="fa fa-bar-chart" aria-hidden="true"></i>
-        <!-- <i class="fa fa-keyboard-o" aria-hidden="true"></i> -->
-        <span class="post-meta-item-text">字数统计: </span>
-        <span class="post-count">1.5k字</span>
-      </span>
-    </span>
-
-    <span class="post-time">
-      &nbsp; | &nbsp;
-      <span class="post-meta-item-icon">
-	    <i class="fa fa-pagelines" aria-hidden="true"></i>
-        <span class="post-meta-item-text">阅读时长: </span>
-        <span class="post-count">6min</span>
-      </span>
-    </span>
-	
-
-</div>
-<!-- 添加标题栏文字统计效果结束 -->
-		
-      </header>
-    
-	
-    <div class="article-entry" itemprop="articleBody">
-	  <!-- 添加分类与标签 -->
-	  
-		  
-			<h2 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h2><h3 id="检查是否设置密码有效期，密码复杂度"><a href="#检查是否设置密码有效期，密码复杂度" class="headerlink" title="检查是否设置密码有效期，密码复杂度"></a>检查是否设置密码有效期，密码复杂度</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"># 执行备份</span><br><span class="line">cp -p /etc/login.defs /etc/login.defs.$(date +%F).bak</span><br><span class="line">查看文件/etc/login.defs，检查如下参数值是否满足要求：</span><br><span class="line">PASS_MAX_DAYS 90         #密码最长过期天数</span><br><span class="line">PASS_MIN_DAYS 7            #密码最小过期天数</span><br><span class="line">PASS_MIN_LEN 8            #密码最小长度</span><br><span class="line">PASS_WARN_AGE 7            #密码过期警告天数</span><br><span class="line"></span><br><span class="line"># 设置密码复杂度</span><br><span class="line"># 执行备份</span><br><span class="line">cp -p /etc/pam.d/system-auth /etc/pam.d/system-auth.$(date +%F).bak</span><br><span class="line">在/etc/pam.d/system-auth中的“password    requisite     pam_pwquality.so”行尾添加具体参数</span><br><span class="line">比如“minlen=16 ucredit=-1 lcredit=-1 ocredit=-1 dcredit=-1”，表示最小密码长度16位，数字，大小写字母，特殊字符均至少包含1位</span><br></pre></td></tr></table></figure>
-
-<h3 id="检查账户认证失败次数限制"><a href="#检查账户认证失败次数限制" class="headerlink" title="检查账户认证失败次数限制"></a>检查账户认证失败次数限制</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">执行备份    </span><br><span class="line">cp -p /etc/pam.d/system-auth /etc/pam.d/system-auth.$(date &#x27;+%F&#x27;).bak</span><br><span class="line">查看文件/etc/pam.d/system-auth，检查如下参数值是否满足要求：</span><br><span class="line">auth        required      pam_tally2.so  deny=5 onerr=fail no_magic_root unlock_time=180</span><br><span class="line">account     required      pam_tally2.so</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="检查历史命令设置"><a href="#检查历史命令设置" class="headerlink" title="检查历史命令设置"></a>检查历史命令设置</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">echo &#x27;HISTFILESIZE=20&#x27; &gt;&gt; /etc/profile</span><br><span class="line">echo &#x27;HISTSIZE=20&#x27; &gt;&gt; /etc/profile</span><br><span class="line">source  /etc/profile</span><br></pre></td></tr></table></figure>
-		  
-				  
-	  
-      
-	  <!-- 添加打赏 -->
-	  
-	
-	  <!-- 添加版权声明 -->
-      
-	  
-	</div>
-	
-	<!-- 添加置顶 -->
-    <div class="article-info article-info-index">
-      
-	  
-	  <!-- 分类页 -->
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">漏洞修复</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/漏洞修复/" class="article-tag-list-link color5">漏洞修复</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-	  
-	  <!-- 添加展开全文 -->
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/post/b7b6dca9.html">展开全文 >></a>
-        </p>
-      
-	  
-	  <!-- 添加分享 -->
-      
-	  
-      <div class="clearfix"></div>
-	  
-    </div>
-  </div>
-</article>
-
-
-
-<!-- 添加回到顶部和文章目录 -->
-<aside class="wrap-side-operation">
-  <div class="mod-side-operation">
-    
-      <div class="jump-container" id="js-jump-container" style="display:none;">
-        <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-          <i class="icon-font icon-back"></i>
-        </a>
-      </div>
-    
-    
-  </div>
-</aside>
-
-<!-- 添加评论 -->
-
-
-<!-- valine评论
-  
-  <section id="comments" style="margin:10px;padding:10px;background:#fff;">
-    <div id="vcomment" class="comment"></div> 
-<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
-<script>
-   var notify = 'true' == true ? true : false;
-   var verify = 'true' == true ? true : false;
-    window.onload = function() {
-        new Valine({
-            el: '.comment',
-            notify: notify,
-            verify: verify,
-            app_id: "oaNIM7WrQSG7UOdJT8sGT8Ap-gzGzoHsz",
-            app_key: "CnYOpc2uW5oBwt6wgLB1ggYh",
-            placeholder: "ヾﾉ≧∀≦)o来啊，快活啊!",
-            avatar:"wavatar"
-        });
-    }
-</script>
-  </section>
-
--->
-<!-- valine评论 -->
-
-
-
-
-<!-- 文章页添加mathjax公式 -->
-
-  
-
-<!-- 文章页添加mathjax公式 -->
-
-
-  
-    <article id="post-2024-04-02-hexo插件hexo-generator-index-pin-top实现文章的排序" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h2 itemprop="name">
-      <a class="article-title_code_ant" href="/post/3225ac4f.html">hexo插件hexo-generator-index-pin-top实现文章的排序</a>
-    </h2>
-  
-
-        
-		
-		  <a href="/post/3225ac4f.html" class="archive-article-date">
-  	<time datetime="2024-04-02T09:19:33.000Z" itemprop="datePublished">
-	<!-- <i class="icon-calendar icon"></i> -->
-
-	<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
-	&nbsp;
-	2024-04-02</time>
-	
-	<!-- busuanzi阅读量统计
-	
-	-->
-	<!-- busuanzi阅读量统计 -->
-	
-	
-	
-    <!-- waline阅读量统计 
-	
-	-->
-</a>
-
-
-        
-		
-		
-		  <!-- 添加标题栏文字统计效果 -->
-<div class="word-count">
-	
-	
-    <span class="post-time">
-      <span class="post-meta-item-icon">
-	    <i class="fa fa-bar-chart" aria-hidden="true"></i>
-        <!-- <i class="fa fa-keyboard-o" aria-hidden="true"></i> -->
-        <span class="post-meta-item-text">字数统计: </span>
-        <span class="post-count">118字</span>
+        <span class="post-count">9字</span>
       </span>
     </span>
 
@@ -983,16 +380,8 @@
 	  <!-- 添加分类与标签 -->
 	  
 		  
-		  <h1 id="hexo如何修改-文章排序"><a href="#hexo如何修改-文章排序" class="headerlink" title="hexo如何修改: 文章排序"></a>hexo如何修改: 文章排序</h1><p>hexo默认情况下以编写时间的先后来排序，后写的后出现</p>
-<p>按照以下方法可为文章添加top属性来排序</p>
-<p>首先在cmd中输入以下命令</p>
-<p>首先要切入hexo所在的文件夹，否则生成页面会报错</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm uninstall hexo-generator-index --save</span><br><span class="line">npm install hexo-generator-index-pin-top --save</span><br></pre></td></tr></table></figure>
-
-<p>然后在文章当中添加top属性即可</p>
-<p>数字越大，排在越上面</p>
-<p><img src="/imgs/3285662-20240208155353623-1901434418.png" alt="img"></p>
-
+			这里有东西被加密了，需要输入密码查看哦。
+		  
 				  
 	  
       
@@ -1015,7 +404,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">语雀</a>
         		</li>
       		
 		</ul>
@@ -1027,11 +416,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/博客/" class="article-tag-list-link color3">博客</a>
+        			<a href="/categories/语雀/" class="article-tag-list-link color3">语雀</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="/categories/博客/hexo/" class="article-tag-list-link color5">hexo</a>
+        			<a href="/categories/语雀/综合管理平台/" class="article-tag-list-link color2">综合管理平台</a>
         		</li>
       		
 		</ul>
@@ -1042,7 +431,7 @@
 	  <!-- 添加展开全文 -->
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/post/3225ac4f.html">展开全文 >></a>
+          <a class="article-more-a" href="/post/a9024b3b.html">展开全文 >></a>
         </p>
       
 	  
@@ -1111,26 +500,26 @@
 
 
   
-    <article id="post-2024-03-29-hexo 插件hexo-git-backup实现对文章的备份" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-语雀/综合管理平台/2024-05-23-pg库语句" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h2 itemprop="name">
-      <a class="article-title_code_ant" href="/post/a8dc1525.html">hexo 插件hexo-git-backup实现对文章的备份</a>
+      <a class="article-title_code_ant" href="/post/4dc60fa4.html">pg库语句</a>
     </h2>
   
 
         
 		
-		  <a href="/post/a8dc1525.html" class="archive-article-date">
-  	<time datetime="2024-03-29T00:00:00.000Z" itemprop="datePublished">
+		  <a href="/post/4dc60fa4.html" class="archive-article-date">
+  	<time datetime="2024-05-23T16:24:16.000Z" itemprop="datePublished">
 	<!-- <i class="icon-calendar icon"></i> -->
 
 	<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
 	&nbsp;
-	2024-03-29</time>
+	2024-05-23</time>
 	
 	<!-- busuanzi阅读量统计
 	
@@ -1157,593 +546,7 @@
 	    <i class="fa fa-bar-chart" aria-hidden="true"></i>
         <!-- <i class="fa fa-keyboard-o" aria-hidden="true"></i> -->
         <span class="post-meta-item-text">字数统计: </span>
-        <span class="post-count">1.3k字</span>
-      </span>
-    </span>
-
-    <span class="post-time">
-      &nbsp; | &nbsp;
-      <span class="post-meta-item-icon">
-	    <i class="fa fa-pagelines" aria-hidden="true"></i>
-        <span class="post-meta-item-text">阅读时长: </span>
-        <span class="post-count">5min</span>
-      </span>
-    </span>
-	
-
-</div>
-<!-- 添加标题栏文字统计效果结束 -->
-		
-      </header>
-    
-	
-    <div class="article-entry" itemprop="articleBody">
-	  <!-- 添加分类与标签 -->
-	  
-		  
-			<p>一篇关于Hexo博客的备份与恢复的，用的是一个插件：<a href="https://github.com/coneycode/hexo-git-backup">hexo-git-backup</a>，Hexo官网的插件里搜不到，这个插件发布在了GitHub上，关于安装使用官方也给了很简洁易懂的说明文档。</p>
-<h2 id="备份"><a href="#备份" class="headerlink" title="备份"></a>备份</h2><h3 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h3><p>如果你的Hexo版本是2.x.x（查看Hexo版本可使用命令：<code>hexo version</code>）在终端中使用如下命令安装：</p>
-<figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>npm install hexo-git-backup<span class="variable">@0</span>.<span class="number">0.91</span> --save</span><br></pre></td></tr></table></figure>
-
-<p>如果你的Hexo版本是3.x.x<strong>及后续版本</strong>，则使用如下命令安装：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-git-backup --save</span><br></pre></td></tr></table></figure>
-		  
-				  
-	  
-      
-	  <!-- 添加打赏 -->
-	  
-	
-	  <!-- 添加版权声明 -->
-      
-	  
-	</div>
-	
-	<!-- 添加置顶 -->
-    <div class="article-info article-info-index">
-      
-	  
-	  <!-- 分类页 -->
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/博客/" class="article-tag-list-link color3">博客</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/博客/hexo/" class="article-tag-list-link color5">hexo</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-	  
-	  <!-- 添加展开全文 -->
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/post/a8dc1525.html">展开全文 >></a>
-        </p>
-      
-	  
-	  <!-- 添加分享 -->
-      
-	  
-      <div class="clearfix"></div>
-	  
-    </div>
-  </div>
-</article>
-
-
-
-<!-- 添加回到顶部和文章目录 -->
-<aside class="wrap-side-operation">
-  <div class="mod-side-operation">
-    
-      <div class="jump-container" id="js-jump-container" style="display:none;">
-        <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-          <i class="icon-font icon-back"></i>
-        </a>
-      </div>
-    
-    
-  </div>
-</aside>
-
-<!-- 添加评论 -->
-
-
-<!-- valine评论
-  
-  <section id="comments" style="margin:10px;padding:10px;background:#fff;">
-    <div id="vcomment" class="comment"></div> 
-<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
-<script>
-   var notify = 'true' == true ? true : false;
-   var verify = 'true' == true ? true : false;
-    window.onload = function() {
-        new Valine({
-            el: '.comment',
-            notify: notify,
-            verify: verify,
-            app_id: "oaNIM7WrQSG7UOdJT8sGT8Ap-gzGzoHsz",
-            app_key: "CnYOpc2uW5oBwt6wgLB1ggYh",
-            placeholder: "ヾﾉ≧∀≦)o来啊，快活啊!",
-            avatar:"wavatar"
-        });
-    }
-</script>
-  </section>
-
--->
-<!-- valine评论 -->
-
-
-
-
-<!-- 文章页添加mathjax公式 -->
-
-  
-
-<!-- 文章页添加mathjax公式 -->
-
-
-  
-    <article id="post-2024-03-29-等保测评漏洞修复" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h2 itemprop="name">
-      <a class="article-title_code_ant" href="/post/ece3b4be.html">等保测评漏洞修复</a>
-    </h2>
-  
-
-        
-		
-		  <a href="/post/ece3b4be.html" class="archive-article-date">
-  	<time datetime="2024-03-29T00:00:00.000Z" itemprop="datePublished">
-	<!-- <i class="icon-calendar icon"></i> -->
-
-	<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
-	&nbsp;
-	2024-03-29</time>
-	
-	<!-- busuanzi阅读量统计
-	
-	-->
-	<!-- busuanzi阅读量统计 -->
-	
-	
-	
-    <!-- waline阅读量统计 
-	
-	-->
-</a>
-
-
-        
-		
-		
-		  <!-- 添加标题栏文字统计效果 -->
-<div class="word-count">
-	
-	
-    <span class="post-time">
-      <span class="post-meta-item-icon">
-	    <i class="fa fa-bar-chart" aria-hidden="true"></i>
-        <!-- <i class="fa fa-keyboard-o" aria-hidden="true"></i> -->
-        <span class="post-meta-item-text">字数统计: </span>
-        <span class="post-count">1.8k字</span>
-      </span>
-    </span>
-
-    <span class="post-time">
-      &nbsp; | &nbsp;
-      <span class="post-meta-item-icon">
-	    <i class="fa fa-pagelines" aria-hidden="true"></i>
-        <span class="post-meta-item-text">阅读时长: </span>
-        <span class="post-count">8min</span>
-      </span>
-    </span>
-	
-
-</div>
-<!-- 添加标题栏文字统计效果结束 -->
-		
-      </header>
-    
-	
-    <div class="article-entry" itemprop="articleBody">
-	  <!-- 添加分类与标签 -->
-	  
-		  
-			<h2 id="1-服务器密码限制"><a href="#1-服务器密码限制" class="headerlink" title="1.服务器密码限制"></a>1.服务器密码限制</h2><p><strong>等保测评检测问题：</strong>未对身份鉴别信息复杂度进行检查，未强制要求定期更换口令。</p>
-<p><strong>解决方法：</strong></p>
-<p>Win+R键打开运行，输入 secpol.msc，打开本地安全策略</p>
-<p><img src="/imgs/2034e349deaa4234b56d9c0f6f0158b8.png"></p>
-<p><img src="/imgs/188f81be44dc48918ec39cca3146ec13.png"></p>
-<p>打开“计算机管理”</p>
-<p>打开cmd面板，输入compmgmt.msc，打开</p>
-<p>将密码永不过期设置为不勾选</p>
-<p><img src="/imgs/344128a169134f5395a313dd32abaa10.png"></p>
-		  
-				  
-	  
-      
-	  <!-- 添加打赏 -->
-	  
-	
-	  <!-- 添加版权声明 -->
-      
-	  
-	</div>
-	
-	<!-- 添加置顶 -->
-    <div class="article-info article-info-index">
-      
-	  
-	  <!-- 分类页 -->
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">漏洞修复</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/漏洞修复/" class="article-tag-list-link color5">漏洞修复</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-	  
-	  <!-- 添加展开全文 -->
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/post/ece3b4be.html">展开全文 >></a>
-        </p>
-      
-	  
-	  <!-- 添加分享 -->
-      
-	  
-      <div class="clearfix"></div>
-	  
-    </div>
-  </div>
-</article>
-
-
-
-<!-- 添加回到顶部和文章目录 -->
-<aside class="wrap-side-operation">
-  <div class="mod-side-operation">
-    
-      <div class="jump-container" id="js-jump-container" style="display:none;">
-        <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-          <i class="icon-font icon-back"></i>
-        </a>
-      </div>
-    
-    
-  </div>
-</aside>
-
-<!-- 添加评论 -->
-
-
-<!-- valine评论
-  
-  <section id="comments" style="margin:10px;padding:10px;background:#fff;">
-    <div id="vcomment" class="comment"></div> 
-<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
-<script>
-   var notify = 'true' == true ? true : false;
-   var verify = 'true' == true ? true : false;
-    window.onload = function() {
-        new Valine({
-            el: '.comment',
-            notify: notify,
-            verify: verify,
-            app_id: "oaNIM7WrQSG7UOdJT8sGT8Ap-gzGzoHsz",
-            app_key: "CnYOpc2uW5oBwt6wgLB1ggYh",
-            placeholder: "ヾﾉ≧∀≦)o来啊，快活啊!",
-            avatar:"wavatar"
-        });
-    }
-</script>
-  </section>
-
--->
-<!-- valine评论 -->
-
-
-
-
-<!-- 文章页添加mathjax公式 -->
-
-  
-
-<!-- 文章页添加mathjax公式 -->
-
-
-  
-    <article id="post-2024-03-22-系统开机自启动程序设置" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h2 itemprop="name">
-      <a class="article-title_code_ant" href="/post/bf358e81.html">系统开机自启动程序设置</a>
-    </h2>
-  
-
-        
-		
-		  <a href="/post/bf358e81.html" class="archive-article-date">
-  	<time datetime="2024-03-22T00:00:00.000Z" itemprop="datePublished">
-	<!-- <i class="icon-calendar icon"></i> -->
-
-	<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
-	&nbsp;
-	2024-03-22</time>
-	
-	<!-- busuanzi阅读量统计
-	
-	-->
-	<!-- busuanzi阅读量统计 -->
-	
-	
-	
-    <!-- waline阅读量统计 
-	
-	-->
-</a>
-
-
-        
-		
-		
-		  <!-- 添加标题栏文字统计效果 -->
-<div class="word-count">
-	
-	
-    <span class="post-time">
-      <span class="post-meta-item-icon">
-	    <i class="fa fa-bar-chart" aria-hidden="true"></i>
-        <!-- <i class="fa fa-keyboard-o" aria-hidden="true"></i> -->
-        <span class="post-meta-item-text">字数统计: </span>
-        <span class="post-count">2.7k字</span>
-      </span>
-    </span>
-
-    <span class="post-time">
-      &nbsp; | &nbsp;
-      <span class="post-meta-item-icon">
-	    <i class="fa fa-pagelines" aria-hidden="true"></i>
-        <span class="post-meta-item-text">阅读时长: </span>
-        <span class="post-count">11min</span>
-      </span>
-    </span>
-	
-
-</div>
-<!-- 添加标题栏文字统计效果结束 -->
-		
-      </header>
-    
-	
-    <div class="article-entry" itemprop="articleBody">
-	  <!-- 添加分类与标签 -->
-	  
-		  
-			<h2 id="windows-将-bat-脚本设置为开机自启动"><a href="#windows-将-bat-脚本设置为开机自启动" class="headerlink" title="windows 将 bat 脚本设置为开机自启动"></a>windows 将 bat 脚本设置为开机自启动</h2><h3 id="修改注册表的方式"><a href="#修改注册表的方式" class="headerlink" title="修改注册表的方式"></a>修改注册表的方式</h3><p>​	进入注册表，点击任务栏开始，输入 regedit.exe，进入 [HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run] 位置后，新建一个二进制字符类型的项，数值数据位置填入所需开机自启动的应用程序位置，但是该方式应用于在产的系统会导致无法启动（由于系统使用了杀桌面的方式）。</p>
-<h3 id="设置脚本启动的方式"><a href="#设置脚本启动的方式" class="headerlink" title="设置脚本启动的方式"></a>设置脚本启动的方式</h3><p>​	注意：系统授权过期等原因可能会导致无法启动</p>
-<p>​	在开始位置输入 gpedit.msc 进入本地策略组，在计算机配置—Windows 设置—脚本（启动&#x2F;关闭）位置双击启动，并添加相对应的脚本。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">使用场景：需要在windows开机启动时直接运行一个bat脚本，通过这个脚本调用写好的python之类的管理工具。</span><br><span class="line">步骤：</span><br><span class="line">1、按下Win + R快捷键打开“运行”对话框</span><br><span class="line">2、输入shell:startup，然后按下回车键</span><br><span class="line">3、这将打开“启动”文件夹，右键点击.bat文件，选择“创建快捷方式”，然后将快捷方式复制或移动到“启动”文件夹中。</span><br><span class="line">4、重启电脑后，Windows将自动运行“启动”文件夹中的所有程序，bat脚本也将自动运行。</span><br></pre></td></tr></table></figure>
-		  
-				  
-	  
-      
-	  <!-- 添加打赏 -->
-	  
-	
-	  <!-- 添加版权声明 -->
-      
-	  
-	</div>
-	
-	<!-- 添加置顶 -->
-    <div class="article-info article-info-index">
-      
-	  
-	  <!-- 分类页 -->
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">CentOS7</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">Windows</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/linux/" class="article-tag-list-link color1">linux</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/Windows/" class="article-tag-list-link color3">Windows</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-	  
-	  <!-- 添加展开全文 -->
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/post/bf358e81.html">展开全文 >></a>
-        </p>
-      
-	  
-	  <!-- 添加分享 -->
-      
-	  
-      <div class="clearfix"></div>
-	  
-    </div>
-  </div>
-</article>
-
-
-
-<!-- 添加回到顶部和文章目录 -->
-<aside class="wrap-side-operation">
-  <div class="mod-side-operation">
-    
-      <div class="jump-container" id="js-jump-container" style="display:none;">
-        <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-          <i class="icon-font icon-back"></i>
-        </a>
-      </div>
-    
-    
-  </div>
-</aside>
-
-<!-- 添加评论 -->
-
-
-<!-- valine评论
-  
-  <section id="comments" style="margin:10px;padding:10px;background:#fff;">
-    <div id="vcomment" class="comment"></div> 
-<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
-<script>
-   var notify = 'true' == true ? true : false;
-   var verify = 'true' == true ? true : false;
-    window.onload = function() {
-        new Valine({
-            el: '.comment',
-            notify: notify,
-            verify: verify,
-            app_id: "oaNIM7WrQSG7UOdJT8sGT8Ap-gzGzoHsz",
-            app_key: "CnYOpc2uW5oBwt6wgLB1ggYh",
-            placeholder: "ヾﾉ≧∀≦)o来啊，快活啊!",
-            avatar:"wavatar"
-        });
-    }
-</script>
-  </section>
-
--->
-<!-- valine评论 -->
-
-
-
-
-<!-- 文章页添加mathjax公式 -->
-
-  
-
-<!-- 文章页添加mathjax公式 -->
-
-
-  
-    <article id="post-2024-03-21-firewall" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h2 itemprop="name">
-      <a class="article-title_code_ant" href="/post/6ae2bd65.html">firewalld</a>
-    </h2>
-  
-
-        
-		
-		  <a href="/post/6ae2bd65.html" class="archive-article-date">
-  	<time datetime="2024-03-21T00:00:00.000Z" itemprop="datePublished">
-	<!-- <i class="icon-calendar icon"></i> -->
-
-	<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
-	&nbsp;
-	2024-03-21</time>
-	
-	<!-- busuanzi阅读量统计
-	
-	-->
-	<!-- busuanzi阅读量统计 -->
-	
-	
-	
-    <!-- waline阅读量统计 
-	
-	-->
-</a>
-
-
-        
-		
-		
-		  <!-- 添加标题栏文字统计效果 -->
-<div class="word-count">
-	
-	
-    <span class="post-time">
-      <span class="post-meta-item-icon">
-	    <i class="fa fa-bar-chart" aria-hidden="true"></i>
-        <!-- <i class="fa fa-keyboard-o" aria-hidden="true"></i> -->
-        <span class="post-meta-item-text">字数统计: </span>
-        <span class="post-count">220字</span>
+        <span class="post-count">9字</span>
       </span>
     </span>
 
@@ -1767,9 +570,8 @@
 	  <!-- 添加分类与标签 -->
 	  
 		  
-		  <h2 id="firewall常用命令"><a href="#firewall常用命令" class="headerlink" title="firewall常用命令"></a>firewall常用命令</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">查看使用的端口</span><br><span class="line">netstat -untlp</span><br><span class="line">查看防火墙状态</span><br><span class="line">systemctl status firewalld</span><br><span class="line"><span class="comment">#开启防火墙</span></span><br><span class="line">systemctl start firewalld</span><br><span class="line"><span class="comment">#开机启动</span></span><br><span class="line">systemctl <span class="built_in">enable</span> firewalld</span><br><span class="line"></span><br><span class="line">永久打开端口</span><br><span class="line">firewall-cmd --permanent --add-port=6379/tcp</span><br><span class="line">// 添加复杂规则,只允许指定IP段访问6379端口</span><br><span class="line">firewall-cmd --permanent --add-rich-rule=<span class="string">&#x27;rule family=&quot;ipv4&quot; source address=&quot;172.16.10.0/24&quot; port protocol=&quot;tcp&quot; port=&quot;6379&quot; accept&#x27;</span></span><br><span class="line">// 移除复杂规则,只允许指定IP段访问6379端口</span><br><span class="line">firewall-cmd --permanent --remove-rich-rule=<span class="string">&#x27;rule family=&quot;ipv4&quot; source address=&quot;172.16.2.0/24&quot; port protocol=&quot;tcp&quot; port=&quot;6379&quot; accept&#x27;</span></span><br><span class="line"></span><br><span class="line">重载</span><br><span class="line">firewall-cmd --reload</span><br><span class="line"><span class="comment">#关闭端口9001</span></span><br><span class="line">firewall-cmd --zone=public --remove-port=6379/tcp --permanent</span><br><span class="line"><span class="comment"># 查看防火墙，添加的端口也可以看到</span></span><br><span class="line">firewall-cmd --list-all</span><br><span class="line">测试</span><br><span class="line">telnet 172.16.2.103  6379</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">firewall-cmd --permanent --add-rich-rule=<span class="string">&#x27;rule family=&quot;ipv4&quot; source address=&quot;172.16.2.0/24&quot; port protocol=&quot;tcp&quot; port=&quot;19200&quot; accept&#x27;</span></span><br></pre></td></tr></table></figure>
-
-
+			这里有东西被加密了，需要输入密码查看哦。
+		  
 				  
 	  
       
@@ -1792,11 +594,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">CentOS7</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">firewalld</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">语雀</a>
         		</li>
       		
 		</ul>
@@ -1808,11 +606,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/linux/" class="article-tag-list-link color1">linux</a>
+        			<a href="/categories/语雀/" class="article-tag-list-link color3">语雀</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="/categories/linux/firewalld/" class="article-tag-list-link color5">firewalld</a>
+        			<a href="/categories/语雀/综合管理平台/" class="article-tag-list-link color2">综合管理平台</a>
         		</li>
       		
 		</ul>
@@ -1823,7 +621,7 @@
 	  <!-- 添加展开全文 -->
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/post/6ae2bd65.html">展开全文 >></a>
+          <a class="article-more-a" href="/post/4dc60fa4.html">展开全文 >></a>
         </p>
       
 	  
@@ -1892,26 +690,26 @@
 
 
   
-    <article id="post-2024-03-21-hexo 插件hexo-blog-encrypt 实现对文章的加密" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-语雀/综合管理平台/2024-05-23-pg弱密码修复" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h2 itemprop="name">
-      <a class="article-title_code_ant" href="/post/ef718547.html">hexo 插件hexo-blog-encrypt 实现对文章的加密</a>
+      <a class="article-title_code_ant" href="/post/e966ffad.html">pg弱密码修复</a>
     </h2>
   
 
         
 		
-		  <a href="/post/ef718547.html" class="archive-article-date">
-  	<time datetime="2024-03-21T00:00:00.000Z" itemprop="datePublished">
+		  <a href="/post/e966ffad.html" class="archive-article-date">
+  	<time datetime="2024-05-23T16:24:16.000Z" itemprop="datePublished">
 	<!-- <i class="icon-calendar icon"></i> -->
 
 	<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
 	&nbsp;
-	2024-03-21</time>
+	2024-05-23</time>
 	
 	<!-- busuanzi阅读量统计
 	
@@ -1938,7 +736,7 @@
 	    <i class="fa fa-bar-chart" aria-hidden="true"></i>
         <!-- <i class="fa fa-keyboard-o" aria-hidden="true"></i> -->
         <span class="post-meta-item-text">字数统计: </span>
-        <span class="post-count">376字</span>
+        <span class="post-count">9字</span>
       </span>
     </span>
 
@@ -1962,17 +760,8 @@
 	  <!-- 添加分类与标签 -->
 	  
 		  
-		  <h2 id="下载插件"><a href="#下载插件" class="headerlink" title="下载插件"></a>下载插件</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-blog-encrypt</span><br></pre></td></tr></table></figure>
-
-<h2 id="快速使用"><a href="#快速使用" class="headerlink" title="快速使用"></a>快速使用</h2><p>文章配置里面添加（不启用密码的话password设为空或者不写）</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hello World</span><br><span class="line">date: 2020-12-18 20:44:18</span><br><span class="line">password: (填写你想设置的密码)</span><br><span class="line">abstract: 这里有东西被加密了，需要输入密码查看哦。</span><br><span class="line">message: 您好，这里需要密码。</span><br><span class="line">wrong_pass_message: 抱歉，这个密码看着不太对，请再试试。</span><br><span class="line">wrong_hash_message: 抱歉，这个文章不能被纠正，不过您还是能看看解密后的内容。</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<h2 id="按标签设置密码"><a href="#按标签设置密码" class="headerlink" title="按标签设置密码"></a>按标签设置密码</h2><p>在博客根目录下的_config.xml中添加:</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">encrypt: # hexo-blog-encrypt</span><br><span class="line">  abstract: 这里有东西被加密了，需要输入密码查看哦。</span><br><span class="line">  message: 您好, 这里需要密码.</span><br><span class="line">  tags:</span><br><span class="line">  - &#123;name: tagName, password: 密码A&#125;</span><br><span class="line">  - &#123;name: tagName, password: 密码B&#125;</span><br><span class="line">  template: &lt;div id=&quot;hexo-blog-encrypt&quot; data-wpm=&quot;&#123;&#123;hbeWrongPassMessage&#125;&#125;&quot; data-whm=&quot;&#123;&#123;hbeWrongHashMessage&#125;&#125;&quot;&gt;&lt;div class=&quot;hbe-input-container&quot;&gt;&lt;input type=&quot;password&quot; id=&quot;hbePass&quot; placeholder=&quot;&#123;&#123;hbeMessage&#125;&#125;&quot; /&gt;&lt;label&gt;&#123;&#123;hbeMessage&#125;&#125;&lt;/label&gt;&lt;div class=&quot;bottom-line&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;script id=&quot;hbeData&quot; type=&quot;hbeData&quot; data-hmacdigest=&quot;&#123;&#123;hbeHmacDigest&#125;&#125;&quot;&gt;&#123;&#123;hbeEncryptedData&#125;&#125;&lt;/script&gt;&lt;/div&gt;</span><br><span class="line">  wrong_pass_message: 抱歉, 这个密码看着不太对, 请再试试.</span><br><span class="line">  wrong_hash_message: 抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.</span><br></pre></td></tr></table></figure>
-
-<h2 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h2><p><img src="/imgs/image-20240320163358836-1711088473591-24.png" alt="image-20240320163358836"></p>
-<h2 id="配置优先级"><a href="#配置优先级" class="headerlink" title="配置优先级"></a>配置优先级</h2><p>文章信息头 &gt; _config.yml (站点根目录下的) &gt; 默认配置</p>
-
+			这里有东西被加密了，需要输入密码查看哦。
+		  
 				  
 	  
       
@@ -1995,7 +784,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">语雀</a>
         		</li>
       		
 		</ul>
@@ -2007,11 +796,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/博客/" class="article-tag-list-link color3">博客</a>
+        			<a href="/categories/语雀/" class="article-tag-list-link color3">语雀</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="/categories/博客/hexo/" class="article-tag-list-link color5">hexo</a>
+        			<a href="/categories/语雀/综合管理平台/" class="article-tag-list-link color2">综合管理平台</a>
         		</li>
       		
 		</ul>
@@ -2022,7 +811,7 @@
 	  <!-- 添加展开全文 -->
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/post/ef718547.html">展开全文 >></a>
+          <a class="article-more-a" href="/post/e966ffad.html">展开全文 >></a>
         </p>
       
 	  
@@ -2091,26 +880,26 @@
 
 
   
-    <article id="post-2024-03-20-Github+Hexo搭建个人博客" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-语雀/综合管理平台/2024-05-23-【win系统之服务器SMB协议】共享文件夹" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h2 itemprop="name">
-      <a class="article-title_code_ant" href="/post/dbfe91e4.html">Github+Hexo搭建个人博客</a>
+      <a class="article-title_code_ant" href="/post/254e8aa.html">【win系统之服务器SMB协议】共享文件夹</a>
     </h2>
   
 
         
 		
-		  <a href="/post/dbfe91e4.html" class="archive-article-date">
-  	<time datetime="2024-03-20T00:00:00.000Z" itemprop="datePublished">
+		  <a href="/post/254e8aa.html" class="archive-article-date">
+  	<time datetime="2024-05-23T16:24:16.000Z" itemprop="datePublished">
 	<!-- <i class="icon-calendar icon"></i> -->
 
 	<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
 	&nbsp;
-	2024-03-20</time>
+	2024-05-23</time>
 	
 	<!-- busuanzi阅读量统计
 	
@@ -2137,7 +926,7 @@
 	    <i class="fa fa-bar-chart" aria-hidden="true"></i>
         <!-- <i class="fa fa-keyboard-o" aria-hidden="true"></i> -->
         <span class="post-meta-item-text">字数统计: </span>
-        <span class="post-count">1.5k字</span>
+        <span class="post-count">9字</span>
       </span>
     </span>
 
@@ -2146,7 +935,7 @@
       <span class="post-meta-item-icon">
 	    <i class="fa fa-pagelines" aria-hidden="true"></i>
         <span class="post-meta-item-text">阅读时长: </span>
-        <span class="post-count">6min</span>
+        <span class="post-count">1min</span>
       </span>
     </span>
 	
@@ -2161,14 +950,7 @@
 	  <!-- 添加分类与标签 -->
 	  
 		  
-			<h1 id="一、下载安装-git-，Node"><a href="#一、下载安装-git-，Node" class="headerlink" title="一、下载安装 git ，Node"></a><strong>一、下载安装 git ，Node</strong></h1><p>Node下载地址：<a target="_blank" rel="noopener" href="https://nodejs.org/en/">https://nodejs.org/en/</a></p>
-<p>Git：<a target="_blank" rel="noopener" href="https://git-scm.com/">https://git-scm.com/</a></p>
-<h1 id="二、安装，配置-Hexo"><a href="#二、安装，配置-Hexo" class="headerlink" title="二、安装，配置 Hexo"></a><strong>二、安装，配置 Hexo</strong></h1><p>​	Hexo官方文档：<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">https://hexo.io/zh-cn/docs/</a></p>
-<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><pre><code> 前面已经安装了Git和Node.js，然后用npm，安装Hexo
- 
- 找个文件夹，右键“git bash here”,打开git控制台
-</code></pre>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+			这里有东西被加密了，需要输入密码查看哦。
 		  
 				  
 	  
@@ -2192,11 +974,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">语雀</a>
         		</li>
       		
 		</ul>
@@ -2208,11 +986,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/博客/" class="article-tag-list-link color3">博客</a>
+        			<a href="/categories/语雀/" class="article-tag-list-link color3">语雀</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="/categories/博客/hexo/" class="article-tag-list-link color5">hexo</a>
+        			<a href="/categories/语雀/综合管理平台/" class="article-tag-list-link color2">综合管理平台</a>
         		</li>
       		
 		</ul>
@@ -2223,7 +1001,1147 @@
 	  <!-- 添加展开全文 -->
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/post/dbfe91e4.html">展开全文 >></a>
+          <a class="article-more-a" href="/post/254e8aa.html">展开全文 >></a>
+        </p>
+      
+	  
+	  <!-- 添加分享 -->
+      
+	  
+      <div class="clearfix"></div>
+	  
+    </div>
+  </div>
+</article>
+
+
+
+<!-- 添加回到顶部和文章目录 -->
+<aside class="wrap-side-operation">
+  <div class="mod-side-operation">
+    
+      <div class="jump-container" id="js-jump-container" style="display:none;">
+        <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+          <i class="icon-font icon-back"></i>
+        </a>
+      </div>
+    
+    
+  </div>
+</aside>
+
+<!-- 添加评论 -->
+
+
+<!-- valine评论
+  
+  <section id="comments" style="margin:10px;padding:10px;background:#fff;">
+    <div id="vcomment" class="comment"></div> 
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+   var notify = 'true' == true ? true : false;
+   var verify = 'true' == true ? true : false;
+    window.onload = function() {
+        new Valine({
+            el: '.comment',
+            notify: notify,
+            verify: verify,
+            app_id: "oaNIM7WrQSG7UOdJT8sGT8Ap-gzGzoHsz",
+            app_key: "CnYOpc2uW5oBwt6wgLB1ggYh",
+            placeholder: "ヾﾉ≧∀≦)o来啊，快活啊!",
+            avatar:"wavatar"
+        });
+    }
+</script>
+  </section>
+
+-->
+<!-- valine评论 -->
+
+
+
+
+<!-- 文章页添加mathjax公式 -->
+
+  
+
+<!-- 文章页添加mathjax公式 -->
+
+
+  
+    <article id="post-语雀/综合管理平台/2024-05-23-系统页面配置" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h2 itemprop="name">
+      <a class="article-title_code_ant" href="/post/cf95e492.html">系统页面配置</a>
+    </h2>
+  
+
+        
+		
+		  <a href="/post/cf95e492.html" class="archive-article-date">
+  	<time datetime="2024-05-23T16:24:16.000Z" itemprop="datePublished">
+	<!-- <i class="icon-calendar icon"></i> -->
+
+	<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+	&nbsp;
+	2024-05-23</time>
+	
+	<!-- busuanzi阅读量统计
+	
+	-->
+	<!-- busuanzi阅读量统计 -->
+	
+	
+	
+    <!-- waline阅读量统计 
+	
+	-->
+</a>
+
+
+        
+		
+		
+		  <!-- 添加标题栏文字统计效果 -->
+<div class="word-count">
+	
+	
+    <span class="post-time">
+      <span class="post-meta-item-icon">
+	    <i class="fa fa-bar-chart" aria-hidden="true"></i>
+        <!-- <i class="fa fa-keyboard-o" aria-hidden="true"></i> -->
+        <span class="post-meta-item-text">字数统计: </span>
+        <span class="post-count">9字</span>
+      </span>
+    </span>
+
+    <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+	    <i class="fa fa-pagelines" aria-hidden="true"></i>
+        <span class="post-meta-item-text">阅读时长: </span>
+        <span class="post-count">1min</span>
+      </span>
+    </span>
+	
+
+</div>
+<!-- 添加标题栏文字统计效果结束 -->
+		
+      </header>
+    
+	
+    <div class="article-entry" itemprop="articleBody">
+	  <!-- 添加分类与标签 -->
+	  
+		  
+			这里有东西被加密了，需要输入密码查看哦。
+		  
+				  
+	  
+      
+	  <!-- 添加打赏 -->
+	  
+	
+	  <!-- 添加版权声明 -->
+      
+	  
+	</div>
+	
+	<!-- 添加置顶 -->
+    <div class="article-info article-info-index">
+      
+	  
+	  <!-- 分类页 -->
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">语雀</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/语雀/" class="article-tag-list-link color3">语雀</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/语雀/综合管理平台/" class="article-tag-list-link color2">综合管理平台</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+	  
+	  <!-- 添加展开全文 -->
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/post/cf95e492.html">展开全文 >></a>
+        </p>
+      
+	  
+	  <!-- 添加分享 -->
+      
+	  
+      <div class="clearfix"></div>
+	  
+    </div>
+  </div>
+</article>
+
+
+
+<!-- 添加回到顶部和文章目录 -->
+<aside class="wrap-side-operation">
+  <div class="mod-side-operation">
+    
+      <div class="jump-container" id="js-jump-container" style="display:none;">
+        <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+          <i class="icon-font icon-back"></i>
+        </a>
+      </div>
+    
+    
+  </div>
+</aside>
+
+<!-- 添加评论 -->
+
+
+<!-- valine评论
+  
+  <section id="comments" style="margin:10px;padding:10px;background:#fff;">
+    <div id="vcomment" class="comment"></div> 
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+   var notify = 'true' == true ? true : false;
+   var verify = 'true' == true ? true : false;
+    window.onload = function() {
+        new Valine({
+            el: '.comment',
+            notify: notify,
+            verify: verify,
+            app_id: "oaNIM7WrQSG7UOdJT8sGT8Ap-gzGzoHsz",
+            app_key: "CnYOpc2uW5oBwt6wgLB1ggYh",
+            placeholder: "ヾﾉ≧∀≦)o来啊，快活啊!",
+            avatar:"wavatar"
+        });
+    }
+</script>
+  </section>
+
+-->
+<!-- valine评论 -->
+
+
+
+
+<!-- 文章页添加mathjax公式 -->
+
+  
+
+<!-- 文章页添加mathjax公式 -->
+
+
+  
+    <article id="post-语雀/综合管理平台/2024-05-23-自动化任务管理" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h2 itemprop="name">
+      <a class="article-title_code_ant" href="/post/bb5d3bc0.html">自动化任务管理</a>
+    </h2>
+  
+
+        
+		
+		  <a href="/post/bb5d3bc0.html" class="archive-article-date">
+  	<time datetime="2024-05-23T16:24:16.000Z" itemprop="datePublished">
+	<!-- <i class="icon-calendar icon"></i> -->
+
+	<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+	&nbsp;
+	2024-05-23</time>
+	
+	<!-- busuanzi阅读量统计
+	
+	-->
+	<!-- busuanzi阅读量统计 -->
+	
+	
+	
+    <!-- waline阅读量统计 
+	
+	-->
+</a>
+
+
+        
+		
+		
+		  <!-- 添加标题栏文字统计效果 -->
+<div class="word-count">
+	
+	
+    <span class="post-time">
+      <span class="post-meta-item-icon">
+	    <i class="fa fa-bar-chart" aria-hidden="true"></i>
+        <!-- <i class="fa fa-keyboard-o" aria-hidden="true"></i> -->
+        <span class="post-meta-item-text">字数统计: </span>
+        <span class="post-count">9字</span>
+      </span>
+    </span>
+
+    <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+	    <i class="fa fa-pagelines" aria-hidden="true"></i>
+        <span class="post-meta-item-text">阅读时长: </span>
+        <span class="post-count">1min</span>
+      </span>
+    </span>
+	
+
+</div>
+<!-- 添加标题栏文字统计效果结束 -->
+		
+      </header>
+    
+	
+    <div class="article-entry" itemprop="articleBody">
+	  <!-- 添加分类与标签 -->
+	  
+		  
+			这里有东西被加密了，需要输入密码查看哦。
+		  
+				  
+	  
+      
+	  <!-- 添加打赏 -->
+	  
+	
+	  <!-- 添加版权声明 -->
+      
+	  
+	</div>
+	
+	<!-- 添加置顶 -->
+    <div class="article-info article-info-index">
+      
+	  
+	  <!-- 分类页 -->
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">语雀</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/语雀/" class="article-tag-list-link color3">语雀</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/语雀/综合管理平台/" class="article-tag-list-link color2">综合管理平台</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+	  
+	  <!-- 添加展开全文 -->
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/post/bb5d3bc0.html">展开全文 >></a>
+        </p>
+      
+	  
+	  <!-- 添加分享 -->
+      
+	  
+      <div class="clearfix"></div>
+	  
+    </div>
+  </div>
+</article>
+
+
+
+<!-- 添加回到顶部和文章目录 -->
+<aside class="wrap-side-operation">
+  <div class="mod-side-operation">
+    
+      <div class="jump-container" id="js-jump-container" style="display:none;">
+        <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+          <i class="icon-font icon-back"></i>
+        </a>
+      </div>
+    
+    
+  </div>
+</aside>
+
+<!-- 添加评论 -->
+
+
+<!-- valine评论
+  
+  <section id="comments" style="margin:10px;padding:10px;background:#fff;">
+    <div id="vcomment" class="comment"></div> 
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+   var notify = 'true' == true ? true : false;
+   var verify = 'true' == true ? true : false;
+    window.onload = function() {
+        new Valine({
+            el: '.comment',
+            notify: notify,
+            verify: verify,
+            app_id: "oaNIM7WrQSG7UOdJT8sGT8Ap-gzGzoHsz",
+            app_key: "CnYOpc2uW5oBwt6wgLB1ggYh",
+            placeholder: "ヾﾉ≧∀≦)o来啊，快活啊!",
+            avatar:"wavatar"
+        });
+    }
+</script>
+  </section>
+
+-->
+<!-- valine评论 -->
+
+
+
+
+<!-- 文章页添加mathjax公式 -->
+
+  
+
+<!-- 文章页添加mathjax公式 -->
+
+
+  
+    <article id="post-语雀/综合管理平台/2024-05-23-院务管理最新需求交互逻辑" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h2 itemprop="name">
+      <a class="article-title_code_ant" href="/post/6bebeed5.html">院务管理最新需求交互逻辑</a>
+    </h2>
+  
+
+        
+		
+		  <a href="/post/6bebeed5.html" class="archive-article-date">
+  	<time datetime="2024-05-23T16:24:16.000Z" itemprop="datePublished">
+	<!-- <i class="icon-calendar icon"></i> -->
+
+	<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+	&nbsp;
+	2024-05-23</time>
+	
+	<!-- busuanzi阅读量统计
+	
+	-->
+	<!-- busuanzi阅读量统计 -->
+	
+	
+	
+    <!-- waline阅读量统计 
+	
+	-->
+</a>
+
+
+        
+		
+		
+		  <!-- 添加标题栏文字统计效果 -->
+<div class="word-count">
+	
+	
+    <span class="post-time">
+      <span class="post-meta-item-icon">
+	    <i class="fa fa-bar-chart" aria-hidden="true"></i>
+        <!-- <i class="fa fa-keyboard-o" aria-hidden="true"></i> -->
+        <span class="post-meta-item-text">字数统计: </span>
+        <span class="post-count">9字</span>
+      </span>
+    </span>
+
+    <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+	    <i class="fa fa-pagelines" aria-hidden="true"></i>
+        <span class="post-meta-item-text">阅读时长: </span>
+        <span class="post-count">1min</span>
+      </span>
+    </span>
+	
+
+</div>
+<!-- 添加标题栏文字统计效果结束 -->
+		
+      </header>
+    
+	
+    <div class="article-entry" itemprop="articleBody">
+	  <!-- 添加分类与标签 -->
+	  
+		  
+			这里有东西被加密了，需要输入密码查看哦。
+		  
+				  
+	  
+      
+	  <!-- 添加打赏 -->
+	  
+	
+	  <!-- 添加版权声明 -->
+      
+	  
+	</div>
+	
+	<!-- 添加置顶 -->
+    <div class="article-info article-info-index">
+      
+	  
+	  <!-- 分类页 -->
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">语雀</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/语雀/" class="article-tag-list-link color3">语雀</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/语雀/综合管理平台/" class="article-tag-list-link color2">综合管理平台</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+	  
+	  <!-- 添加展开全文 -->
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/post/6bebeed5.html">展开全文 >></a>
+        </p>
+      
+	  
+	  <!-- 添加分享 -->
+      
+	  
+      <div class="clearfix"></div>
+	  
+    </div>
+  </div>
+</article>
+
+
+
+<!-- 添加回到顶部和文章目录 -->
+<aside class="wrap-side-operation">
+  <div class="mod-side-operation">
+    
+      <div class="jump-container" id="js-jump-container" style="display:none;">
+        <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+          <i class="icon-font icon-back"></i>
+        </a>
+      </div>
+    
+    
+  </div>
+</aside>
+
+<!-- 添加评论 -->
+
+
+<!-- valine评论
+  
+  <section id="comments" style="margin:10px;padding:10px;background:#fff;">
+    <div id="vcomment" class="comment"></div> 
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+   var notify = 'true' == true ? true : false;
+   var verify = 'true' == true ? true : false;
+    window.onload = function() {
+        new Valine({
+            el: '.comment',
+            notify: notify,
+            verify: verify,
+            app_id: "oaNIM7WrQSG7UOdJT8sGT8Ap-gzGzoHsz",
+            app_key: "CnYOpc2uW5oBwt6wgLB1ggYh",
+            placeholder: "ヾﾉ≧∀≦)o来啊，快活啊!",
+            avatar:"wavatar"
+        });
+    }
+</script>
+  </section>
+
+-->
+<!-- valine评论 -->
+
+
+
+
+<!-- 文章页添加mathjax公式 -->
+
+  
+
+<!-- 文章页添加mathjax公式 -->
+
+
+  
+    <article id="post-语雀/我的知识库/2024-05-23-OSI七层网络模型" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h2 itemprop="name">
+      <a class="article-title_code_ant" href="/post/3c19d3a7.html">OSI七层网络模型</a>
+    </h2>
+  
+
+        
+		
+		  <a href="/post/3c19d3a7.html" class="archive-article-date">
+  	<time datetime="2024-05-23T16:24:16.000Z" itemprop="datePublished">
+	<!-- <i class="icon-calendar icon"></i> -->
+
+	<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+	&nbsp;
+	2024-05-23</time>
+	
+	<!-- busuanzi阅读量统计
+	
+	-->
+	<!-- busuanzi阅读量统计 -->
+	
+	
+	
+    <!-- waline阅读量统计 
+	
+	-->
+</a>
+
+
+        
+		
+		
+		  <!-- 添加标题栏文字统计效果 -->
+<div class="word-count">
+	
+	
+    <span class="post-time">
+      <span class="post-meta-item-icon">
+	    <i class="fa fa-bar-chart" aria-hidden="true"></i>
+        <!-- <i class="fa fa-keyboard-o" aria-hidden="true"></i> -->
+        <span class="post-meta-item-text">字数统计: </span>
+        <span class="post-count">9字</span>
+      </span>
+    </span>
+
+    <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+	    <i class="fa fa-pagelines" aria-hidden="true"></i>
+        <span class="post-meta-item-text">阅读时长: </span>
+        <span class="post-count">1min</span>
+      </span>
+    </span>
+	
+
+</div>
+<!-- 添加标题栏文字统计效果结束 -->
+		
+      </header>
+    
+	
+    <div class="article-entry" itemprop="articleBody">
+	  <!-- 添加分类与标签 -->
+	  
+		  
+			这里有东西被加密了，需要输入密码查看哦。
+		  
+				  
+	  
+      
+	  <!-- 添加打赏 -->
+	  
+	
+	  <!-- 添加版权声明 -->
+      
+	  
+	</div>
+	
+	<!-- 添加置顶 -->
+    <div class="article-info article-info-index">
+      
+	  
+	  <!-- 分类页 -->
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">语雀</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/语雀/" class="article-tag-list-link color3">语雀</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/语雀/我的知识库/" class="article-tag-list-link color1">我的知识库</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+	  
+	  <!-- 添加展开全文 -->
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/post/3c19d3a7.html">展开全文 >></a>
+        </p>
+      
+	  
+	  <!-- 添加分享 -->
+      
+	  
+      <div class="clearfix"></div>
+	  
+    </div>
+  </div>
+</article>
+
+
+
+<!-- 添加回到顶部和文章目录 -->
+<aside class="wrap-side-operation">
+  <div class="mod-side-operation">
+    
+      <div class="jump-container" id="js-jump-container" style="display:none;">
+        <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+          <i class="icon-font icon-back"></i>
+        </a>
+      </div>
+    
+    
+  </div>
+</aside>
+
+<!-- 添加评论 -->
+
+
+<!-- valine评论
+  
+  <section id="comments" style="margin:10px;padding:10px;background:#fff;">
+    <div id="vcomment" class="comment"></div> 
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+   var notify = 'true' == true ? true : false;
+   var verify = 'true' == true ? true : false;
+    window.onload = function() {
+        new Valine({
+            el: '.comment',
+            notify: notify,
+            verify: verify,
+            app_id: "oaNIM7WrQSG7UOdJT8sGT8Ap-gzGzoHsz",
+            app_key: "CnYOpc2uW5oBwt6wgLB1ggYh",
+            placeholder: "ヾﾉ≧∀≦)o来啊，快活啊!",
+            avatar:"wavatar"
+        });
+    }
+</script>
+  </section>
+
+-->
+<!-- valine评论 -->
+
+
+
+
+<!-- 文章页添加mathjax公式 -->
+
+  
+
+<!-- 文章页添加mathjax公式 -->
+
+
+  
+    <article id="post-语雀/我的知识库/2024-05-23-OSI与TCP、IP的区别" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h2 itemprop="name">
+      <a class="article-title_code_ant" href="/post/43c5d490.html">OSI与TCP、IP的区别</a>
+    </h2>
+  
+
+        
+		
+		  <a href="/post/43c5d490.html" class="archive-article-date">
+  	<time datetime="2024-05-23T16:24:16.000Z" itemprop="datePublished">
+	<!-- <i class="icon-calendar icon"></i> -->
+
+	<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+	&nbsp;
+	2024-05-23</time>
+	
+	<!-- busuanzi阅读量统计
+	
+	-->
+	<!-- busuanzi阅读量统计 -->
+	
+	
+	
+    <!-- waline阅读量统计 
+	
+	-->
+</a>
+
+
+        
+		
+		
+		  <!-- 添加标题栏文字统计效果 -->
+<div class="word-count">
+	
+	
+    <span class="post-time">
+      <span class="post-meta-item-icon">
+	    <i class="fa fa-bar-chart" aria-hidden="true"></i>
+        <!-- <i class="fa fa-keyboard-o" aria-hidden="true"></i> -->
+        <span class="post-meta-item-text">字数统计: </span>
+        <span class="post-count">9字</span>
+      </span>
+    </span>
+
+    <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+	    <i class="fa fa-pagelines" aria-hidden="true"></i>
+        <span class="post-meta-item-text">阅读时长: </span>
+        <span class="post-count">1min</span>
+      </span>
+    </span>
+	
+
+</div>
+<!-- 添加标题栏文字统计效果结束 -->
+		
+      </header>
+    
+	
+    <div class="article-entry" itemprop="articleBody">
+	  <!-- 添加分类与标签 -->
+	  
+		  
+			这里有东西被加密了，需要输入密码查看哦。
+		  
+				  
+	  
+      
+	  <!-- 添加打赏 -->
+	  
+	
+	  <!-- 添加版权声明 -->
+      
+	  
+	</div>
+	
+	<!-- 添加置顶 -->
+    <div class="article-info article-info-index">
+      
+	  
+	  <!-- 分类页 -->
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">语雀</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/语雀/" class="article-tag-list-link color3">语雀</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/语雀/我的知识库/" class="article-tag-list-link color1">我的知识库</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+	  
+	  <!-- 添加展开全文 -->
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/post/43c5d490.html">展开全文 >></a>
+        </p>
+      
+	  
+	  <!-- 添加分享 -->
+      
+	  
+      <div class="clearfix"></div>
+	  
+    </div>
+  </div>
+</article>
+
+
+
+<!-- 添加回到顶部和文章目录 -->
+<aside class="wrap-side-operation">
+  <div class="mod-side-operation">
+    
+      <div class="jump-container" id="js-jump-container" style="display:none;">
+        <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+          <i class="icon-font icon-back"></i>
+        </a>
+      </div>
+    
+    
+  </div>
+</aside>
+
+<!-- 添加评论 -->
+
+
+<!-- valine评论
+  
+  <section id="comments" style="margin:10px;padding:10px;background:#fff;">
+    <div id="vcomment" class="comment"></div> 
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+   var notify = 'true' == true ? true : false;
+   var verify = 'true' == true ? true : false;
+    window.onload = function() {
+        new Valine({
+            el: '.comment',
+            notify: notify,
+            verify: verify,
+            app_id: "oaNIM7WrQSG7UOdJT8sGT8Ap-gzGzoHsz",
+            app_key: "CnYOpc2uW5oBwt6wgLB1ggYh",
+            placeholder: "ヾﾉ≧∀≦)o来啊，快活啊!",
+            avatar:"wavatar"
+        });
+    }
+</script>
+  </section>
+
+-->
+<!-- valine评论 -->
+
+
+
+
+<!-- 文章页添加mathjax公式 -->
+
+  
+
+<!-- 文章页添加mathjax公式 -->
+
+
+  
+    <article id="post-语雀/我的知识库/2024-05-23-Pycharm使用教程" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h2 itemprop="name">
+      <a class="article-title_code_ant" href="/post/ee1d9b53.html">Pycharm使用教程</a>
+    </h2>
+  
+
+        
+		
+		  <a href="/post/ee1d9b53.html" class="archive-article-date">
+  	<time datetime="2024-05-23T16:24:16.000Z" itemprop="datePublished">
+	<!-- <i class="icon-calendar icon"></i> -->
+
+	<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+	&nbsp;
+	2024-05-23</time>
+	
+	<!-- busuanzi阅读量统计
+	
+	-->
+	<!-- busuanzi阅读量统计 -->
+	
+	
+	
+    <!-- waline阅读量统计 
+	
+	-->
+</a>
+
+
+        
+		
+		
+		  <!-- 添加标题栏文字统计效果 -->
+<div class="word-count">
+	
+	
+    <span class="post-time">
+      <span class="post-meta-item-icon">
+	    <i class="fa fa-bar-chart" aria-hidden="true"></i>
+        <!-- <i class="fa fa-keyboard-o" aria-hidden="true"></i> -->
+        <span class="post-meta-item-text">字数统计: </span>
+        <span class="post-count">9字</span>
+      </span>
+    </span>
+
+    <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+	    <i class="fa fa-pagelines" aria-hidden="true"></i>
+        <span class="post-meta-item-text">阅读时长: </span>
+        <span class="post-count">1min</span>
+      </span>
+    </span>
+	
+
+</div>
+<!-- 添加标题栏文字统计效果结束 -->
+		
+      </header>
+    
+	
+    <div class="article-entry" itemprop="articleBody">
+	  <!-- 添加分类与标签 -->
+	  
+		  
+			这里有东西被加密了，需要输入密码查看哦。
+		  
+				  
+	  
+      
+	  <!-- 添加打赏 -->
+	  
+	
+	  <!-- 添加版权声明 -->
+      
+	  
+	</div>
+	
+	<!-- 添加置顶 -->
+    <div class="article-info article-info-index">
+      
+	  
+	  <!-- 分类页 -->
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">语雀</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/语雀/" class="article-tag-list-link color3">语雀</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/语雀/我的知识库/" class="article-tag-list-link color1">我的知识库</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+	  
+	  <!-- 添加展开全文 -->
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/post/ee1d9b53.html">展开全文 >></a>
         </p>
       
 	  
@@ -2294,7 +2212,7 @@
   
   
     <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/page/2/">&lt;&lt; 上一页</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><a class="page-number" href="/page/6/">6</a><a class="extend next" rel="next" href="/page/4/">下一页 &gt;&gt;</a>
+      <a class="extend prev" rel="prev" href="/page/2/">&lt;&lt; 上一页</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><span class="space">&hellip;</span><a class="page-number" href="/page/65/">65</a><a class="extend next" rel="next" href="/page/4/">下一页 &gt;&gt;</a>
     </nav>
   
 
@@ -2346,10 +2264,10 @@ window.MathJax = {
 	  <br>
 	  <div class="footer-center">
 	    <i class="fa fa-file-word-o" aria-hidden="true"></i>
-		<span> 54 篇</span>
+		<span> 642 篇</span>
 		<span class="post-meta-divider">|</span>
 		<i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-		<span> <span class="post-count">90.8k</span></span>
+		<span> <span class="post-count">96.1k</span></span>
       </div>
 	  
 	  <!-- 添加不蒜子统计 -->
@@ -2574,11 +2492,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">心情随笔</a>
+                <a href="javascript:void(0)" class="js-tag color5">技术分享</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">技术分享</a>
+                <a href="javascript:void(0)" class="js-tag color5">心情随笔</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2590,11 +2508,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">其他</a>
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+                <a href="javascript:void(0)" class="js-tag color3">其他</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2610,15 +2528,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">实施运维</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">Postgresql</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">PostGIS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">实施运维</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2674,15 +2592,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">github</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">docker</a>
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">github</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">python</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">语雀</a>
               </li>
             
             <div class="clearfix"></div>
