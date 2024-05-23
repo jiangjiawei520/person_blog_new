@@ -1,14 +1,14 @@
 ---
-ayout: post
+layout: post
 title: Centos8无法执行update的解决办法（Failed to download metadata for repo ‘AppStream’）
 tags:
-  - 语雀
+- 语雀
 categories:
-  - - 语雀
-    - 我的知识库
-abbrlink: cf7b892b
-password: Grbk@2024
-date: 2024-05-23 16:24:15
+- [语雀,我的知识库]
+abbrlink: 
+password: "Grbk@2024"
+typora-root-url: ./..
+date: 2024-05-23 18:36:32
 ---
 ### 问题起因
 因[Centos8](https://so.csdn.net/so/search?q=Centos8&spm=1001.2101.3001.7020)软件源(yum)官方已经停止维护，无法连接官方的软件源，因此需要修改yum.repos.d来改变软件源
@@ -17,8 +17,8 @@ date: 2024-05-23 16:24:15
 按照顺序输入下列命令即可
 #### 进入/etc/yum.repos.d目录
 ```bash
-cd /etc/yum.repos.d
 <!--more-->
+cd /etc/yum.repos.d
 ```
 #### 修改源链接
 ```

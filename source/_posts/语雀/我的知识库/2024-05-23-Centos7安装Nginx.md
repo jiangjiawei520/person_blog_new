@@ -1,14 +1,14 @@
 ---
-ayout: post
+layout: post
 title: Centos7安装Nginx
 tags:
-  - 语雀
+- 语雀
 categories:
-  - - 语雀
-    - 我的知识库
-abbrlink: 78e47ef5
-password: Grbk@2024
-date: 2024-05-23 16:24:15
+- [语雀,我的知识库]
+abbrlink: 
+password: "Grbk@2024"
+typora-root-url: ./..
+date: 2024-05-23 18:36:32
 ---
 ## 一、安装环境
 
@@ -17,8 +17,8 @@ date: 2024-05-23 16:24:15
 yum install -y gcc-c++
 ```
 
-### 2.安装pcre库
 <!--more-->
+### 2.安装pcre库
 nginx的http模块使用pcre来解析正则表达式，所以需要在linux上安装pcre库，pcre-devel是使用pcre开发的一个二次开发库。nginx也需要此库。
 ```
 yum install -y pcre pcre-devel

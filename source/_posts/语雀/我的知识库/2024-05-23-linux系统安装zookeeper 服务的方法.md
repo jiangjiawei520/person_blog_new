@@ -1,14 +1,14 @@
 ---
-ayout: post
+layout: post
 title: linux系统安装zookeeper 服务的方法
 tags:
-  - 语雀
+- 语雀
 categories:
-  - - 语雀
-    - 我的知识库
-abbrlink: 247cb3e9
-password: Grbk@2024
-date: 2024-05-23 16:24:15
+- [语雀,我的知识库]
+abbrlink: 
+password: "Grbk@2024"
+typora-root-url: ./..
+date: 2024-05-23 18:36:32
 ---
 1、创建 /usr/local/services/zookeeper 文件夹：
 
@@ -17,8 +17,8 @@ date: 2024-05-23 16:24:15
 
 2、进入到 /usr/local/services/zookeeper 目录中：
 
-| 1 | cd/usr/local/services/zookeeper |
 <!--more-->
+| 1 | cd/usr/local/services/zookeeper |
 | --- | --- |
 
 3、下载 zookeeper-3.4.9.tar.gz：

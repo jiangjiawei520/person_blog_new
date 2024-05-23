@@ -1,14 +1,14 @@
 ---
-ayout: post
+layout: post
 title: MySQL Create Table .... Select ...
 tags:
-  - 语雀
+- 语雀
 categories:
-  - - 语雀
-    - 我的知识库
-abbrlink: fe00b06a
-password: Grbk@2024
-date: 2024-05-23 16:24:15
+- [语雀,我的知识库]
+abbrlink: 
+password: "Grbk@2024"
+typora-root-url: ./..
+date: 2024-05-23 18:36:32
 ---
 
 改为分两步执行即可，第一步建表，第二步插数据：

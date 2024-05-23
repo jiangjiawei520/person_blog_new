@@ -1,14 +1,14 @@
 ---
-ayout: post
+layout: post
 title: oracle转mysql函数
 tags:
-  - 语雀
+- 语雀
 categories:
-  - - 语雀
-    - 我的知识库
-abbrlink: 828d689f
-password: Grbk@2024
-date: 2024-05-23 16:24:16
+- [语雀,我的知识库]
+abbrlink: 
+password: "Grbk@2024"
+typora-root-url: ./..
+date: 2024-05-23 18:36:32
 ---
 ```
 create or replace procedure P_GET_TABLE_MYSQL_DDL(
@@ -17,8 +17,8 @@ create or replace procedure P_GET_TABLE_MYSQL_DDL(
 )
 AS
 begin
-with v_base as (
 <!--more-->
+with v_base as (
     select TABLE_NAME T_NAME, COMMENTS
     from USER_TAB_COMMENTS
     where TABLE_NAME = vTableName

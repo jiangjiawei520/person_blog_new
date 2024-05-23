@@ -1,14 +1,14 @@
 ---
-ayout: post
+layout: post
 title: 分布式基础知识SpringCloud
 tags:
-  - 语雀
+- 语雀
 categories:
-  - - 语雀
-    - 我的知识库
-abbrlink: 1bdf978a
-password: Grbk@2024
-date: 2024-05-23 16:24:16
+- [语雀,我的知识库]
+abbrlink: 
+password: "Grbk@2024"
+typora-root-url: ./..
+date: 2024-05-23 18:36:32
 ---
 # 一、前言
 只有光头才能变强
@@ -17,8 +17,8 @@ date: 2024-05-23 16:24:16
 SpringCloud GitHub Demo(看完文章的同学可以自己练手玩玩)：
 
 - https://github.com/ZhongFuCheng3y/msc-Demo
-
 <!--more-->
+
 项目结构图：
 ![image.png](https://cdn.nlark.com/yuque/0/2021/png/12484160/1632147985526-b2c6b252-db42-417a-ba12-d0c655772cbb.png#clientId=u46e31914-6c08-4&from=paste&id=u7a0f070d&originHeight=683&originWidth=617&originalType=url&ratio=1&size=410816&status=done&style=none&taskId=ue7976388-7571-498c-9ebf-d07ceb95f1e)
 # 二、集群/分布式/微服务/SOA是什么？

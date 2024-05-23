@@ -1,14 +1,14 @@
 ---
-ayout: post
+layout: post
 title: nginx location 限制ip或ip段访问
 tags:
-  - 语雀
+- 语雀
 categories:
-  - - 语雀
-    - 我的知识库
-abbrlink: af642938
-password: Grbk@2024
-date: 2024-05-23 16:24:15
+- [语雀,我的知识库]
+abbrlink: 
+password: "Grbk@2024"
+typora-root-url: ./..
+date: 2024-05-23 18:36:32
 ---
 
 ## 配置
@@ -17,8 +17,8 @@ server {
     listen       80;
     server_name  localhost;
     location / {
-    	 allow all;
 <!--more-->
+    	 allow all;
          deny 111.111.111.111;
          root /app/abc/html;
          index index.html index.htm;

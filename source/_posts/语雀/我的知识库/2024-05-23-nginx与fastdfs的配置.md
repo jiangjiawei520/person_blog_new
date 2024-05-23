@@ -1,14 +1,14 @@
 ---
-ayout: post
+layout: post
 title: nginx与fastdfs的配置
 tags:
-  - 语雀
+- 语雀
 categories:
-  - - 语雀
-    - 我的知识库
-abbrlink: bb2f217d
-password: Grbk@2024
-date: 2024-05-23 16:24:15
+- [语雀,我的知识库]
+abbrlink: 
+password: "Grbk@2024"
+typora-root-url: ./..
+date: 2024-05-23 18:36:32
 ---
 [https://blog.csdn.net/qq_41946543/article/details/102811191?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.control&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.control](https://blog.csdn.net/qq_41946543/article/details/102811191?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.control&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.control)
  
@@ -17,8 +17,8 @@ date: 2024-05-23 16:24:15
 ip addr(ifconfig)
 找到你的网卡名称对应的inet后面的ip，我这里的是192.168.1.103，找到了记录一下先，后面我们会用到
 ![](https://cdn.nlark.com/yuque/0/2021/png/12484160/1611906852052-71cfa5aa-1bff-4af6-9c46-b9682ff81d0e.png#align=left&display=inline&height=83&originHeight=238&originWidth=1183&status=done&style=none&width=415)
-安装编译环境
 <!--more-->
+安装编译环境
 yum install git gcc gcc-c++ make automake autoconf libtool pcre pcre-devel zlib zlib-devel openssl-devel wget vim -y
  
 创建数据存储目录

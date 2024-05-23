@@ -1,14 +1,14 @@
 ---
-ayout: post
+layout: post
 title: 七个人生工具：SWOT、PDCA、6W2H、SMA
 tags:
-  - 语雀
+- 语雀
 categories:
-  - - 语雀
-    - 我的知识库
-abbrlink: cbc8780b
-password: Grbk@2024
-date: 2024-05-23 16:24:16
+- [语雀,我的知识库]
+abbrlink: 
+password: "Grbk@2024"
+typora-root-url: ./..
+date: 2024-05-23 18:36:32
 ---
 ## 一、SWOT分析法：
 　　Strengths：优势
@@ -17,8 +17,8 @@ date: 2024-05-23 16:24:16
 　　Threats：威胁
 　　意义：帮您清晰地把握全局，分析自己在资源方面的优势与劣势，把握环境提供的机会，防范可能存在的风险与威胁，对我们的成功有非常重要的意义。
 
-## 二、PDCA循环规则
 <!--more-->
+## 二、PDCA循环规则
 　　Plan：制定目标与计划；
 　　Do：任务展开，组织实施；
 　　Check：对过程中的关键点和最终结果进行检查；

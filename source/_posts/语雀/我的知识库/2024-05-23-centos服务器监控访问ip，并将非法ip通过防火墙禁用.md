@@ -1,14 +1,14 @@
 ---
-ayout: post
+layout: post
 title: centos服务器监控访问ip，并将非法ip通过防火墙禁用
 tags:
-  - 语雀
+- 语雀
 categories:
-  - - 语雀
-    - 我的知识库
-abbrlink: 9a0684b7
-password: Grbk@2024
-date: 2024-05-23 16:24:15
+- [语雀,我的知识库]
+abbrlink: 
+password: "Grbk@2024"
+typora-root-url: ./..
+date: 2024-05-23 18:36:32
 ---
 ## 使用iftop查看访问ip
 我们在shell直接输入iftop,有可能会提示我们无此命令，这时我们需要安装iftop
@@ -17,8 +17,8 @@ yum install iftop -y
 如图：
 ![image.png](https://cdn.nlark.com/yuque/0/2021/png/12484160/1639360763735-85e75f61-9d31-4f2d-aacb-ab7ef249d1cb.png#clientId=uc5ab3970-6abd-4&from=paste&id=u3c74bd95&originHeight=410&originWidth=644&originalType=url&ratio=1&size=23799&status=done&style=none&taskId=ubb4c90b9-3b95-40b6-ae44-ca6bf0efb89)
 ### 效果
-![image.png](https://cdn.nlark.com/yuque/0/2021/png/12484160/1639360763708-7b82b075-3cf8-49a0-b49d-f99db67e57df.png#clientId=uc5ab3970-6abd-4&from=paste&id=u9883dcca&originHeight=381&originWidth=651&originalType=url&ratio=1&size=16443&status=done&style=none&taskId=u59b64888-7162-4f3b-bd06-b38d147b579)
 <!--more-->
+![image.png](https://cdn.nlark.com/yuque/0/2021/png/12484160/1639360763708-7b82b075-3cf8-49a0-b49d-f99db67e57df.png#clientId=uc5ab3970-6abd-4&from=paste&id=u9883dcca&originHeight=381&originWidth=651&originalType=url&ratio=1&size=16443&status=done&style=none&taskId=u59b64888-7162-4f3b-bd06-b38d147b579)
 # Centos7开放或限制IP和端口
 **开放或限制端口**
 > #单个端口开放

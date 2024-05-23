@@ -1,14 +1,14 @@
 ---
-ayout: post
+layout: post
 title: centos抓包 tcpdump
 tags:
-  - 语雀
+- 语雀
 categories:
-  - - 语雀
-    - 我的知识库
-abbrlink: '93e46677'
-password: Grbk@2024
-date: 2024-05-23 16:24:15
+- [语雀,我的知识库]
+abbrlink: 
+password: "Grbk@2024"
+typora-root-url: ./..
+date: 2024-05-23 18:36:32
 ---
 准备工作：
 1、安装flex
@@ -17,8 +17,8 @@ yum -y install flex
 yum -y install bison
 安装tcpdump：
 wget http://www.tcpdump.org/release/libpcap-1.5.3.tar.gz
-wget http://www.tcpdump.org/release/tcpdump-4.5.1.tar.gz
 <!--more-->
+wget http://www.tcpdump.org/release/tcpdump-4.5.1.tar.gz
 tar -zxvf libpcap-1.5.3.tar.gz
 cd libpcap-1.5.3
 ./configure

@@ -1,14 +1,14 @@
 ---
-ayout: post
+layout: post
 title: CentOS7安装MySQL（完整版）
 tags:
-  - 语雀
+- 语雀
 categories:
-  - - 语雀
-    - 我的知识库
-abbrlink: 8667c95d
-password: Grbk@2024
-date: 2024-05-23 16:24:15
+- [语雀,我的知识库]
+abbrlink: 
+password: "Grbk@2024"
+typora-root-url: ./..
+date: 2024-05-23 18:36:32
 ---
 在CentOS中默认安装有MariaDB，这个是MySQL的分支，但为了需要，还是要在系统中安装MySQL，而且安装完成之后可以直接覆盖掉MariaDB。
 
@@ -17,8 +17,8 @@ date: 2024-05-23 16:24:15
 1 下载并安装MySQL官方的 Yum Repository
 [root@localhost ~]# wget -i -c [http://dev.mysql.com/get/mysql57-community-release-el7-10.noarch.rpm](http://dev.mysql.com/get/mysql57-community-release-el7-10.noarch.rpm)
  
-
 <!--more-->
+
   使用上面的命令就直接下载了安装用的Yum Repository，大概25KB的样子，然后就可以直接yum安装了。
 
 [root@localhost ~]# yum -y install mysql57-community-release-el7-10.noarch.rpm

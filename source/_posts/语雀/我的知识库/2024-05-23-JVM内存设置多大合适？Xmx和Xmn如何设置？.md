@@ -1,14 +1,14 @@
 ---
-ayout: post
+layout: post
 title: JVM内存设置多大合适？Xmx和Xmn如何设置？
 tags:
-  - 语雀
+- 语雀
 categories:
-  - - 语雀
-    - 我的知识库
-abbrlink: 8d6ae8de
-password: Grbk@2024
-date: 2024-05-23 16:24:15
+- [语雀,我的知识库]
+abbrlink: 
+password: "Grbk@2024"
+typora-root-url: ./..
+date: 2024-05-23 18:36:32
 ---
 # 1、问题
 Full GC为一次特殊GC行为的描述，这次GC会回收整个堆的内存，包含老年代，新生代，metaspace等
@@ -17,8 +17,8 @@ Full GC为一次特殊GC行为的描述，这次GC会回收整个堆的内存，
 依据的原则是根据Java Performance里面的推荐公式来进行设置。
  
 ![image.png](https://cdn.nlark.com/yuque/0/2021/png/12484160/1637811515231-8afac8c5-fe14-41dd-b1dc-3d1ec436ffb5.png#clientId=u5f4cbcf5-9031-4&from=paste&id=u33b480a8&originHeight=237&originWidth=640&originalType=url&ratio=1&size=105674&status=done&style=none&taskId=u77278c14-16ca-461a-b11b-9b64240e8b2)
-具体来讲：
 <!--more-->
+具体来讲：
 	Java整个堆大小设置，Xmx 和 Xms设置为老年代存活对象的3-4倍，即FullGC之后的老年代内存占用的3-4倍
 	永久代 PermSize和MaxPermSize设置为老年代存活对象的1.2-1.5倍。
 	年轻代Xmn的设置为老年代存活对象的1-1.5倍。

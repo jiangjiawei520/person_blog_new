@@ -1,14 +1,14 @@
 ---
-ayout: post
+layout: post
 title: MySQL与Oracle数据类型对应关系(表格形式)
 tags:
-  - 语雀
+- 语雀
 categories:
-  - - 语雀
-    - 我的知识库
-abbrlink: 2b8b51a5
-password: Grbk@2024
-date: 2024-05-23 16:24:15
+- [语雀,我的知识库]
+abbrlink: 
+password: "Grbk@2024"
+typora-root-url: ./..
+date: 2024-05-23 18:36:32
 ---
 MySQL与Oracle两种数据库在工作中，都是用的比较多的数据库，由于MySQL与Oracle在数据类型上有部分差异，在我们迁移数据库时，会遇上一定的麻烦
 # MySQL与Oracle数据库数据类型的对应关系
@@ -17,8 +17,8 @@ MySQL与Oracle两种数据库在工作中，都是用的比较多的数据库，
 | --- | --- | --- |
 | 变长字符串 | VARCHAR[0-65535]
 定义长度默认按字符长度计算，如果是GBK编码的汉字将占用2个字节 | VARCHAR2[1-4000]
-VARCHAR是VARCHAR2的同义词
 <!--more-->
+VARCHAR是VARCHAR2的同义词
 定义默认按字节长度计算 |
 | 整数 | TINYINT(-128-127)
 SMALLINT(-32768-32767)

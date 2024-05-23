@@ -1,14 +1,14 @@
 ---
-ayout: post
+layout: post
 title: canal+mysql+zookeeper+rocketmq
 tags:
-  - 语雀
+- 语雀
 categories:
-  - - 语雀
-    - 我的知识库
-abbrlink: 58febff3
-password: Grbk@2024
-date: 2024-05-23 16:24:15
+- [语雀,我的知识库]
+abbrlink: 
+password: "Grbk@2024"
+typora-root-url: ./..
+date: 2024-05-23 18:36:32
 ---
 实现监控数据库更新记录监控，配合rocketmq完成消息队列存量数据推送
 ### 安装配置MySQL
@@ -17,8 +17,8 @@ date: 2024-05-23 16:24:15
 ```bash
 # 登录mysql
 root@ops04:/root #mysql -uroot -p123456
-mysql: [Warning] Using a password on the command line interface can be insecure.
 <!--more-->
+mysql: [Warning] Using a password on the command line interface can be insecure.
 Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 442523
 Server version: 5.7.29 MySQL Community Server (GPL)

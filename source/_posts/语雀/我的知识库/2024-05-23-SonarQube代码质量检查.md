@@ -1,14 +1,14 @@
 ---
-ayout: post
+layout: post
 title: SonarQube代码质量检查
 tags:
-  - 语雀
+- 语雀
 categories:
-  - - 语雀
-    - 我的知识库
-abbrlink: f3453f73
-password: Grbk@2024
-date: 2024-05-23 16:24:16
+- [语雀,我的知识库]
+abbrlink: 
+password: "Grbk@2024"
+typora-root-url: ./..
+date: 2024-05-23 18:36:32
 ---
 服务端
 
@@ -17,8 +17,8 @@ date: 2024-05-23 16:24:16
     1、准备Java环境，这里略去配置
 
     2、需要安装MySQL (支持数据库种类见sonar.properties)，这里略去配置
-
 <!--more-->
+
     3、sonar [https://docs.sonarqube.org](https://docs.sonarqube.org)
 
 ◆数据库配置：

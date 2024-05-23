@@ -1,14 +1,14 @@
 ---
-ayout: post
+layout: post
 title: nginx 之 https 证书配置
 tags:
-  - 语雀
+- 语雀
 categories:
-  - - 语雀
-    - 我的知识库
-abbrlink: 5c384b6b
-password: Grbk@2024
-date: 2024-05-23 16:24:15
+- [语雀,我的知识库]
+abbrlink: 
+password: "Grbk@2024"
+typora-root-url: ./..
+date: 2024-05-23 18:36:32
 ---
 ## HTTPS原理和作用
 **为什么需要HTTPS**
@@ -17,8 +17,8 @@ date: 2024-05-23 16:24:15
 - 传输数据被中间人盗用、信息泄露
 - 数据内容劫持、篡改
 
-**HTTPS协议的实现**
 <!--more-->
+**HTTPS协议的实现**
 对传输内容进行加密以及身份验证
 对称加密：加密秘钥和解密秘钥是对等的，一样的
 ![image.png](https://cdn.nlark.com/yuque/0/2021/png/12484160/1639734441479-cc82011e-141a-4109-be46-265e910bb599.png#clientId=ubc5cfd8b-06e5-4&from=paste&id=u2d561b60&originHeight=430&originWidth=1363&originalType=url&ratio=1&size=119895&status=done&style=none&taskId=u538ef2f0-e757-4caa-9501-3dc325e5e28)

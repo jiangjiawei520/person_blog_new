@@ -1,14 +1,14 @@
 ---
-ayout: post
+layout: post
 title: Centos 定时清理文件(Shell+crontab)
 tags:
-  - 语雀
+- 语雀
 categories:
-  - - 语雀
-    - 我的知识库
-abbrlink: af574707
-password: Grbk@2024
-date: 2024-05-23 16:24:15
+- [语雀,我的知识库]
+abbrlink: 
+password: "Grbk@2024"
+typora-root-url: ./..
+date: 2024-05-23 18:36:32
 ---
 ## 需求
 最近有个需求，就是rsync每次同步的数据量很多，但是需要保留的数据库bak文件
@@ -17,8 +17,8 @@ date: 2024-05-23 16:24:15
 
 
 find /usr/local/tomcat/data-integration/logs/1/  -name "*.txt"  -exec rm -rf {} \;
-## 解决方案
 <!--more-->
+## 解决方案
 利用shell脚本来定期删除文件夹内的任务
 ## 1、创建shell文件
 ```bash

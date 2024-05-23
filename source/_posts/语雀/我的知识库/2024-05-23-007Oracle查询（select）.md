@@ -1,14 +1,14 @@
 ---
-ayout: post
+layout: post
 title: 007Oracle查询（select）
 tags:
-  - 语雀
+- 语雀
 categories:
-  - - 语雀
-    - 我的知识库
-abbrlink: 1f3f1bc5
-password: Grbk@2024
-date: 2024-05-23 16:24:15
+- [语雀,我的知识库]
+abbrlink: 
+password: "Grbk@2024"
+typora-root-url: ./..
+date: 2024-05-23 18:36:32
 ---
 Oracle表的简单查询。
 简单查询是利用SELECT命令从表中进行提取数据，SELECT命令结构如下：
@@ -17,8 +17,8 @@ select命令结构：
 ```plsql
 select *|列名|表达式 from 表名 where 条件 order by 列名
 ```
-案例1：查询学生信息表（stuinfo）中“李四”同学的基本信息：
 <!--more-->
+案例1：查询学生信息表（stuinfo）中“李四”同学的基本信息：
 ```plsql
 select t.* from STUDENT.STUINFO t where t.stuname = '李四';
 ```

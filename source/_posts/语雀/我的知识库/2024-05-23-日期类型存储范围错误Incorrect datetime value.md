@@ -1,14 +1,14 @@
 ---
-ayout: post
+layout: post
 title: 日期类型存储范围错误Incorrect datetime value
 tags:
-  - 语雀
+- 语雀
 categories:
-  - - 语雀
-    - 我的知识库
-abbrlink: f41702ef
-password: Grbk@2024
-date: 2024-05-23 16:24:16
+- [语雀,我的知识库]
+abbrlink: 
+password: "Grbk@2024"
+typora-root-url: ./..
+date: 2024-05-23 18:36:32
 ---
 **问题原因：不同的数据库日期类型存储范围不同导致的错误。**
 > mysql中对日期类型的存储范围是不同的。

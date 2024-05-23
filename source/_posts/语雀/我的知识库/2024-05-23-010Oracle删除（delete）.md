@@ -1,14 +1,14 @@
 ---
-ayout: post
+layout: post
 title: 010Oracle删除（delete）
 tags:
-  - 语雀
+- 语雀
 categories:
-  - - 语雀
-    - 我的知识库
-abbrlink: 29a0fb5f
-password: Grbk@2024
-date: 2024-05-23 16:24:15
+- [语雀,我的知识库]
+abbrlink: 
+password: "Grbk@2024"
+typora-root-url: ./..
+date: 2024-05-23 18:36:32
 ---
 Oracle中对表数据的删除是利用delete命令进行的。
 
@@ -17,8 +17,8 @@ Oracle中对表数据的删除是利用delete命令进行的。
 delete命令结构：
 **delete** **from** 表名 **where** 条件
 
-命令解析：
 <!--more-->
+命令解析：
 1、当delete from不加where条件时，表示是把表中的数据全部删除。
 
 ---

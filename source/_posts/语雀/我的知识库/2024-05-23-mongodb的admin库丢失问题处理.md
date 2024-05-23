@@ -1,14 +1,14 @@
 ---
-ayout: post
+layout: post
 title: mongodb的admin库丢失问题处理
 tags:
-  - 语雀
+- 语雀
 categories:
-  - - 语雀
-    - 我的知识库
-abbrlink: ecbf3eb8
-password: Grbk@2024
-date: 2024-05-23 16:24:15
+- [语雀,我的知识库]
+abbrlink: 
+password: "Grbk@2024"
+typora-root-url: ./..
+date: 2024-05-23 18:36:32
 ---
 # 现象
 无法使用账号密码访问附件数据库
@@ -17,8 +17,8 @@ date: 2024-05-23 16:24:15
 1、查看日志发现是admin库被删除
 2、创建一个类似环境
 3、删除admin库
-4、重新创建用户（自动创建admin库）验证是否正常使用
 <!--more-->
+4、重新创建用户（自动创建admin库）验证是否正常使用
 
 备份验证
 主要验证是否可以使用备份的data数据文件，用新端口去访问使用

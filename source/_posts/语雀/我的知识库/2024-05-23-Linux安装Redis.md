@@ -1,14 +1,14 @@
 ---
-ayout: post
+layout: post
 title: Linux安装Redis
 tags:
-  - 语雀
+- 语雀
 categories:
-  - - 语雀
-    - 我的知识库
-abbrlink: acb8270e
-password: Grbk@2024
-date: 2024-05-23 16:24:15
+- [语雀,我的知识库]
+abbrlink: 
+password: "Grbk@2024"
+typora-root-url: ./..
+date: 2024-05-23 18:36:32
 ---
 ## 环境：
 Linux CentOS 7.4
@@ -17,8 +17,8 @@ Linux CentOS 7.4
 
 1. 安装 gccredis 是 c 语言编写的
 ```bash
-yum install gcc-c++
 <!--more-->
+yum install gcc-c++
 ```
 
 2. 下载 redis 安装包,在 root 目录下执行

@@ -1,14 +1,14 @@
 ---
-ayout: post
+layout: post
 title: 009Oracle更新（update）
 tags:
-  - 语雀
+- 语雀
 categories:
-  - - 语雀
-    - 我的知识库
-abbrlink: 8a5aedd8
-password: Grbk@2024
-date: 2024-05-23 16:24:15
+- [语雀,我的知识库]
+abbrlink: 
+password: "Grbk@2024"
+typora-root-url: ./..
+date: 2024-05-23 18:36:32
 ---
 Oracle对表数据的更新是使用update命令来执行的。
 
@@ -17,8 +17,8 @@ Oracle对表数据的更新是使用update命令来执行的。
 update命令结构：
 **update** 表名 **set** 列名1=值1,列名2=值2,列名3=值3..... **where** 条件
 
----
 <!--more-->
+---
 
 案例1、更新学生“张三”的年龄和身份证信息：
 **update** student.stuinfo t    **set** t.age = '24', t.idnumber = '3503021994XXXXXXXX'  **where** t.stuname = '张三'; **commit**; **select** * **from** student.stuinfo t **where** t.stuname='张三';

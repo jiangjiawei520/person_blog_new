@@ -1,14 +1,14 @@
 ---
-ayout: post
+layout: post
 title: 获取linux系统CPU、内存、磁盘IO等信息
 tags:
-  - 语雀
+- 语雀
 categories:
-  - - 语雀
-    - 我的知识库
-abbrlink: 8f00bdd4
-password: Grbk@2024
-date: 2024-05-23 16:24:16
+- [语雀,我的知识库]
+abbrlink: 
+password: "Grbk@2024"
+typora-root-url: ./..
+date: 2024-05-23 18:36:32
 ---
 1、操作系统及版本
 cat /etc/redhat-release
@@ -17,8 +17,8 @@ cat /etc/redhat-release
 #!/bin/bash
 # 获取要监控的本地服务器IP地址
 IP=`ifconfig | grep inet | grep -vE 'inet6|127.0.0.1' | awk '{print $2}'`
-echo "IP地址："$IP
 <!--more-->
+echo "IP地址："$IP
  
 # 获取cpu总核数
 cpu_num=`grep -c "model name" /proc/cpuinfo`

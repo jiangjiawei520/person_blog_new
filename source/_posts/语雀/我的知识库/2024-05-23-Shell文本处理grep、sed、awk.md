@@ -1,14 +1,14 @@
 ---
-ayout: post
+layout: post
 title: Shell文本处理grep、sed、awk
 tags:
-  - 语雀
+- 语雀
 categories:
-  - - 语雀
-    - 我的知识库
-abbrlink: 2c57feb2
-password: Grbk@2024
-date: 2024-05-23 16:24:16
+- [语雀,我的知识库]
+abbrlink: 
+password: "Grbk@2024"
+typora-root-url: ./..
+date: 2024-05-23 18:36:32
 ---
 ## grep
 grep是一款强大的文本搜索工具，支持正则表达式。
@@ -17,8 +17,8 @@ grep是一款强大的文本搜索工具，支持正则表达式。
  -v        取反
  -i        忽略大小写
  -c        符合条件的行数
- -n        输出的同时打印行号
 <!--more-->
+ -n        输出的同时打印行号
  ^*        以*开头         
  *$        以*结尾 
  ^$        空行 

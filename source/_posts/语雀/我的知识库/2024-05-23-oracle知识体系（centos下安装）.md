@@ -1,14 +1,14 @@
 ---
-ayout: post
+layout: post
 title: oracle知识体系（centos下安装）
 tags:
-  - 语雀
+- 语雀
 categories:
-  - - 语雀
-    - 我的知识库
-abbrlink: 121e5bc
-password: Grbk@2024
-date: 2024-05-23 16:24:15
+- [语雀,我的知识库]
+abbrlink: 
+password: "Grbk@2024"
+typora-root-url: ./..
+date: 2024-05-23 18:36:32
 ---
 | 编制人 | 编制内容 | 编制时间 |
 | --- | --- | --- |
@@ -17,8 +17,8 @@ date: 2024-05-23 16:24:15
 ## 一、准备工作
 ### 1、下载安装包
 下载Oracle安装包：[linux.x64_11gR2_database_1of2.zip](http://www.oracle.com/technetwork/database/enterprise-edition/downloads/112010-linx8664soft-100572.html) 和 [linux.x64_11gR2_database_2of2.zip](http://www.oracle.com/technetwork/database/enterprise-edition/downloads/112010-linx8664soft-100572.html) ，可以下载到本地，通过ftp服务上传到Linux系统（[参考CentOS7 FTP服务器搭建](http://www.cnblogs.com/xibei666/p/5934659.html)），也可以使用Linux系统的wget命令，下载文件包；
-[https://www.oracle.com/cn/database/enterprise-edition/downloads/oracle-db11g-linux.html](https://www.oracle.com/cn/database/enterprise-edition/downloads/oracle-db11g-linux.html)
 <!--more-->
+[https://www.oracle.com/cn/database/enterprise-edition/downloads/oracle-db11g-linux.html](https://www.oracle.com/cn/database/enterprise-edition/downloads/oracle-db11g-linux.html)
 ### 2、创建用户和用户组
 创建运行oracle数据库的系统用户和用户组，用Root账号登录，运行下面指令，创建所需要用户和用户组，[分组原因参考网址](http://www.oracle.com/technetwork/cn/articles/hunter-rac11gr2-iscsi-2-092412-zhs.html#13)
 ```bash

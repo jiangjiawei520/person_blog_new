@@ -1,14 +1,14 @@
 ---
-ayout: post
+layout: post
 title: 八、α测试（Alpha Testing）、β测试(Beta Testing)、第三方测试
 tags:
-  - 语雀
+- 语雀
 categories:
-  - - 语雀
-    - 我的知识库
-abbrlink: 6aef795e
-password: Grbk@2024
-date: 2024-05-23 16:24:16
+- [语雀,我的知识库]
+abbrlink: 
+password: "Grbk@2024"
+typora-root-url: ./..
+date: 2024-05-23 18:36:32
 ---
 ### **注：alpha测试和beta测试不能由程序员和测试员完成。**
 #### 1.α测试（Alpha Testing）
@@ -17,8 +17,8 @@ date: 2024-05-23 16:24:16
 大型通用软件，在正式发布前，通常需要执行Alpha和Beta测试。α测试不能由程序员或测试员完成。
 #### 2.β测试(Beta Testing)
 Beta测试是一种验收测试。Beta测试由软件的最终用户们在一个或多个客户场所进行。
-#### α测试与Beta测试的区别：
 <!--more-->
+#### α测试与Beta测试的区别：
 （1）测试的场所不同：Alpha测试是指把用户请到开发方的场所来测试,beta测试是指在一个或多个用户的场所进行的测试。
 （2）Alpha测试的环境是受开发方控制的,用户的数量相对比较少,时间比较集中。beta测试的环境是不受开发方控制的,用户数量相对比较多,时间不集中。
 （3）alpha测试先于beta测试执行。通用的软件产品需要较大规模的beta测试,测试周期比较长。

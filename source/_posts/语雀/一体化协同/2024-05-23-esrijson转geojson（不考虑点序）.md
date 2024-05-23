@@ -1,14 +1,14 @@
 ---
-ayout: post
+layout: post
 title: esrijson转geojson（不考虑点序）
 tags:
-  - 语雀
+- 语雀
 categories:
-  - - 语雀
-    - 一体化协同
-abbrlink: 878c924d
-password: Grbk@2024
-date: 2024-05-23 16:24:15
+- [语雀,一体化协同]
+abbrlink: 
+password: "Grbk@2024"
+typora-root-url: ./..
+date: 2024-05-23 18:36:31
 ---
 ### 接口地址
 #### 政务网正式地址（原始）
@@ -17,8 +17,8 @@ date: 2024-05-23 16:24:15
 ```
  http://19.15.69.85:8081/json/analysis/operator/clockwiseesrijson2geojson
 ```
-#### 政务网测试地址（原始）
 <!--more-->
+#### 政务网测试地址（原始）
 > 
 
 ```

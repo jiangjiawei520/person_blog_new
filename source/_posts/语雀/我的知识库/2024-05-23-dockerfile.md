@@ -1,14 +1,14 @@
 ---
-ayout: post
+layout: post
 title: dockerfile
 tags:
-  - 语雀
+- 语雀
 categories:
-  - - 语雀
-    - 我的知识库
-abbrlink: 1979f904
-password: Grbk@2024
-date: 2024-05-23 16:24:15
+- [语雀,我的知识库]
+abbrlink: 
+password: "Grbk@2024"
+typora-root-url: ./..
+date: 2024-05-23 18:36:32
 ---
 # nginx
 ## 模版
@@ -17,8 +17,8 @@ date: 2024-05-23 16:24:15
 .
 ├── conf
 │   ├── default.conf
-│   └── nginx.repo
 <!--more-->
+│   └── nginx.repo
 ├── Dockerfile
 ```
 

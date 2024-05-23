@@ -1,14 +1,14 @@
 ---
-ayout: post
+layout: post
 title: CentOS虚拟机centos-root扩容
 tags:
-  - 语雀
+- 语雀
 categories:
-  - - 语雀
-    - 我的知识库
-abbrlink: f7603ea0
-password: Grbk@2024
-date: 2024-05-23 16:24:15
+- [语雀,我的知识库]
+abbrlink: 
+password: "Grbk@2024"
+typora-root-url: ./..
+date: 2024-05-23 18:36:32
 ---
 本文介绍在虚拟机 vmware 的 CentOS 系统中实现无损扩容根分区的方法。
 
@@ -17,8 +17,8 @@ date: 2024-05-23 16:24:15
 
 ## 技术小结
 备份虚拟机，拍快照
-虚拟机创建硬盘
 <!--more-->
+虚拟机创建硬盘
 磁盘分区
 扩容
 ## 实践

@@ -1,14 +1,14 @@
 ---
-ayout: post
+layout: post
 title: mysql开启binlog日志
 tags:
-  - 语雀
+- 语雀
 categories:
-  - - 语雀
-    - 我的知识库
-abbrlink: 76ffcb2b
-password: Grbk@2024
-date: 2024-05-23 16:24:15
+- [语雀,我的知识库]
+abbrlink: 
+password: "Grbk@2024"
+typora-root-url: ./..
+date: 2024-05-23 18:36:32
 ---
 ## 介绍
 binlog是二进制日志文件，Mysql的binlog日志作用是用来记录mysql内部增删改查等对mysql数据库有更新的内容的记录（对数据库的改动），对数据库的查询select或show等不会被binlog日志记录;主要用于数据库的主从复制以及增量恢复。
@@ -17,8 +17,8 @@ mysql的binlog日志必须打开log-bin功能才能生存binlog日志
 > -rw-rw---- 1 mysql mysql   126 8月  10 22:06 mysql-bin.000002
 > -rw-rw---- 1 mysql mysql 11799 8月  15 18:17 mysql-bin.000003
 
-## 1、登录mysql之后使用下面的命令查看是否开启binlog
 <!--more-->
+## 1、登录mysql之后使用下面的命令查看是否开启binlog
 show variables like 'log_%';
 ![image.png](https://cdn.nlark.com/yuque/0/2021/png/12484160/1640573777339-661bed4b-0a3b-48f2-8375-b350cfe546c1.png#clientId=uc5408318-c919-4&from=paste&id=ue8a65a7c&originHeight=432&originWidth=669&originalType=url&ratio=1&size=25037&status=done&style=none&taskId=u1d971cb7-461f-42f5-837b-4271bc15399)
 ## 2、编辑配置文件

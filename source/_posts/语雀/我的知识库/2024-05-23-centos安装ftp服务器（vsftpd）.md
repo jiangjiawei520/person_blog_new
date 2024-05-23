@@ -1,14 +1,14 @@
 ---
-ayout: post
+layout: post
 title: centos安装ftp服务器（vsftpd）
 tags:
-  - 语雀
+- 语雀
 categories:
-  - - 语雀
-    - 我的知识库
-abbrlink: a8e4c409
-password: Grbk@2024
-date: 2024-05-23 16:24:15
+- [语雀,我的知识库]
+abbrlink: 
+password: "Grbk@2024"
+typora-root-url: ./..
+date: 2024-05-23 18:36:32
 ---
 ## 一、安装
 1、安装
@@ -17,8 +17,8 @@ yum -y install vsftpd
 ```
 2、修改配置，去掉匿名登录：
 
-```bash
 <!--more-->
+```bash
 vim /etc/vsftpd/vsftpd.conf
 anonymous_enable=YES
 改为：

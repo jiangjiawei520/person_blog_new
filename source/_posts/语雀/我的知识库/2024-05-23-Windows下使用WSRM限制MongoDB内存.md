@@ -1,14 +1,14 @@
 ---
-ayout: post
+layout: post
 title: Windows下使用WSRM限制MongoDB内存
 tags:
-  - 语雀
+- 语雀
 categories:
-  - - 语雀
-    - 我的知识库
-abbrlink: e1e4f2ac
-password: Grbk@2024
-date: 2024-05-23 16:24:16
+- [语雀,我的知识库]
+abbrlink: 
+password: "Grbk@2024"
+typora-root-url: ./..
+date: 2024-05-23 18:36:32
 ---
  MongoDB，在WINDOWS 2008 64位环境下部署的，Mongodb吃内存太厉害了，如果不重启服务，内存一直蹭蹭地往上涨，定时重启MongoDB服务是能暂时的收回内存，但这也不是长久之计。如果不去限制MongoDB的内存那么系统有多少内存都能被它消耗掉，我们的服务器上还有IIS, SQL SERVER, Redis等其他服务，不能将内存全部分配给Mongodb使用，怎样限制MongoDB的内存呢？
 为了解决这个问题，Windows 2008自带的“Windows 系统资源管理器”，可以完美的解决这个问题。配置的方法如下：
@@ -17,8 +17,8 @@ date: 2024-05-23 16:24:16
 ![image.png](https://cdn.nlark.com/yuque/0/2023/png/12484160/1678845984501-de88d3a0-3b6d-48dd-ad11-88c56a0114aa.png#averageHue=%23a9b29c&clientId=u8c01eb78-6d75-4&from=paste&id=u1b8d4b9d&originHeight=317&originWidth=494&originalType=url&ratio=1&rotation=0&showTitle=false&size=18009&status=done&style=none&taskId=u8f39b7c2-249c-41d4-b136-b169f760298&title=)
 选择“功能”  -- 添加功能  -- 勾选  Windows 系统资管理器
 在弹出的窗口点击“添加必须的功能”
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/12484160/1678845984591-eefe7264-0d70-4fb1-b5a6-535fbcf98189.png#averageHue=%23e9e8e7&clientId=u8c01eb78-6d75-4&from=paste&id=u15322a13&originHeight=532&originWidth=872&originalType=url&ratio=1&rotation=0&showTitle=false&size=36479&status=done&style=none&taskId=u2f7acb83-31e3-420a-ba1c-95a283968cf&title=)
 <!--more-->
+![image.png](https://cdn.nlark.com/yuque/0/2023/png/12484160/1678845984591-eefe7264-0d70-4fb1-b5a6-535fbcf98189.png#averageHue=%23e9e8e7&clientId=u8c01eb78-6d75-4&from=paste&id=u15322a13&originHeight=532&originWidth=872&originalType=url&ratio=1&rotation=0&showTitle=false&size=36479&status=done&style=none&taskId=u2f7acb83-31e3-420a-ba1c-95a283968cf&title=)
 下一步   ---  安装
 ![image.png](https://cdn.nlark.com/yuque/0/2023/png/12484160/1678845984605-0c649567-8570-4391-8d0f-464dc0b28b8b.png#averageHue=%23e8e6e4&clientId=u8c01eb78-6d75-4&from=paste&id=u67656a9d&originHeight=563&originWidth=765&originalType=url&ratio=1&rotation=0&showTitle=false&size=26498&status=done&style=none&taskId=ub63b1645-6a83-42bf-8004-44d08fa2754&title=)
 稍微等待1分钟左右 Windows 系统资管理器就安装好了

@@ -1,14 +1,14 @@
 ---
-ayout: post
+layout: post
 title: curl如何发送POST请求，如何自定义Header头
 tags:
-  - 语雀
+- 语雀
 categories:
-  - - 语雀
-    - 我的知识库
-abbrlink: 617bfcb1
-password: Grbk@2024
-date: 2024-05-23 16:24:15
+- [语雀,我的知识库]
+abbrlink: 
+password: "Grbk@2024"
+typora-root-url: ./..
+date: 2024-05-23 18:36:32
 ---
 # curl 使用
 ## 使用curl 发送POST请求
@@ -17,8 +17,8 @@ date: 2024-05-23 16:24:15
 
 ### 1. application/x-www-form-urlencoded
 最常见的POST请求，form表单。 使用curl进行请求很简单，示例如下：
-
 <!--more-->
+
 > curl -X POST -d "name=zhangsan" 127.0.0.1:80/api/getInfo
 
 
