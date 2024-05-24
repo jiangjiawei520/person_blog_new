@@ -6,9 +6,9 @@ tags:
 categories:
 - [语雀,我的知识库]
 abbrlink: 
-password: "Grbk@2024"
+password: "bk@2024"
 typora-root-url: ./..
-date: 2024-05-24 10:45:56
+date: 2024-05-24 10:50:14
 ---
 本文介绍在虚拟机 vmware 的 CentOS 系统中实现无损扩容根分区的方法。
 

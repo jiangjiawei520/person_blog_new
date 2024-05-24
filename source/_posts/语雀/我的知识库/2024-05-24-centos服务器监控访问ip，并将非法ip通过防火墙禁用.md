@@ -6,9 +6,9 @@ tags:
 categories:
 - [语雀,我的知识库]
 abbrlink: 
-password: "Grbk@2024"
+password: "bk@2024"
 typora-root-url: ./..
-date: 2024-05-24 10:45:56
+date: 2024-05-24 10:50:14
 ---
 ## 使用iftop查看访问ip
 我们在shell直接输入iftop,有可能会提示我们无此命令，这时我们需要安装iftop

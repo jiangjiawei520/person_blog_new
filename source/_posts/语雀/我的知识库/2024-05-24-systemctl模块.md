@@ -6,9 +6,9 @@ tags:
 categories:
 - [语雀,我的知识库]
 abbrlink: 
-password: "Grbk@2024"
+password: "bk@2024"
 typora-root-url: ./..
-date: 2024-05-24 10:45:56
+date: 2024-05-24 10:50:14
 ---
 systemctl在enable、disable、mask子命令里面增加了--now选项，可以激活同时启动服务，激活同时停止服务等。
 立刻启动单元： systemctl start

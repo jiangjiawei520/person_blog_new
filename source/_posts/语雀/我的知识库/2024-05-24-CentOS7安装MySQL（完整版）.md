@@ -6,9 +6,9 @@ tags:
 categories:
 - [语雀,我的知识库]
 abbrlink: 
-password: "Grbk@2024"
+password: "bk@2024"
 typora-root-url: ./..
-date: 2024-05-24 10:45:56
+date: 2024-05-24 10:50:14
 ---
 在CentOS中默认安装有MariaDB，这个是MySQL的分支，但为了需要，还是要在系统中安装MySQL，而且安装完成之后可以直接覆盖掉MariaDB。
 

@@ -6,9 +6,9 @@ tags:
 categories:
 - [语雀,我的知识库]
 abbrlink: 
-password: "Grbk@2024"
+password: "bk@2024"
 typora-root-url: ./..
-date: 2024-05-24 10:45:56
+date: 2024-05-24 10:50:14
 ---
 ### DDL（Data Definition Languages）语句：
 数据定义语言，这些语句定义了不同的数据段、数据库、表、列、索引等数据库对象的定义。 常用的语句关键字主要包括 create、drop、alter 等，**更多的被数据库管理员（DBA）所使用，一般的开发人员很少使用。** 具体命令有：

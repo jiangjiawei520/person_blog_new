@@ -6,9 +6,9 @@ tags:
 categories:
 - [语雀,我的知识库]
 abbrlink: 
-password: "Grbk@2024"
+password: "bk@2024"
 typora-root-url: ./..
-date: 2024-05-24 10:45:56
+date: 2024-05-24 10:50:14
 ---
 # 1、问题
 Full GC为一次特殊GC行为的描述，这次GC会回收整个堆的内存，包含老年代，新生代，metaspace等

@@ -6,9 +6,9 @@ tags:
 categories:
 - [语雀,我的知识库]
 abbrlink: 
-password: "Grbk@2024"
+password: "bk@2024"
 typora-root-url: ./..
-date: 2024-05-24 10:45:56
+date: 2024-05-24 10:50:14
 ---
  MongoDB，在WINDOWS 2008 64位环境下部署的，Mongodb吃内存太厉害了，如果不重启服务，内存一直蹭蹭地往上涨，定时重启MongoDB服务是能暂时的收回内存，但这也不是长久之计。如果不去限制MongoDB的内存那么系统有多少内存都能被它消耗掉，我们的服务器上还有IIS, SQL SERVER, Redis等其他服务，不能将内存全部分配给Mongodb使用，怎样限制MongoDB的内存呢？
 为了解决这个问题，Windows 2008自带的“Windows 系统资源管理器”，可以完美的解决这个问题。配置的方法如下：

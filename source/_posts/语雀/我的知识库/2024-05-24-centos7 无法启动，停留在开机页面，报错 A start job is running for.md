@@ -6,9 +6,9 @@ tags:
 categories:
 - [语雀,我的知识库]
 abbrlink: 
-password: "Grbk@2024"
+password: "bk@2024"
 typora-root-url: ./..
-date: 2024-05-24 10:45:56
+date: 2024-05-24 10:50:14
 ---
 ## 问题描述
 [centos7](https://so.csdn.net/so/search?q=centos7&spm=1001.2101.3001.7020) 部署的服务因服务器IP更换，出现报错"A start job is running for /etc/rc.d/rc.local compatibility "，因IP地址更换，在fastdfs服务中设置开机自启动，故storage与tracker间无法通信，导致无法开机。

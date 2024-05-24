@@ -6,9 +6,9 @@ tags:
 categories:
 - [语雀,我的知识库]
 abbrlink: 
-password: "Grbk@2024"
+password: "bk@2024"
 typora-root-url: ./..
-date: 2024-05-24 10:45:56
+date: 2024-05-24 10:50:14
 ---
 # Oracle建表(create** table)**
 Oracle表是Oracle数据库的核心，是存储数据的逻辑基础。Oracle表是一个二维的数据结构，有列字段和对应列的数据构成一个数据存储的结构。可以简单看成行和列的二维表，列代表着Oracle字段（column），行代表着一行数据（即一条数据记录）。

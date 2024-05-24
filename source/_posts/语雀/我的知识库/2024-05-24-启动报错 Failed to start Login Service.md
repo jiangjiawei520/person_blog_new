@@ -6,9 +6,9 @@ tags:
 categories:
 - [语雀,我的知识库]
 abbrlink: 
-password: "Grbk@2024"
+password: "bk@2024"
 typora-root-url: ./..
-date: 2024-05-24 10:45:57
+date: 2024-05-24 10:50:14
 ---
 之前由于误删passwd文件，导致系统重新启动的时候，卡在加载界面不动，按ctrl+1切换到代码界面，发现很多报错，其中多次出现Failed to start Login Service。下面分享一下解决这个bug的方法：
   首先我们开机进入如下界面：

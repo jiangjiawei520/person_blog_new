@@ -6,9 +6,9 @@ tags:
 categories:
 - [语雀,我的知识库]
 abbrlink: 
-password: "Grbk@2024"
+password: "bk@2024"
 typora-root-url: ./..
-date: 2024-05-24 10:45:56
+date: 2024-05-24 10:50:14
 ---
 # Oracle列转行_unpivot
 在实际业务开发环境中，我们经常会遇到要对查询的数据集进行列转行的需求。那么Oracle是如何实现的呢？本文也将通过几个实例来详细讲解一下。

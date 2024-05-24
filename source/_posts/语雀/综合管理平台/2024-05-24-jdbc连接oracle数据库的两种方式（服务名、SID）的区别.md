@@ -6,9 +6,9 @@ tags:
 categories:
 - [语雀,综合管理平台]
 abbrlink: 
-password: "Grbk@2024"
+password: "bk@2024"
 typora-root-url: ./..
-date: 2024-05-24 10:45:57
+date: 2024-05-24 10:50:15
 ---
 使用服务名
 jdbc:oracle:thin:@localhost:1521/orclpdb（orclpdb是oracle数据库的服务名）
