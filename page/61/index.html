@@ -310,201 +310,6 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-2024-04-18-hexo-yilia使用hexo-generator-search插件集成本地搜索" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h2 itemprop="name">
-      <a class="article-title_code_ant" href="/post/613d6936.html">hexo+yilia(new-yilia)使用hexo-generator-search插件集成本地搜索</a>
-    </h2>
-  
-
-        
-		
-		  <a href="/post/613d6936.html" class="archive-article-date">
-  	<time datetime="2024-04-18T17:43:32.000Z" itemprop="datePublished">
-	<!-- <i class="icon-calendar icon"></i> -->
-
-	<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
-	&nbsp;
-	2024-04-18</time>
-	
-	<!-- busuanzi阅读量统计
-	
-	-->
-	<!-- busuanzi阅读量统计 -->
-	
-	
-	
-    <!-- waline阅读量统计 
-	
-	-->
-</a>
-
-
-        
-		
-		
-		  <!-- 添加标题栏文字统计效果 -->
-<div class="word-count">
-	
-	
-    <span class="post-time">
-      <span class="post-meta-item-icon">
-	    <i class="fa fa-bar-chart" aria-hidden="true"></i>
-        <!-- <i class="fa fa-keyboard-o" aria-hidden="true"></i> -->
-        <span class="post-meta-item-text">字数统计: </span>
-        <span class="post-count">2.6k字</span>
-      </span>
-    </span>
-
-    <span class="post-time">
-      &nbsp; | &nbsp;
-      <span class="post-meta-item-icon">
-	    <i class="fa fa-pagelines" aria-hidden="true"></i>
-        <span class="post-meta-item-text">阅读时长: </span>
-        <span class="post-count">14min</span>
-      </span>
-    </span>
-	
-
-</div>
-<!-- 添加标题栏文字统计效果结束 -->
-		
-      </header>
-    
-	
-    <div class="article-entry" itemprop="articleBody">
-	  <!-- 添加分类与标签 -->
-	  
-		  
-			<p>yilia主题也有集成搜索功能，不过它使用的搜索是基于标题和标签的，有一定的局限性，没有提供全文检索功能。这篇文章介绍的就是集成全文检索和今日诗词。</p>
-<h3 id="效果图"><a href="#效果图" class="headerlink" title="效果图"></a>效果图</h3><p><img src="/imgs/20200411232312.png"></p>
-<p>动图<br><img src="/imgs/hexo-yilia-local-search2.gif"></p>
-<h2 id="1-集成本地搜索"><a href="#1-集成本地搜索" class="headerlink" title="1.集成本地搜索"></a>1.集成本地搜索</h2><p>参考：为 Hexo 博客增加一个站内搜索：<a target="_blank" rel="noopener" href="https://www.barretlee.com/blog/2017/06/04/hexo-search-insite/">https://www.barretlee.com/blog/2017/06/04/hexo-search-insite/</a></p>
-<p><img src="/imgs/20200411214252.png"></p>
-<h3 id="原理说明"><a href="#原理说明" class="headerlink" title="原理说明"></a>原理说明</h3><p>使用<code>hexo-generator-search</code>插件为文章生成一个全局的<code>search.xml</code>，里面包含所有文章的内容（可配置）。然后再去这个文件中搜索关键字，以此来找到需要的文章。</p>
-		  
-				  
-	  
-      
-	  <!-- 添加打赏 -->
-	  
-	
-	  <!-- 添加版权声明 -->
-      
-	  
-	</div>
-	
-	<!-- 添加置顶 -->
-    <div class="article-info article-info-index">
-      
-	  
-	  <!-- 分类页 -->
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/博客/" class="article-tag-list-link color3">博客</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/博客/hexo/" class="article-tag-list-link color5">hexo</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-	  
-	  <!-- 添加展开全文 -->
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/post/613d6936.html">展开全文 >></a>
-        </p>
-      
-	  
-	  <!-- 添加分享 -->
-      
-	  
-      <div class="clearfix"></div>
-	  
-    </div>
-  </div>
-</article>
-
-
-
-<!-- 添加回到顶部和文章目录 -->
-<aside class="wrap-side-operation">
-  <div class="mod-side-operation">
-    
-      <div class="jump-container" id="js-jump-container" style="display:none;">
-        <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-          <i class="icon-font icon-back"></i>
-        </a>
-      </div>
-    
-    
-  </div>
-</aside>
-
-<!-- 添加评论 -->
-
-
-<!-- valine评论
-  
-  <section id="comments" style="margin:10px;padding:10px;background:#fff;">
-    <div id="vcomment" class="comment"></div> 
-<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
-<script>
-   var notify = 'true' == true ? true : false;
-   var verify = 'true' == true ? true : false;
-    window.onload = function() {
-        new Valine({
-            el: '.comment',
-            notify: notify,
-            verify: verify,
-            app_id: "oaNIM7WrQSG7UOdJT8sGT8Ap-gzGzoHsz",
-            app_key: "CnYOpc2uW5oBwt6wgLB1ggYh",
-            placeholder: "ヾﾉ≧∀≦)o来啊，快活啊!",
-            avatar:"wavatar"
-        });
-    }
-</script>
-  </section>
-
--->
-<!-- valine评论 -->
-
-
-
-
-<!-- 文章页添加mathjax公式 -->
-
-  
-
-<!-- 文章页添加mathjax公式 -->
-
-
-  
     <article id="post-2024-04-16-MobaXterm登录堡垒机-跳板机直接使用Linux服务器" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -2302,6 +2107,198 @@
 
 
   
+    <article id="post-2024-04-07-等保测评漏洞修复2" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h2 itemprop="name">
+      <a class="article-title_code_ant" href="/post/b7b6dca9.html">等保测评漏洞修复2</a>
+    </h2>
+  
+
+        
+		
+		  <a href="/post/b7b6dca9.html" class="archive-article-date">
+  	<time datetime="2024-04-07T10:14:53.000Z" itemprop="datePublished">
+	<!-- <i class="icon-calendar icon"></i> -->
+
+	<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+	&nbsp;
+	2024-04-07</time>
+	
+	<!-- busuanzi阅读量统计
+	
+	-->
+	<!-- busuanzi阅读量统计 -->
+	
+	
+	
+    <!-- waline阅读量统计 
+	
+	-->
+</a>
+
+
+        
+		
+		
+		  <!-- 添加标题栏文字统计效果 -->
+<div class="word-count">
+	
+	
+    <span class="post-time">
+      <span class="post-meta-item-icon">
+	    <i class="fa fa-bar-chart" aria-hidden="true"></i>
+        <!-- <i class="fa fa-keyboard-o" aria-hidden="true"></i> -->
+        <span class="post-meta-item-text">字数统计: </span>
+        <span class="post-count">1.5k字</span>
+      </span>
+    </span>
+
+    <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+	    <i class="fa fa-pagelines" aria-hidden="true"></i>
+        <span class="post-meta-item-text">阅读时长: </span>
+        <span class="post-count">6min</span>
+      </span>
+    </span>
+	
+
+</div>
+<!-- 添加标题栏文字统计效果结束 -->
+		
+      </header>
+    
+	
+    <div class="article-entry" itemprop="articleBody">
+	  <!-- 添加分类与标签 -->
+	  
+		  
+			<h2 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h2><h3 id="检查是否设置密码有效期，密码复杂度"><a href="#检查是否设置密码有效期，密码复杂度" class="headerlink" title="检查是否设置密码有效期，密码复杂度"></a>检查是否设置密码有效期，密码复杂度</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"># 执行备份</span><br><span class="line">cp -p /etc/login.defs /etc/login.defs.$(date +%F).bak</span><br><span class="line">查看文件/etc/login.defs，检查如下参数值是否满足要求：</span><br><span class="line">PASS_MAX_DAYS 90         #密码最长过期天数</span><br><span class="line">PASS_MIN_DAYS 7            #密码最小过期天数</span><br><span class="line">PASS_MIN_LEN 8            #密码最小长度</span><br><span class="line">PASS_WARN_AGE 7            #密码过期警告天数</span><br><span class="line"></span><br><span class="line"># 设置密码复杂度</span><br><span class="line"># 执行备份</span><br><span class="line">cp -p /etc/pam.d/system-auth /etc/pam.d/system-auth.$(date +%F).bak</span><br><span class="line">在/etc/pam.d/system-auth中的“password    requisite     pam_pwquality.so”行尾添加具体参数</span><br><span class="line">比如“minlen=16 ucredit=-1 lcredit=-1 ocredit=-1 dcredit=-1”，表示最小密码长度16位，数字，大小写字母，特殊字符均至少包含1位</span><br></pre></td></tr></table></figure>
+
+<h3 id="检查账户认证失败次数限制"><a href="#检查账户认证失败次数限制" class="headerlink" title="检查账户认证失败次数限制"></a>检查账户认证失败次数限制</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">执行备份    </span><br><span class="line">cp -p /etc/pam.d/system-auth /etc/pam.d/system-auth.$(date &#x27;+%F&#x27;).bak</span><br><span class="line">查看文件/etc/pam.d/system-auth，检查如下参数值是否满足要求：</span><br><span class="line">auth        required      pam_tally2.so  deny=5 onerr=fail no_magic_root unlock_time=180</span><br><span class="line">account     required      pam_tally2.so</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="检查历史命令设置"><a href="#检查历史命令设置" class="headerlink" title="检查历史命令设置"></a>检查历史命令设置</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">echo &#x27;HISTFILESIZE=20&#x27; &gt;&gt; /etc/profile</span><br><span class="line">echo &#x27;HISTSIZE=20&#x27; &gt;&gt; /etc/profile</span><br><span class="line">source  /etc/profile</span><br></pre></td></tr></table></figure>
+		  
+				  
+	  
+      
+	  <!-- 添加打赏 -->
+	  
+	
+	  <!-- 添加版权声明 -->
+      
+	  
+	</div>
+	
+	<!-- 添加置顶 -->
+    <div class="article-info article-info-index">
+      
+	  
+	  <!-- 分类页 -->
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">漏洞修复</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/漏洞修复/" class="article-tag-list-link color5">漏洞修复</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+	  
+	  <!-- 添加展开全文 -->
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/post/b7b6dca9.html">展开全文 >></a>
+        </p>
+      
+	  
+	  <!-- 添加分享 -->
+      
+	  
+      <div class="clearfix"></div>
+	  
+    </div>
+  </div>
+</article>
+
+
+
+<!-- 添加回到顶部和文章目录 -->
+<aside class="wrap-side-operation">
+  <div class="mod-side-operation">
+    
+      <div class="jump-container" id="js-jump-container" style="display:none;">
+        <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+          <i class="icon-font icon-back"></i>
+        </a>
+      </div>
+    
+    
+  </div>
+</aside>
+
+<!-- 添加评论 -->
+
+
+<!-- valine评论
+  
+  <section id="comments" style="margin:10px;padding:10px;background:#fff;">
+    <div id="vcomment" class="comment"></div> 
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+   var notify = 'true' == true ? true : false;
+   var verify = 'true' == true ? true : false;
+    window.onload = function() {
+        new Valine({
+            el: '.comment',
+            notify: notify,
+            verify: verify,
+            app_id: "oaNIM7WrQSG7UOdJT8sGT8Ap-gzGzoHsz",
+            app_key: "CnYOpc2uW5oBwt6wgLB1ggYh",
+            placeholder: "ヾﾉ≧∀≦)o来啊，快活啊!",
+            avatar:"wavatar"
+        });
+    }
+</script>
+  </section>
+
+-->
+<!-- valine评论 -->
+
+
+
+
+<!-- 文章页添加mathjax公式 -->
+
+  
+
+<!-- 文章页添加mathjax公式 -->
+
+
+  
   
     <nav id="page-nav">
       <a class="extend prev" rel="prev" href="/page/60/">&lt;&lt; 上一页</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/59/">59</a><a class="page-number" href="/page/60/">60</a><span class="page-number current">61</span><a class="page-number" href="/page/62/">62</a><a class="page-number" href="/page/63/">63</a><span class="space">&hellip;</span><a class="page-number" href="/page/65/">65</a><a class="extend next" rel="next" href="/page/62/">下一页 &gt;&gt;</a>
@@ -2356,7 +2353,7 @@ window.MathJax = {
 	  <br>
 	  <div class="footer-center">
 	    <i class="fa fa-file-word-o" aria-hidden="true"></i>
-		<span> 642 篇</span>
+		<span> 641 篇</span>
 		<span class="post-meta-divider">|</span>
 		<i class="fa fa-pencil-square-o" aria-hidden="true"></i>
 		<span> <span class="post-count">96.1k</span></span>
@@ -2688,11 +2685,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">docker</a>
+                <a href="javascript:void(0)" class="js-tag color2">python</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">python</a>
+                <a href="javascript:void(0)" class="js-tag color2">docker</a>
               </li>
              
               <li class="article-tag-list-item">

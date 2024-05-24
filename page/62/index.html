@@ -310,198 +310,6 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-2024-04-07-等保测评漏洞修复2" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h2 itemprop="name">
-      <a class="article-title_code_ant" href="/post/b7b6dca9.html">等保测评漏洞修复2</a>
-    </h2>
-  
-
-        
-		
-		  <a href="/post/b7b6dca9.html" class="archive-article-date">
-  	<time datetime="2024-04-07T10:14:53.000Z" itemprop="datePublished">
-	<!-- <i class="icon-calendar icon"></i> -->
-
-	<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
-	&nbsp;
-	2024-04-07</time>
-	
-	<!-- busuanzi阅读量统计
-	
-	-->
-	<!-- busuanzi阅读量统计 -->
-	
-	
-	
-    <!-- waline阅读量统计 
-	
-	-->
-</a>
-
-
-        
-		
-		
-		  <!-- 添加标题栏文字统计效果 -->
-<div class="word-count">
-	
-	
-    <span class="post-time">
-      <span class="post-meta-item-icon">
-	    <i class="fa fa-bar-chart" aria-hidden="true"></i>
-        <!-- <i class="fa fa-keyboard-o" aria-hidden="true"></i> -->
-        <span class="post-meta-item-text">字数统计: </span>
-        <span class="post-count">1.5k字</span>
-      </span>
-    </span>
-
-    <span class="post-time">
-      &nbsp; | &nbsp;
-      <span class="post-meta-item-icon">
-	    <i class="fa fa-pagelines" aria-hidden="true"></i>
-        <span class="post-meta-item-text">阅读时长: </span>
-        <span class="post-count">6min</span>
-      </span>
-    </span>
-	
-
-</div>
-<!-- 添加标题栏文字统计效果结束 -->
-		
-      </header>
-    
-	
-    <div class="article-entry" itemprop="articleBody">
-	  <!-- 添加分类与标签 -->
-	  
-		  
-			<h2 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h2><h3 id="检查是否设置密码有效期，密码复杂度"><a href="#检查是否设置密码有效期，密码复杂度" class="headerlink" title="检查是否设置密码有效期，密码复杂度"></a>检查是否设置密码有效期，密码复杂度</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"># 执行备份</span><br><span class="line">cp -p /etc/login.defs /etc/login.defs.$(date +%F).bak</span><br><span class="line">查看文件/etc/login.defs，检查如下参数值是否满足要求：</span><br><span class="line">PASS_MAX_DAYS 90         #密码最长过期天数</span><br><span class="line">PASS_MIN_DAYS 7            #密码最小过期天数</span><br><span class="line">PASS_MIN_LEN 8            #密码最小长度</span><br><span class="line">PASS_WARN_AGE 7            #密码过期警告天数</span><br><span class="line"></span><br><span class="line"># 设置密码复杂度</span><br><span class="line"># 执行备份</span><br><span class="line">cp -p /etc/pam.d/system-auth /etc/pam.d/system-auth.$(date +%F).bak</span><br><span class="line">在/etc/pam.d/system-auth中的“password    requisite     pam_pwquality.so”行尾添加具体参数</span><br><span class="line">比如“minlen=16 ucredit=-1 lcredit=-1 ocredit=-1 dcredit=-1”，表示最小密码长度16位，数字，大小写字母，特殊字符均至少包含1位</span><br></pre></td></tr></table></figure>
-
-<h3 id="检查账户认证失败次数限制"><a href="#检查账户认证失败次数限制" class="headerlink" title="检查账户认证失败次数限制"></a>检查账户认证失败次数限制</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">执行备份    </span><br><span class="line">cp -p /etc/pam.d/system-auth /etc/pam.d/system-auth.$(date &#x27;+%F&#x27;).bak</span><br><span class="line">查看文件/etc/pam.d/system-auth，检查如下参数值是否满足要求：</span><br><span class="line">auth        required      pam_tally2.so  deny=5 onerr=fail no_magic_root unlock_time=180</span><br><span class="line">account     required      pam_tally2.so</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="检查历史命令设置"><a href="#检查历史命令设置" class="headerlink" title="检查历史命令设置"></a>检查历史命令设置</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">echo &#x27;HISTFILESIZE=20&#x27; &gt;&gt; /etc/profile</span><br><span class="line">echo &#x27;HISTSIZE=20&#x27; &gt;&gt; /etc/profile</span><br><span class="line">source  /etc/profile</span><br></pre></td></tr></table></figure>
-		  
-				  
-	  
-      
-	  <!-- 添加打赏 -->
-	  
-	
-	  <!-- 添加版权声明 -->
-      
-	  
-	</div>
-	
-	<!-- 添加置顶 -->
-    <div class="article-info article-info-index">
-      
-	  
-	  <!-- 分类页 -->
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">漏洞修复</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/漏洞修复/" class="article-tag-list-link color5">漏洞修复</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-	  
-	  <!-- 添加展开全文 -->
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/post/b7b6dca9.html">展开全文 >></a>
-        </p>
-      
-	  
-	  <!-- 添加分享 -->
-      
-	  
-      <div class="clearfix"></div>
-	  
-    </div>
-  </div>
-</article>
-
-
-
-<!-- 添加回到顶部和文章目录 -->
-<aside class="wrap-side-operation">
-  <div class="mod-side-operation">
-    
-      <div class="jump-container" id="js-jump-container" style="display:none;">
-        <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-          <i class="icon-font icon-back"></i>
-        </a>
-      </div>
-    
-    
-  </div>
-</aside>
-
-<!-- 添加评论 -->
-
-
-<!-- valine评论
-  
-  <section id="comments" style="margin:10px;padding:10px;background:#fff;">
-    <div id="vcomment" class="comment"></div> 
-<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
-<script>
-   var notify = 'true' == true ? true : false;
-   var verify = 'true' == true ? true : false;
-    window.onload = function() {
-        new Valine({
-            el: '.comment',
-            notify: notify,
-            verify: verify,
-            app_id: "oaNIM7WrQSG7UOdJT8sGT8Ap-gzGzoHsz",
-            app_key: "CnYOpc2uW5oBwt6wgLB1ggYh",
-            placeholder: "ヾﾉ≧∀≦)o来啊，快活啊!",
-            avatar:"wavatar"
-        });
-    }
-</script>
-  </section>
-
--->
-<!-- valine评论 -->
-
-
-
-
-<!-- 文章页添加mathjax公式 -->
-
-  
-
-<!-- 文章页添加mathjax公式 -->
-
-
-  
     <article id="post-2024-04-02-hexo插件hexo-generator-index-pin-top实现文章的排序" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -2523,6 +2331,207 @@
 
 
   
+    <article id="post-2024-03-19-更新github仓库、hexo仓库" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h2 itemprop="name">
+      <a class="article-title_code_ant" href="/post/d9bb6d3f.html">更新github仓库、hexo仓库</a>
+    </h2>
+  
+
+        
+		
+		  <a href="/post/d9bb6d3f.html" class="archive-article-date">
+  	<time datetime="2024-03-19T00:00:00.000Z" itemprop="datePublished">
+	<!-- <i class="icon-calendar icon"></i> -->
+
+	<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+	&nbsp;
+	2024-03-19</time>
+	
+	<!-- busuanzi阅读量统计
+	
+	-->
+	<!-- busuanzi阅读量统计 -->
+	
+	
+	
+    <!-- waline阅读量统计 
+	
+	-->
+</a>
+
+
+        
+		
+		
+		  <!-- 添加标题栏文字统计效果 -->
+<div class="word-count">
+	
+	
+    <span class="post-time">
+      <span class="post-meta-item-icon">
+	    <i class="fa fa-bar-chart" aria-hidden="true"></i>
+        <!-- <i class="fa fa-keyboard-o" aria-hidden="true"></i> -->
+        <span class="post-meta-item-text">字数统计: </span>
+        <span class="post-count">475字</span>
+      </span>
+    </span>
+
+    <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+	    <i class="fa fa-pagelines" aria-hidden="true"></i>
+        <span class="post-meta-item-text">阅读时长: </span>
+        <span class="post-count">1min</span>
+      </span>
+    </span>
+	
+
+</div>
+<!-- 添加标题栏文字统计效果结束 -->
+		
+      </header>
+    
+	
+    <div class="article-entry" itemprop="articleBody">
+	  <!-- 添加分类与标签 -->
+	  
+		  
+		  <h2 id="更新github仓库"><a href="#更新github仓库" class="headerlink" title="更新github仓库"></a>更新github仓库</h2><p>首先切换到你的本地仓库中更新的项目目录</p>
+<p>可以在用Git Bash用cd命令切换，也可以直接右键项目点击git bash here</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">//首次时</span><br><span class="line">git config --global user.name <span class="string">&quot;你的名字或昵称&quot;</span></span><br><span class="line">git config --global user.email <span class="string">&quot;你的邮箱&quot;</span></span><br><span class="line">//当天第一次时（初始化）</span><br><span class="line">git init</span><br><span class="line">//每次更新代码时add 和commit</span><br><span class="line">git status //查看仓库状态</span><br><span class="line">git add . //用于更新所有代码</span><br><span class="line">git commit -m <span class="string">&quot;first commit&quot;</span>  （first commit 本次提交的内容）</span><br><span class="line">git remote add origin https://github.com/852172891/test3.git //重新添加远程仓库地址，地址换成你建的项目的地址</span><br><span class="line">git pull origin master --allow-unrelated-histories //正常需要把远程仓库和本地同步，消除差异</span><br><span class="line">git push -u origin master  //将本地仓库的代码提交到github的仓库远程仓库的master主干，这一句执行的时候 可能需要输入你的 github 账号 和密码</span><br><span class="line"></span><br><span class="line">其他</span><br><span class="line">git <span class="built_in">clone</span> https://github.com/852172891/test3.git //fork他人模板</span><br><span class="line">git remote -v                                  //查看远程仓库详细信息，可以看到仓库名称</span><br><span class="line">git remote remove orign                      //删除orign仓库（如果把origin拼写成orign，删除错误名称仓库）</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">git branch new_branch    //新建分支</span><br><span class="line">git push -u origin new_branch       // 推送本地分支到远程仓库，并设置跟踪关系</span><br><span class="line">git checkout 分支名 // 切换分支</span><br><span class="line">git branch -a   //查询所有分支</span><br><span class="line">git branch -d branch_name //删除本地分支</span><br><span class="line">git push origin --delete branch_name  //删除远程分支</span><br></pre></td></tr></table></figure>
+
+<p>注：如果是多人合作开发的话，需要在第四步之后先使用 &gt;git pull 拉取当前分支的最新代码</p>
+<h2 id="更新hexo仓库"><a href="#更新hexo仓库" class="headerlink" title="更新hexo仓库"></a>更新hexo仓库</h2><p>首先切换到你的本地仓库中更新的项目目录</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">hexo init //新建目录初始化为hexo，再拉取代码</span><br><span class="line">hexo clean //清除指定文件夹的效果</span><br><span class="line">hexo g //生成页面</span><br><span class="line">hexo s //发布服务</span><br><span class="line">hexo d //将hexo发布到GitHub上</span><br></pre></td></tr></table></figure>
+
+
+				  
+	  
+      
+	  <!-- 添加打赏 -->
+	  
+	
+	  <!-- 添加版权声明 -->
+      
+	  
+	</div>
+	
+	<!-- 添加置顶 -->
+    <div class="article-info article-info-index">
+      
+	  
+	  <!-- 分类页 -->
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/博客/" class="article-tag-list-link color3">博客</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/博客/hexo/" class="article-tag-list-link color5">hexo</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+	  
+	  <!-- 添加展开全文 -->
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/post/d9bb6d3f.html">展开全文 >></a>
+        </p>
+      
+	  
+	  <!-- 添加分享 -->
+      
+	  
+      <div class="clearfix"></div>
+	  
+    </div>
+  </div>
+</article>
+
+
+
+<!-- 添加回到顶部和文章目录 -->
+<aside class="wrap-side-operation">
+  <div class="mod-side-operation">
+    
+      <div class="jump-container" id="js-jump-container" style="display:none;">
+        <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+          <i class="icon-font icon-back"></i>
+        </a>
+      </div>
+    
+    
+  </div>
+</aside>
+
+<!-- 添加评论 -->
+
+
+<!-- valine评论
+  
+  <section id="comments" style="margin:10px;padding:10px;background:#fff;">
+    <div id="vcomment" class="comment"></div> 
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+   var notify = 'true' == true ? true : false;
+   var verify = 'true' == true ? true : false;
+    window.onload = function() {
+        new Valine({
+            el: '.comment',
+            notify: notify,
+            verify: verify,
+            app_id: "oaNIM7WrQSG7UOdJT8sGT8Ap-gzGzoHsz",
+            app_key: "CnYOpc2uW5oBwt6wgLB1ggYh",
+            placeholder: "ヾﾉ≧∀≦)o来啊，快活啊!",
+            avatar:"wavatar"
+        });
+    }
+</script>
+  </section>
+
+-->
+<!-- valine评论 -->
+
+
+
+
+<!-- 文章页添加mathjax公式 -->
+
+  
+
+<!-- 文章页添加mathjax公式 -->
+
+
+  
   
     <nav id="page-nav">
       <a class="extend prev" rel="prev" href="/page/61/">&lt;&lt; 上一页</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/60/">60</a><a class="page-number" href="/page/61/">61</a><span class="page-number current">62</span><a class="page-number" href="/page/63/">63</a><a class="page-number" href="/page/64/">64</a><a class="page-number" href="/page/65/">65</a><a class="extend next" rel="next" href="/page/63/">下一页 &gt;&gt;</a>
@@ -2577,7 +2586,7 @@ window.MathJax = {
 	  <br>
 	  <div class="footer-center">
 	    <i class="fa fa-file-word-o" aria-hidden="true"></i>
-		<span> 642 篇</span>
+		<span> 641 篇</span>
 		<span class="post-meta-divider">|</span>
 		<i class="fa fa-pencil-square-o" aria-hidden="true"></i>
 		<span> <span class="post-count">96.1k</span></span>
@@ -2909,11 +2918,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">docker</a>
+                <a href="javascript:void(0)" class="js-tag color2">python</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">python</a>
+                <a href="javascript:void(0)" class="js-tag color2">docker</a>
               </li>
              
               <li class="article-tag-list-item">
