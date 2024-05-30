@@ -310,26 +310,26 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-语雀/项目管理/2024-05-24-书籍" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-2021-03-31-github分支备份博客源文件" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h2 itemprop="name">
-      <a class="article-title_code_ant" href="/post/8bba72ca.html">书籍</a>
+      <a class="article-title_code_ant" href="/post/8c3abf48.html">github分支备份博客源文件 (2021-03-31)</a>
     </h2>
   
 
         
 		
-		  <a href="/post/8bba72ca.html" class="archive-article-date">
-  	<time datetime="2024-05-24T10:50:15.000Z" itemprop="datePublished">
+		  <a href="/post/8c3abf48.html" class="archive-article-date">
+  	<time datetime="2021-03-31T17:22:48.000Z" itemprop="datePublished">
 	<!-- <i class="icon-calendar icon"></i> -->
 
 	<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
 	&nbsp;
-	2024-05-24</time>
+	2021-03-31</time>
 	
 	<!-- busuanzi阅读量统计
 	
@@ -356,7 +356,7 @@
 	    <i class="fa fa-bar-chart" aria-hidden="true"></i>
         <!-- <i class="fa fa-keyboard-o" aria-hidden="true"></i> -->
         <span class="post-meta-item-text">字数统计: </span>
-        <span class="post-count">9字</span>
+        <span class="post-count">321字</span>
       </span>
     </span>
 
@@ -380,8 +380,35 @@
 	  <!-- 添加分类与标签 -->
 	  
 		  
-			这里有东西被加密了，需要输入密码查看哦。
-		  
+		  <p>刚建立的博客的所有文件, 刚开始是没有.git文件夹的.</p>
+<p>首先进入.deploy_git目录下, 新建一个分支get-GoCN-news_bak</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch get-GoCN-news_bak</span><br></pre></td></tr></table></figure>
+
+<p>然后将该目录下的.git文件夹复制到博客的根目录下, 也就是上一级目录.<br>在git bash下操作, 切换到hexo分支.</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout get-GoCN-news_bak</span><br></pre></td></tr></table></figure>
+
+<p>切回主分支</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout master</span><br></pre></td></tr></table></figure>
+
+<p>将根目录下的文件先建立索引, 后推送到远程仓库的hexo分支上.<br>&#x2F;&#x2F; 将文件添加到版本库</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br></pre></td></tr></table></figure>
+
+<p>&#x2F;&#x2F; 上传到版本库</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m &quot;描述信息&quot;</span><br></pre></td></tr></table></figure>
+
+<p>&#x2F;&#x2F; 添加远程推送地址</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin https://github.com/JiangJiaWei520/get-GoCN-news.git</span><br></pre></td></tr></table></figure>
+
+<p>&#x2F;&#x2F; 将本地仓库的内容推送到远程仓库</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin get-GoCN-news_bak</span><br></pre></td></tr></table></figure>
+
+<p>注意:</p>
+<p>不用担心远程提交时会将.deploy_git目录一块提交上去, 在博客根目录下有一个文件.gitignore, 下面是里面的内容, 因为该文件已经把.deploy*的内容全部忽略了, 所以提交时, 只会将剩下的文件提交到博客仓库的hexo分支上去. 完成上面操作后, 刷新仓库会看到这是有两个分支. 这是就算完成了.</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">.DS_Store</span><br><span class="line">Thumbs.db</span><br><span class="line">db.json</span><br><span class="line">*.log</span><br><span class="line">node_modules/</span><br><span class="line">public/</span><br><span class="line">.deploy*/</span><br></pre></td></tr></table></figure>
+
+
+
+
 				  
 	  
       
@@ -404,7 +431,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">语雀</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
         		</li>
       		
 		</ul>
@@ -416,11 +443,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/语雀/" class="article-tag-list-link color3">语雀</a>
+        			<a href="/categories/博客/" class="article-tag-list-link color3">博客</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="/categories/语雀/项目管理/" class="article-tag-list-link color5">项目管理</a>
+        			<a href="/categories/博客/hexo/" class="article-tag-list-link color5">hexo</a>
         		</li>
       		
 		</ul>
@@ -431,7 +458,7 @@
 	  <!-- 添加展开全文 -->
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/post/8bba72ca.html">展开全文 >></a>
+          <a class="article-more-a" href="/post/8c3abf48.html">展开全文 >></a>
         </p>
       
 	  
@@ -500,26 +527,26 @@
 
 
   
-    <article id="post-语雀/项目管理/2024-05-24-事项贯通" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-2020-11-04-basis" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h2 itemprop="name">
-      <a class="article-title_code_ant" href="/post/512ac78e.html">事项贯通</a>
+      <a class="article-title_code_ant" href="/post/9ff79b23.html">关于我</a>
     </h2>
   
 
         
 		
-		  <a href="/post/512ac78e.html" class="archive-article-date">
-  	<time datetime="2024-05-24T10:50:15.000Z" itemprop="datePublished">
+		  <a href="/post/9ff79b23.html" class="archive-article-date">
+  	<time datetime="2020-11-04T00:00:00.000Z" itemprop="datePublished">
 	<!-- <i class="icon-calendar icon"></i> -->
 
 	<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
 	&nbsp;
-	2024-05-24</time>
+	2020-11-04</time>
 	
 	<!-- busuanzi阅读量统计
 	
@@ -546,7 +573,7 @@
 	    <i class="fa fa-bar-chart" aria-hidden="true"></i>
         <!-- <i class="fa fa-keyboard-o" aria-hidden="true"></i> -->
         <span class="post-meta-item-text">字数统计: </span>
-        <span class="post-count">9字</span>
+        <span class="post-count">36字</span>
       </span>
     </span>
 
@@ -570,8 +597,11 @@
 	  <!-- 添加分类与标签 -->
 	  
 		  
-			这里有东西被加密了，需要输入密码查看哦。
-		  
+		  <p>弱水三千，只取一瓢饮；</p>
+<p>娇玫万朵，独摘一枝怜；</p>
+<p>满天星斗，只见一颗芒；</p>
+<p>人海茫茫，唯系你一人</p>
+
 				  
 	  
       
@@ -594,7 +624,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">语雀</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">其他</a>
         		</li>
       		
 		</ul>
@@ -606,11 +636,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/语雀/" class="article-tag-list-link color3">语雀</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/语雀/项目管理/" class="article-tag-list-link color5">项目管理</a>
+        			<a href="/categories/其他/" class="article-tag-list-link color3">其他</a>
         		</li>
       		
 		</ul>
@@ -621,7 +647,7 @@
 	  <!-- 添加展开全文 -->
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/post/512ac78e.html">展开全文 >></a>
+          <a class="article-more-a" href="/post/9ff79b23.html">展开全文 >></a>
         </p>
       
 	  
@@ -690,26 +716,26 @@
 
 
   
-    <article id="post-语雀/项目管理/2024-05-24-交换中心了解" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-2020-08-30-notes" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h2 itemprop="name">
-      <a class="article-title_code_ant" href="/post/403c594a.html">交换中心了解</a>
+      <a class="article-title_code_ant" href="/post/633e4f47.html">2020年8月30日21:20:08日记</a>
     </h2>
   
 
         
 		
-		  <a href="/post/403c594a.html" class="archive-article-date">
-  	<time datetime="2024-05-24T10:50:15.000Z" itemprop="datePublished">
+		  <a href="/post/633e4f47.html" class="archive-article-date">
+  	<time datetime="2020-08-30T21:20:24.000Z" itemprop="datePublished">
 	<!-- <i class="icon-calendar icon"></i> -->
 
 	<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
 	&nbsp;
-	2024-05-24</time>
+	2020-08-30</time>
 	
 	<!-- busuanzi阅读量统计
 	
@@ -736,7 +762,7 @@
 	    <i class="fa fa-bar-chart" aria-hidden="true"></i>
         <!-- <i class="fa fa-keyboard-o" aria-hidden="true"></i> -->
         <span class="post-meta-item-text">字数统计: </span>
-        <span class="post-count">9字</span>
+        <span class="post-count">122字</span>
       </span>
     </span>
 
@@ -760,8 +786,8 @@
 	  <!-- 添加分类与标签 -->
 	  
 		  
-			这里有东西被加密了，需要输入密码查看哦。
-		  
+		  <p>​		一周的折腾，总是完成了个人网站导航、个人笔记网站和个人博客的搭建，耗时很多，找一个能记录时间的地方，希望能坚持下去，时光留不住，能留住的只是它的痕迹。整理完搭建过程中的笔记算是初步完成了整个过程的搭建，需要开始其他的工作，增加技能学习，累计知识，垒实基础，希望后面会更好。</p>
+
 				  
 	  
       
@@ -784,7 +810,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">语雀</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">日记本</a>
         		</li>
       		
 		</ul>
@@ -796,11 +822,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/语雀/" class="article-tag-list-link color3">语雀</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/语雀/项目管理/" class="article-tag-list-link color5">项目管理</a>
+        			<a href="/categories/日记本/" class="article-tag-list-link color4">日记本</a>
         		</li>
       		
 		</ul>
@@ -811,7 +833,7 @@
 	  <!-- 添加展开全文 -->
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/post/403c594a.html">展开全文 >></a>
+          <a class="article-more-a" href="/post/633e4f47.html">展开全文 >></a>
         </p>
       
 	  
@@ -880,26 +902,26 @@
 
 
   
-    <article id="post-语雀/项目管理/2024-05-24-人员计划" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-2020-08-30-cs" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h2 itemprop="name">
-      <a class="article-title_code_ant" href="/post/d9bfbf87.html">人员计划</a>
+      <a class="article-title_code_ant" href="/post/9daba997.html">测试</a>
     </h2>
   
 
         
 		
-		  <a href="/post/d9bfbf87.html" class="archive-article-date">
-  	<time datetime="2024-05-24T10:50:15.000Z" itemprop="datePublished">
+		  <a href="/post/9daba997.html" class="archive-article-date">
+  	<time datetime="2020-08-30T15:30:16.000Z" itemprop="datePublished">
 	<!-- <i class="icon-calendar icon"></i> -->
 
 	<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
 	&nbsp;
-	2024-05-24</time>
+	2020-08-30</time>
 	
 	<!-- busuanzi阅读量统计
 	
@@ -926,7 +948,7 @@
 	    <i class="fa fa-bar-chart" aria-hidden="true"></i>
         <!-- <i class="fa fa-keyboard-o" aria-hidden="true"></i> -->
         <span class="post-meta-item-text">字数统计: </span>
-        <span class="post-count">9字</span>
+        <span class="post-count">2字</span>
       </span>
     </span>
 
@@ -950,8 +972,8 @@
 	  <!-- 添加分类与标签 -->
 	  
 		  
-			这里有东西被加密了，需要输入密码查看哦。
-		  
+		  <p>测试</p>
+
 				  
 	  
       
@@ -974,7 +996,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">语雀</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">测试</a>
         		</li>
       		
 		</ul>
@@ -986,11 +1008,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/语雀/" class="article-tag-list-link color3">语雀</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/语雀/项目管理/" class="article-tag-list-link color5">项目管理</a>
+        			<a href="/categories/测试/" class="article-tag-list-link color3">测试</a>
         		</li>
       		
 		</ul>
@@ -1001,7 +1019,7 @@
 	  <!-- 添加展开全文 -->
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/post/d9bfbf87.html">展开全文 >></a>
+          <a class="article-more-a" href="/post/9daba997.html">展开全文 >></a>
         </p>
       
 	  
@@ -1070,26 +1088,26 @@
 
 
   
-    <article id="post-语雀/项目管理/2024-05-24-优秀员工" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-2020-08-27-Markdown Basic grammar" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h2 itemprop="name">
-      <a class="article-title_code_ant" href="/post/b168026d.html">优秀员工</a>
+      <a class="article-title_code_ant" href="/post/5d36ff15.html">Markdown基本语法</a>
     </h2>
   
 
         
 		
-		  <a href="/post/b168026d.html" class="archive-article-date">
-  	<time datetime="2024-05-24T10:50:15.000Z" itemprop="datePublished">
+		  <a href="/post/5d36ff15.html" class="archive-article-date">
+  	<time datetime="2020-08-27T00:00:00.000Z" itemprop="datePublished">
 	<!-- <i class="icon-calendar icon"></i> -->
 
 	<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
 	&nbsp;
-	2024-05-24</time>
+	2020-08-27</time>
 	
 	<!-- busuanzi阅读量统计
 	
@@ -1116,7 +1134,7 @@
 	    <i class="fa fa-bar-chart" aria-hidden="true"></i>
         <!-- <i class="fa fa-keyboard-o" aria-hidden="true"></i> -->
         <span class="post-meta-item-text">字数统计: </span>
-        <span class="post-count">9字</span>
+        <span class="post-count">4.2k字</span>
       </span>
     </span>
 
@@ -1125,7 +1143,7 @@
       <span class="post-meta-item-icon">
 	    <i class="fa fa-pagelines" aria-hidden="true"></i>
         <span class="post-meta-item-text">阅读时长: </span>
-        <span class="post-count">1min</span>
+        <span class="post-count">18min</span>
       </span>
     </span>
 	
@@ -1140,7 +1158,46 @@
 	  <!-- 添加分类与标签 -->
 	  
 		  
-			这里有东西被加密了，需要输入密码查看哦。
+			<h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><p>要创建标题，请<code>#</code>在单词或短语的前面添加数字符号（）。您使用的数字符号的数量应与标题级别相对应。例如，要创建标题级别三（<code>&lt;h3&gt;</code>），请使用三个数字符号（例如<code>### My Header</code>）。</p>
+<table>
+<thead>
+<tr>
+<th>Markdown</th>
+<th>HTML</th>
+<th>渲染输出</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code># Heading level 1</code></td>
+<td><code>&lt;h1&gt;Heading level 1&lt;/h1&gt;</code></td>
+<td>标题等级1</td>
+</tr>
+<tr>
+<td><code>## Heading level 2</code></td>
+<td><code>&lt;h2&gt;Heading level 2&lt;/h2&gt;</code></td>
+<td>标题等级2</td>
+</tr>
+<tr>
+<td><code>### Heading level 3</code></td>
+<td><code>&lt;h3&gt;Heading level 3&lt;/h3&gt;</code></td>
+<td>标题级别3</td>
+</tr>
+<tr>
+<td><code>#### Heading level 4</code></td>
+<td><code>&lt;h4&gt;Heading level 4&lt;/h4&gt;</code></td>
+<td>标题级别4</td>
+</tr>
+<tr>
+<td><code>##### Heading level 5</code></td>
+<td><code>&lt;h5&gt;Heading level 5&lt;/h5&gt;</code></td>
+<td>标题5</td>
+</tr>
+<tr>
+<td><code>###### Heading level 6</code></td>
+<td><code>&lt;h6&gt;Heading level 6&lt;/h6&gt;</code></td>
+<td>标题等级6</td>
+</tr>
+</tbody></table>
 		  
 				  
 	  
@@ -1164,7 +1221,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">语雀</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">技术分享</a>
         		</li>
       		
 		</ul>
@@ -1176,11 +1233,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/语雀/" class="article-tag-list-link color3">语雀</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/语雀/项目管理/" class="article-tag-list-link color5">项目管理</a>
+        			<a href="/categories/技术分享/" class="article-tag-list-link color5">技术分享</a>
         		</li>
       		
 		</ul>
@@ -1191,7 +1244,7 @@
 	  <!-- 添加展开全文 -->
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/post/b168026d.html">展开全文 >></a>
+          <a class="article-more-a" href="/post/5d36ff15.html">展开全文 >></a>
         </p>
       
 	  
@@ -1260,26 +1313,26 @@
 
 
   
-    <article id="post-语雀/项目管理/2024-05-24-会议记录" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-2020-08-27-Markdown Cheat sheet" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h2 itemprop="name">
-      <a class="article-title_code_ant" href="/post/ccb62715.html">会议记录</a>
+      <a class="article-title_code_ant" href="/post/a904f437.html">markdown备忘表</a>
     </h2>
   
 
         
 		
-		  <a href="/post/ccb62715.html" class="archive-article-date">
-  	<time datetime="2024-05-24T10:50:15.000Z" itemprop="datePublished">
+		  <a href="/post/a904f437.html" class="archive-article-date">
+  	<time datetime="2020-08-27T00:00:00.000Z" itemprop="datePublished">
 	<!-- <i class="icon-calendar icon"></i> -->
 
 	<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
 	&nbsp;
-	2024-05-24</time>
+	2020-08-27</time>
 	
 	<!-- busuanzi阅读量统计
 	
@@ -1306,7 +1359,7 @@
 	    <i class="fa fa-bar-chart" aria-hidden="true"></i>
         <!-- <i class="fa fa-keyboard-o" aria-hidden="true"></i> -->
         <span class="post-meta-item-text">字数统计: </span>
-        <span class="post-count">9字</span>
+        <span class="post-count">270字</span>
       </span>
     </span>
 
@@ -1330,7 +1383,7 @@
 	  <!-- 添加分类与标签 -->
 	  
 		  
-			这里有东西被加密了，需要输入密码查看哦。
+			<h2 id="总览"><a href="#总览" class="headerlink" title="总览"></a>总览</h2><p>该Markdown备忘单提供了所有Markdown语法元素的快速概述。它无法涵盖所有的极端情况，因此，如果您需要有关这些元素中任何一个的更多信息，请参阅我们的参考指南以获取<a target="_blank" rel="noopener" href="http://markdown.p2hp.com/basic-syntax">基本语法</a>和<a target="_blank" rel="noopener" href="http://markdown.p2hp.com/extended-syntax">扩展语法</a>。</p>
 		  
 				  
 	  
@@ -1354,7 +1407,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">语雀</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">技术分享</a>
         		</li>
       		
 		</ul>
@@ -1366,11 +1419,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/语雀/" class="article-tag-list-link color3">语雀</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/语雀/项目管理/" class="article-tag-list-link color5">项目管理</a>
+        			<a href="/categories/技术分享/" class="article-tag-list-link color5">技术分享</a>
         		</li>
       		
 		</ul>
@@ -1381,7 +1430,7 @@
 	  <!-- 添加展开全文 -->
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/post/ccb62715.html">展开全文 >></a>
+          <a class="article-more-a" href="/post/a904f437.html">展开全文 >></a>
         </p>
       
 	  
@@ -1450,26 +1499,26 @@
 
 
   
-    <article id="post-语雀/项目管理/2024-05-24-信息系统项目管理师" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-2020-08-24-Hexo-next-theme" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h2 itemprop="name">
-      <a class="article-title_code_ant" href="/post/3404782e.html">信息系统项目管理师</a>
+      <a class="article-title_code_ant" href="/post/398792d6.html">Hexo 的文档</a>
     </h2>
   
 
         
 		
-		  <a href="/post/3404782e.html" class="archive-article-date">
-  	<time datetime="2024-05-24T10:50:15.000Z" itemprop="datePublished">
+		  <a href="/post/398792d6.html" class="archive-article-date">
+  	<time datetime="2020-08-24T00:00:00.000Z" itemprop="datePublished">
 	<!-- <i class="icon-calendar icon"></i> -->
 
 	<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
 	&nbsp;
-	2024-05-24</time>
+	2020-08-24</time>
 	
 	<!-- busuanzi阅读量统计
 	
@@ -1496,7 +1545,7 @@
 	    <i class="fa fa-bar-chart" aria-hidden="true"></i>
         <!-- <i class="fa fa-keyboard-o" aria-hidden="true"></i> -->
         <span class="post-meta-item-text">字数统计: </span>
-        <span class="post-count">9字</span>
+        <span class="post-count">2.2k字</span>
       </span>
     </span>
 
@@ -1505,7 +1554,7 @@
       <span class="post-meta-item-icon">
 	    <i class="fa fa-pagelines" aria-hidden="true"></i>
         <span class="post-meta-item-text">阅读时长: </span>
-        <span class="post-count">1min</span>
+        <span class="post-count">8min</span>
       </span>
     </span>
 	
@@ -1520,7 +1569,10 @@
 	  <!-- 添加分类与标签 -->
 	  
 		  
-			这里有东西被加密了，需要输入密码查看哦。
+			<p>​	<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">Hexo</a> 是高效的静态站点生成框架，她基于 <a target="_blank" rel="noopener" href="https://nodejs.org/">Node.js</a>。 通过 Hexo 你可以轻松地使用 Markdown 编写文章，除了 Markdown 本身的语法之外，还可以使用 Hexo 提供的 <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/tag-plugins.html">标签插件</a> 来快速的插入特定形式的内容。在这篇文章中，假定你已经成功安装了 Hexo，并使用 Hexo 提供的命令创建了一个站点。</p>
+<p>你可以访问 <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">Hexo 的文档</a> 了解如何安装 Hexo</p>
+<p>在 Hexo 中有两份主要的配置文件，其名称都是 <code>_config.yml</code>。 其中，一份位于站点根目录下，主要包含 Hexo 本身的配置；另一份位于主题目录下，这份配置由主题作者提供，主要用于配置主题相关的选项。</p>
+<p>为了描述方便，在以下说明中，将前者称为 <strong>站点配置文件</strong>， 后者称为 <strong>主题配置文件</strong>。</p>
 		  
 				  
 	  
@@ -1544,7 +1596,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">语雀</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">技术分享</a>
         		</li>
       		
 		</ul>
@@ -1556,11 +1608,15 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/语雀/" class="article-tag-list-link color3">语雀</a>
+        			<a href="/categories/技术分享/" class="article-tag-list-link color5">技术分享</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="/categories/语雀/项目管理/" class="article-tag-list-link color5">项目管理</a>
+        			<a href="/categories/博客/" class="article-tag-list-link color3">博客</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/博客/hexo/" class="article-tag-list-link color5">hexo</a>
         		</li>
       		
 		</ul>
@@ -1571,7 +1627,7 @@
 	  <!-- 添加展开全文 -->
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/post/3404782e.html">展开全文 >></a>
+          <a class="article-more-a" href="/post/398792d6.html">展开全文 >></a>
         </p>
       
 	  
@@ -1640,26 +1696,26 @@
 
 
   
-    <article id="post-语雀/项目管理/2024-05-24-周计划" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-2020-08-24-home" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h2 itemprop="name">
-      <a class="article-title_code_ant" href="/post/8363cd74.html">周计划</a>
+      <a class="article-title_code_ant" href="/post/5c941858.html">家，一扇展开岁月的门</a>
     </h2>
   
 
         
 		
-		  <a href="/post/8363cd74.html" class="archive-article-date">
-  	<time datetime="2024-05-24T10:50:15.000Z" itemprop="datePublished">
+		  <a href="/post/5c941858.html" class="archive-article-date">
+  	<time datetime="2020-08-24T00:00:00.000Z" itemprop="datePublished">
 	<!-- <i class="icon-calendar icon"></i> -->
 
 	<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
 	&nbsp;
-	2024-05-24</time>
+	2020-08-24</time>
 	
 	<!-- busuanzi阅读量统计
 	
@@ -1686,7 +1742,7 @@
 	    <i class="fa fa-bar-chart" aria-hidden="true"></i>
         <!-- <i class="fa fa-keyboard-o" aria-hidden="true"></i> -->
         <span class="post-meta-item-text">字数统计: </span>
-        <span class="post-count">9字</span>
+        <span class="post-count">1k字</span>
       </span>
     </span>
 
@@ -1695,7 +1751,7 @@
       <span class="post-meta-item-icon">
 	    <i class="fa fa-pagelines" aria-hidden="true"></i>
         <span class="post-meta-item-text">阅读时长: </span>
-        <span class="post-count">1min</span>
+        <span class="post-count">3min</span>
       </span>
     </span>
 	
@@ -1710,7 +1766,8 @@
 	  <!-- 添加分类与标签 -->
 	  
 		  
-			这里有东西被加密了，需要输入密码查看哦。
+			<p>​	每逢春节和中秋的假日，人们都喜欢赶回家与家人团聚，交通运输的任务也会突然繁忙起来。来自四面八方的人朝着自己的家奔赶去，无论列车多么拥挤，路途多么遥远，路上有多么辛苦 ，回家的信念却是十分的强烈。望着熙熙攘攘往家赶的人群，我的心中对家有种强烈的特别感觉，家，这个词在人们的心中是多么具有吸引力，父母，家人，这个词在人们心中显得是那么有人情味，家，在人们心中的份量又是多么的重。</p>
+<p>
 		  
 				  
 	  
@@ -1734,7 +1791,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">语雀</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">心情随笔</a>
         		</li>
       		
 		</ul>
@@ -1746,11 +1803,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/语雀/" class="article-tag-list-link color3">语雀</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/语雀/项目管理/" class="article-tag-list-link color5">项目管理</a>
+        			<a href="/categories/心情随笔/" class="article-tag-list-link color5">心情随笔</a>
         		</li>
       		
 		</ul>
@@ -1761,7 +1814,7 @@
 	  <!-- 添加展开全文 -->
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/post/8363cd74.html">展开全文 >></a>
+          <a class="article-more-a" href="/post/5c941858.html">展开全文 >></a>
         </p>
       
 	  
@@ -1830,26 +1883,26 @@
 
 
   
-    <article id="post-语雀/项目管理/2024-05-24-安全生产事故总结报告" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-2020-07-11-autorclone-breakthrough-limit" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h2 itemprop="name">
-      <a class="article-title_code_ant" href="/post/309f0375.html">安全生产事故总结报告</a>
+      <a class="article-title_code_ant" href="/post/e2b959ee.html">AutoRclone教程:如何突破Google Drive每日750G限制？</a>
     </h2>
   
 
         
 		
-		  <a href="/post/309f0375.html" class="archive-article-date">
-  	<time datetime="2024-05-24T10:50:15.000Z" itemprop="datePublished">
+		  <a href="/post/e2b959ee.html" class="archive-article-date">
+  	<time datetime="2020-07-11T00:00:00.000Z" itemprop="datePublished">
 	<!-- <i class="icon-calendar icon"></i> -->
 
 	<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
 	&nbsp;
-	2024-05-24</time>
+	2020-07-11</time>
 	
 	<!-- busuanzi阅读量统计
 	
@@ -1876,7 +1929,7 @@
 	    <i class="fa fa-bar-chart" aria-hidden="true"></i>
         <!-- <i class="fa fa-keyboard-o" aria-hidden="true"></i> -->
         <span class="post-meta-item-text">字数统计: </span>
-        <span class="post-count">9字</span>
+        <span class="post-count">2.6k字</span>
       </span>
     </span>
 
@@ -1885,7 +1938,7 @@
       <span class="post-meta-item-icon">
 	    <i class="fa fa-pagelines" aria-hidden="true"></i>
         <span class="post-meta-item-text">阅读时长: </span>
-        <span class="post-count">1min</span>
+        <span class="post-count">10min</span>
       </span>
     </span>
 	
@@ -1900,7 +1953,15 @@
 	  <!-- 添加分类与标签 -->
 	  
 		  
-			这里有东西被加密了，需要输入密码查看哦。
+			<h2 id="AutoRclone可以干什么？"><a href="#AutoRclone可以干什么？" class="headerlink" title="AutoRclone可以干什么？"></a>AutoRclone可以干什么？</h2><p>可以方便快捷地：</p>
+<ul>
+<li>从Google Drive到Team Drive</li>
+<li>从Team Drive到Google Drive</li>
+<li>从本地到 Team Drive，</li>
+<li>从公共分享目录到 Team Drive，</li>
+<li>再或者从 Team Drive 到 Team Drive。</li>
+</ul>
+<p>换句话说，就是实现 Team Drive，Google Drive，本地之间的互拷，以及把分享的文件复制到，或者说真正地转存到自己想要的地方。</p>
 		  
 				  
 	  
@@ -1924,7 +1985,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">语雀</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">技术分享</a>
         		</li>
       		
 		</ul>
@@ -1936,11 +1997,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/语雀/" class="article-tag-list-link color3">语雀</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/语雀/项目管理/" class="article-tag-list-link color5">项目管理</a>
+        			<a href="/categories/技术分享/" class="article-tag-list-link color5">技术分享</a>
         		</li>
       		
 		</ul>
@@ -1951,7 +2008,7 @@
 	  <!-- 添加展开全文 -->
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/post/309f0375.html">展开全文 >></a>
+          <a class="article-more-a" href="/post/e2b959ee.html">展开全文 >></a>
         </p>
       
 	  
@@ -2020,26 +2077,26 @@
 
 
   
-    <article id="post-语雀/项目管理/2024-05-24-实施知识体系建立" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-2020-07-05-Google Drive-Treasure chest" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h2 itemprop="name">
-      <a class="article-title_code_ant" href="/post/17eb6fa5.html">实施知识体系建立</a>
+      <a class="article-title_code_ant" href="/post/ae8d3e92.html">Google Drive 百宝箱</a>
     </h2>
   
 
         
 		
-		  <a href="/post/17eb6fa5.html" class="archive-article-date">
-  	<time datetime="2024-05-24T10:50:15.000Z" itemprop="datePublished">
+		  <a href="/post/ae8d3e92.html" class="archive-article-date">
+  	<time datetime="2020-07-05T00:00:00.000Z" itemprop="datePublished">
 	<!-- <i class="icon-calendar icon"></i> -->
 
 	<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
 	&nbsp;
-	2024-05-24</time>
+	2020-07-05</time>
 	
 	<!-- busuanzi阅读量统计
 	
@@ -2066,7 +2123,7 @@
 	    <i class="fa fa-bar-chart" aria-hidden="true"></i>
         <!-- <i class="fa fa-keyboard-o" aria-hidden="true"></i> -->
         <span class="post-meta-item-text">字数统计: </span>
-        <span class="post-count">9字</span>
+        <span class="post-count">3.2k字</span>
       </span>
     </span>
 
@@ -2075,7 +2132,7 @@
       <span class="post-meta-item-icon">
 	    <i class="fa fa-pagelines" aria-hidden="true"></i>
         <span class="post-meta-item-text">阅读时长: </span>
-        <span class="post-count">1min</span>
+        <span class="post-count">13min</span>
       </span>
     </span>
 	
@@ -2090,7 +2147,19 @@
 	  <!-- 添加分类与标签 -->
 	  
 		  
-			这里有东西被加密了，需要输入密码查看哦。
+			<p><img src="http://jiangjiawei.epizy.com/wp-content/uploads/2020/06/u3207433114120194597fm26gp0.png" alt="img"></p>
+<p>原项目地址：<a href="https://github.com/iwestlin/gd-utils">gd-utils</a></p>
+<p>转载:<a target="_blank" rel="noopener" href="https://www.ikarosone.top/archives/195.html">ikarosone</a></p>
+<h3 id="功能简介-原文"><a href="#功能简介-原文" class="headerlink" title="功能简介(原文)"></a>功能简介(原文)</h3><h5 id="本工具目前支持以下功能："><a href="#本工具目前支持以下功能：" class="headerlink" title="本工具目前支持以下功能："></a>本工具目前支持以下功能：</h5><ul>
+<li><p>统计任意（您拥有相关权限的，下同，不再赘述）目录的文件信息，且支持以各种形式（html, table, json）导出。<br>支持中断恢复，且统计过的目录（包括其所有子孙目录）信息会记录在本地数据库文件中（gdurl.sqlite） 请在本项目目录下命令行输入 <em>.&#x2F;count -h</em> 查看使用帮助</p>
+</li>
+<li><p>拷贝任意目录所有文件到您指定目录，同样支持中断恢复。 支持根据文件大小过滤，可输入 <em>.&#x2F;copy -h</em> 查看使用帮助</p>
+</li>
+<li><p>对任意目录进行去重，删除同一目录下的md5值相同的文件（只保留一个），删除空目录。 命令行输入 <em>.&#x2F;dedupe -h</em> 查看使用帮助</p>
+</li>
+<li><p>在 config.js 里完成相关配置后，可以将本项目部署在（可正常访问谷歌服务的）服务器上，提供 http api 文件统计接口</p>
+</li>
+<li><p>支持 telegram bot，配置完成后，上述功能均可通过 bot 进行操作</p>
 		  
 				  
 	  
@@ -2114,7 +2183,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">语雀</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">技术分享</a>
         		</li>
       		
 		</ul>
@@ -2126,11 +2195,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/语雀/" class="article-tag-list-link color3">语雀</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/语雀/项目管理/" class="article-tag-list-link color5">项目管理</a>
+        			<a href="/categories/技术分享/" class="article-tag-list-link color5">技术分享</a>
         		</li>
       		
 		</ul>
@@ -2141,7 +2206,7 @@
 	  <!-- 添加展开全文 -->
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/post/17eb6fa5.html">展开全文 >></a>
+          <a class="article-more-a" href="/post/ae8d3e92.html">展开全文 >></a>
         </p>
       
 	  
@@ -2212,7 +2277,7 @@
   
   
     <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/page/4/">&lt;&lt; 上一页</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><span class="page-number current">5</span><a class="page-number" href="/page/6/">6</a><a class="page-number" href="/page/7/">7</a><span class="space">&hellip;</span><a class="page-number" href="/page/65/">65</a><a class="extend next" rel="next" href="/page/6/">下一页 &gt;&gt;</a>
+      <a class="extend prev" rel="prev" href="/page/4/">&lt;&lt; 上一页</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><span class="page-number current">5</span><a class="page-number" href="/page/6/">6</a><a class="extend next" rel="next" href="/page/6/">下一页 &gt;&gt;</a>
     </nav>
   
 
@@ -2264,10 +2329,10 @@ window.MathJax = {
 	  <br>
 	  <div class="footer-center">
 	    <i class="fa fa-file-word-o" aria-hidden="true"></i>
-		<span> 641 篇</span>
+		<span> 54 篇</span>
 		<span class="post-meta-divider">|</span>
 		<i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-		<span> <span class="post-count">96.1k</span></span>
+		<span> <span class="post-count">90.8k</span></span>
       </div>
 	  
 	  <!-- 添加不蒜子统计 -->
@@ -2596,15 +2661,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">python</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">docker</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">语雀</a>
+                <a href="javascript:void(0)" class="js-tag color2">python</a>
               </li>
             
             <div class="clearfix"></div>
