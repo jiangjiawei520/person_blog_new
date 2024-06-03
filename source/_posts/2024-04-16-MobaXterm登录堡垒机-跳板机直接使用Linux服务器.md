@@ -1,3 +1,4 @@
+---
 title: MobaXterm登录堡垒机/跳板机直接使用Linux/Windows服务器
 tag:
   - MobaXterm
@@ -16,11 +17,7 @@ no_share: false
 no_footer: false
 mathjax: false
 typora-root-url: ./..
-abbrlink: 81cbb71e
-tags:
-  - MobaXterm
-  - shell
-author: ''
+abbrlink: 
 date: 2024-04-16 09:16:00
 top:
 ---
