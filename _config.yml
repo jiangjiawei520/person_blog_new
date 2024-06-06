@@ -80,8 +80,8 @@ index_generator:
   #order_by: -date
   # top值-1表示根据top值倒序（正序设置为1即可），同样date也是根据创建日期倒序。
   order_by:
-    top: -1
-    date: -1
+    top: 1
+    date: 1
 
 # Category & Tag
 default_category: uncategorized
