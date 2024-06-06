@@ -310,26 +310,26 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-2024-04-31-日常更新记录" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-2024-04-02-hexo使用笔记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h2 itemprop="name">
-      <a class="article-title_code_ant" href="/post/49a13fa5.html">日常更新记录</a>
+      <a class="article-title_code_ant" href="/post/f431f6d.html">hexo使用笔记</a>
     </h2>
   
 
         
 		
-		  <a href="/post/49a13fa5.html" class="archive-article-date">
-  	<time datetime="2024-05-01T09:52:15.000Z" itemprop="datePublished">
+		  <a href="/post/f431f6d.html" class="archive-article-date">
+  	<time datetime="2024-04-02T10:45:50.000Z" itemprop="datePublished">
 	<!-- <i class="icon-calendar icon"></i> -->
 
 	<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
 	&nbsp;
-	2024-05-01</time>
+	2024-04-02</time>
 	
 	<!-- busuanzi阅读量统计
 	
@@ -356,7 +356,7 @@
 	    <i class="fa fa-bar-chart" aria-hidden="true"></i>
         <!-- <i class="fa fa-keyboard-o" aria-hidden="true"></i> -->
         <span class="post-meta-item-text">字数统计: </span>
-        <span class="post-count">3k字</span>
+        <span class="post-count">8.5k字</span>
       </span>
     </span>
 
@@ -365,7 +365,7 @@
       <span class="post-meta-item-icon">
 	    <i class="fa fa-pagelines" aria-hidden="true"></i>
         <span class="post-meta-item-text">阅读时长: </span>
-        <span class="post-count">16min</span>
+        <span class="post-count">35min</span>
       </span>
     </span>
 	
@@ -380,240 +380,32 @@
 	  <!-- 添加分类与标签 -->
 	  
 		  
-		  <h2 id="2024年"><a href="#2024年" class="headerlink" title="2024年"></a>2024年</h2><h3 id="5月"><a href="#5月" class="headerlink" title="5月"></a>5月</h3><h4 id="2024年5月31日"><a href="#2024年5月31日" class="headerlink" title="2024年5月31日"></a>2024年5月31日</h4><ul>
-<li><input checked="" disabled="" type="checkbox"> 1、办公流程粤政易消息模版整改（禅道5969）</li>
-<li><input checked="" disabled="" type="checkbox"> 2、办公管理之荣誉奖项需求调整（禅道5970）</li>
-<li><input checked="" disabled="" type="checkbox"> 3、管理制度增加文件名称查重功能（禅道5971）</li>
-<li><input checked="" disabled="" type="checkbox"> 4、《数据提取备案申请》数据详情字段信息问题修复（禅道6011）</li>
-<li><input disabled="" type="checkbox"> 5、OA流程我的已办新增《台账导出》功能（禅道5972）–&gt;自己发给自己，会导出（待办+已办+抄送）</li>
-<li><input checked="" disabled="" type="checkbox"> 6、待办箱和抄送箱信息完善【区分已阅和未阅】（禅道5883）</li>
-<li><input checked="" disabled="" type="checkbox"> 7、数据提取备案数据内容表单项输入方式变更为文本域类型</li>
-<li><input disabled="" type="checkbox"> 8、数据质检报告，错误明细excel与gdb增加时间戳。</li>
-<li><input disabled="" type="checkbox"> 9、图层数据更新功能（数据中台）</li>
+			<h2 id="按照模版创建-md"><a href="#按照模版创建-md" class="headerlink" title="按照模版创建 md"></a>按照模版创建 md</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>layout 是文章的布局，在 scaffolds 中，默认为 post，可以先不写，其他的有 page、draft 等</li>
+<li>Hexo 有三种默认布局：<code>post</code>、<code>page</code> 和 <code>draft</code> 在创建者三种不同类型的文件时，它们将会被保存到不同的路径。</li>
 </ul>
-<h5 id="办公流程粤政易消息模版整改"><a href="#办公流程粤政易消息模版整改" class="headerlink" title="办公流程粤政易消息模版整改"></a><strong>办公流程粤政易消息模版整改</strong></h5><h6 id="配置文件修改"><a href="#配置文件修改" class="headerlink" title="配置文件修改"></a>配置文件修改</h6><p>需要再apollo放开端口，否没有权限401</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># geo-zhglpt-springboot-1.0.0.jar的application.properties</span><br><span class="line"># 配置文件添加配置（测试环境ip172.16.2.68，生产ip172.16.2.75）</span><br><span class="line"># 综管平台用戶接口</span><br><span class="line">userSystem.getOauthidUrl = http://172.16.2.75:9000/user/user-system/secUser/selectOauthidByUserId</span><br><span class="line"># 粤政易模版接口</span><br><span class="line">newPortal.templateUrl =http://172.16.2.75:9000/findApp/commonApply/getMsgTemplate</span><br></pre></td></tr></table></figure>
-
-<h6 id="sql"><a href="#sql" class="headerlink" title="sql"></a>sql</h6><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ALTER TABLE sjzx.bgzx_business_apply_info ADD biz_id varchar(36) NULL COMMENT &#x27;业务id&#x27;; </span><br><span class="line">ALTER TABLE sjzx.bgzx_business_apply_info CHANGE biz_id biz_id varchar(36) NULL COMMENT &#x27;业务id&#x27; AFTER process_instance_title; UPDATE sjzx.bgzx_business_apply_info SET biz_id = JSON_UNQUOTE(JSON_EXTRACT(process_business_json, &#x27;$.formId&#x27;));</span><br></pre></td></tr></table></figure>
-
-<h6 id="后端包"><a href="#后端包" class="headerlink" title="后端包"></a>后端包</h6><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">\\172.16.2.52\00\综管平台更新\202405281405\new-portal-1.0.jar</span><br><span class="line">\\172.16.2.52\00\综管平台更新\202405281405\geo-zhglpt-springboot-1.0.0.jar</span><br></pre></td></tr></table></figure>
-
-<h5 id="办公管理之荣誉奖项需求调整"><a href="#办公管理之荣誉奖项需求调整" class="headerlink" title="办公管理之荣誉奖项需求调整"></a><strong>办公管理之荣誉奖项需求调整</strong></h5><h6 id="字典调整"><a href="#字典调整" class="headerlink" title="字典调整"></a>字典调整</h6><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">荣誉奖项类型</span><br></pre></td></tr></table></figure>
-
-<h5 id="管理制度增加文件名称查重功能"><a href="#管理制度增加文件名称查重功能" class="headerlink" title="管理制度增加文件名称查重功能"></a>管理制度增加文件名称查重功能</h5><h5 id="《数据提取备案申请》数据详情字段信息问题修复"><a href="#《数据提取备案申请》数据详情字段信息问题修复" class="headerlink" title="《数据提取备案申请》数据详情字段信息问题修复"></a>《数据提取备案申请》数据详情字段信息问题修复</h5><h6 id="sql-1"><a href="#sql-1" class="headerlink" title="sql"></a>sql</h6><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ALTER TABLE `zgpt_data_content` </span><br><span class="line">ADD COLUMN `number` int(8) NULL COMMENT &#x27;份数&#x27; AFTER `unit`;</span><br></pre></td></tr></table></figure>
-
-
-
-<h5 id="OA流程我的已办新增《台账导出》功能"><a href="#OA流程我的已办新增《台账导出》功能" class="headerlink" title="OA流程我的已办新增《台账导出》功能"></a>OA流程我的已办新增《台账导出》功能</h5><h5 id="我的待办-我的已办-添加未读标记"><a href="#我的待办-我的已办-添加未读标记" class="headerlink" title="[我的待办&#x2F;我的已办]添加未读标记"></a>[我的待办&#x2F;我的已办]添加未读标记</h5><h6 id="sql-2"><a href="#sql-2" class="headerlink" title="sql"></a>sql</h6><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ALTER TABLE process_instance_info ADD COLUMN read_flag char(1) DEFAULT &#x27;N&#x27;;</span><br><span class="line"></span><br><span class="line">ALTER TABLE process_instance_info </span><br><span class="line">MODIFY COLUMN `read_flag` char(1) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT &#x27;N&#x27; COMMENT &#x27;是否已读（N-否，Y-是）&#x27; AFTER `handle_status`;</span><br></pre></td></tr></table></figure>
-
-
-
-<h6 id="数据处理"><a href="#数据处理" class="headerlink" title="数据处理"></a>数据处理</h6><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">处理之前的数据为已阅</span><br><span class="line"></span><br><span class="line">select * from process_instance_info where  read_flag=&#x27;N&#x27;</span><br><span class="line">update process_instance_info set read_flag=&#x27;Y&#x27; where read_flag=&#x27;N&#x27;</span><br></pre></td></tr></table></figure>
-
-<h6 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h6><p><img src="/../imgs/image-20240531183133323.png" alt="image-20240531183133323"></p>
-<h5 id="数据提取备案数据内容表单项输入方式变更为文本域类型"><a href="#数据提取备案数据内容表单项输入方式变更为文本域类型" class="headerlink" title="数据提取备案数据内容表单项输入方式变更为文本域类型"></a>数据提取备案数据内容表单项输入方式变更为文本域类型</h5><h5 id="图层数据更新功能（数据中台）"><a href="#图层数据更新功能（数据中台）" class="headerlink" title="图层数据更新功能（数据中台）"></a>图层数据更新功能（数据中台）</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># 数据版本更新定时任务配置</span><br><span class="line">geo.scheduled.enable = true</span><br><span class="line">geo.scheduled。fixedDelay = 5000</span><br></pre></td></tr></table></figure>
-
-
-
-<p>菜单、字典配置</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
-
-
-
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br></pre></td><td class="code"><pre><span class="line">/*</span><br><span class="line"> Navicat Premium Data Transfer</span><br><span class="line"></span><br><span class="line"> Source Server         : 192.168.101.160</span><br><span class="line"> Source Server Type    : PostgreSQL</span><br><span class="line"> Source Server Version : 120001</span><br><span class="line"> Source Host           : 192.168.101.160:54321</span><br><span class="line"> Source Catalog        : zhglpt</span><br><span class="line"> Source Schema         : public</span><br><span class="line"></span><br><span class="line"> Target Server Type    : PostgreSQL</span><br><span class="line"> Target Server Version : 120001</span><br><span class="line"> File Encoding         : 65001</span><br><span class="line"></span><br><span class="line"> Date: 28/05/2024 17:28:17</span><br><span class="line">*/</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">-- ----------------------------</span><br><span class="line">-- Table structure for data_update_layer</span><br><span class="line">-- ----------------------------</span><br><span class="line">DROP TABLE IF EXISTS &quot;public&quot;.&quot;data_update_layer&quot;;</span><br><span class="line">CREATE TABLE &quot;public&quot;.&quot;data_update_layer&quot; (</span><br><span class="line">  &quot;id&quot; varchar(50) COLLATE &quot;pg_catalog&quot;.&quot;default&quot; NOT NULL,</span><br><span class="line">  &quot;project_id&quot; varchar(50) COLLATE &quot;pg_catalog&quot;.&quot;default&quot; NOT NULL,</span><br><span class="line">  &quot;name&quot; varchar(50) COLLATE &quot;pg_catalog&quot;.&quot;default&quot; NOT NULL,</span><br><span class="line">  &quot;alias&quot; varchar(50) COLLATE &quot;pg_catalog&quot;.&quot;default&quot;,</span><br><span class="line">  &quot;geometry_type&quot; varchar(50) COLLATE &quot;pg_catalog&quot;.&quot;default&quot; NOT NULL,</span><br><span class="line">  &quot;type&quot; int4 NOT NULL,</span><br><span class="line">  &quot;adjust_layer_filter&quot; varchar(255) COLLATE &quot;pg_catalog&quot;.&quot;default&quot;,</span><br><span class="line">  &quot;adjust_field_map&quot; varchar(255) COLLATE &quot;pg_catalog&quot;.&quot;default&quot;,</span><br><span class="line">  &quot;sort&quot; int4 NOT NULL,</span><br><span class="line">  &quot;create_time&quot; &quot;sys&quot;.&quot;date&quot; NOT NULL,</span><br><span class="line">  &quot;update_time&quot; &quot;sys&quot;.&quot;date&quot; NOT NULL</span><br><span class="line">)</span><br><span class="line">;</span><br><span class="line">COMMENT ON COLUMN &quot;public&quot;.&quot;data_update_layer&quot;.&quot;id&quot; IS &#x27;图层ID&#x27;;</span><br><span class="line">COMMENT ON COLUMN &quot;public&quot;.&quot;data_update_layer&quot;.&quot;project_id&quot; IS &#x27;数据更新方案ID&#x27;;</span><br><span class="line">COMMENT ON COLUMN &quot;public&quot;.&quot;data_update_layer&quot;.&quot;name&quot; IS &#x27;图层名称&#x27;;</span><br><span class="line">COMMENT ON COLUMN &quot;public&quot;.&quot;data_update_layer&quot;.&quot;alias&quot; IS &#x27;图层别名&#x27;;</span><br><span class="line">COMMENT ON COLUMN &quot;public&quot;.&quot;data_update_layer&quot;.&quot;geometry_type&quot; IS &#x27;图形类型&#x27;;</span><br><span class="line">COMMENT ON COLUMN &quot;public&quot;.&quot;data_update_layer&quot;.&quot;type&quot; IS &#x27;图层类型，值可为：1（更新图层）、2（调整图层）、3（更新过程图层）&#x27;;</span><br><span class="line">COMMENT ON COLUMN &quot;public&quot;.&quot;data_update_layer&quot;.&quot;adjust_layer_filter&quot; IS &#x27;调整图层要素筛选条件，此字段值在type为2时有效&#x27;;</span><br><span class="line">COMMENT ON COLUMN &quot;public&quot;.&quot;data_update_layer&quot;.&quot;adjust_field_map&quot; IS &#x27;调整图层查询字段与更新图层字段匹配配置&#x27;;</span><br><span class="line">COMMENT ON COLUMN &quot;public&quot;.&quot;data_update_layer&quot;.&quot;sort&quot; IS &#x27;显示顺序&#x27;;</span><br><span class="line">COMMENT ON COLUMN &quot;public&quot;.&quot;data_update_layer&quot;.&quot;create_time&quot; IS &#x27;记录创建时间&#x27;;</span><br><span class="line">COMMENT ON COLUMN &quot;public&quot;.&quot;data_update_layer&quot;.&quot;update_time&quot; IS &#x27;记录更新时间&#x27;;</span><br><span class="line">COMMENT ON TABLE &quot;public&quot;.&quot;data_update_layer&quot; IS &#x27;数据图层信息表&#x27;;</span><br><span class="line"></span><br><span class="line">-- ----------------------------</span><br><span class="line">-- Table structure for data_update_layer_field</span><br><span class="line">-- ----------------------------</span><br><span class="line">DROP TABLE IF EXISTS &quot;public&quot;.&quot;data_update_layer_field&quot;;</span><br><span class="line">CREATE TABLE &quot;public&quot;.&quot;data_update_layer_field&quot; (</span><br><span class="line">  &quot;id&quot; varchar(50) COLLATE &quot;pg_catalog&quot;.&quot;default&quot; NOT NULL,</span><br><span class="line">  &quot;layer_id&quot; varchar(50) COLLATE &quot;pg_catalog&quot;.&quot;default&quot; NOT NULL,</span><br><span class="line">  &quot;name&quot; varchar(255) COLLATE &quot;pg_catalog&quot;.&quot;default&quot; NOT NULL,</span><br><span class="line">  &quot;alias&quot; varchar(255) COLLATE &quot;pg_catalog&quot;.&quot;default&quot;,</span><br><span class="line">  &quot;type&quot; varchar(50) COLLATE &quot;pg_catalog&quot;.&quot;default&quot; NOT NULL,</span><br><span class="line">  &quot;length&quot; varchar(50) COLLATE &quot;pg_catalog&quot;.&quot;default&quot;,</span><br><span class="line">  &quot;nullable&quot; bool NOT NULL,</span><br><span class="line">  &quot;pk&quot; bool NOT NULL,</span><br><span class="line">  &quot;sort&quot; int4 NOT NULL,</span><br><span class="line">  &quot;create_time&quot; &quot;sys&quot;.&quot;date&quot; NOT NULL,</span><br><span class="line">  &quot;update_time&quot; &quot;sys&quot;.&quot;date&quot; NOT NULL</span><br><span class="line">)</span><br><span class="line">;</span><br><span class="line">COMMENT ON COLUMN &quot;public&quot;.&quot;data_update_layer_field&quot;.&quot;id&quot; IS &#x27;字段ID&#x27;;</span><br><span class="line">COMMENT ON COLUMN &quot;public&quot;.&quot;data_update_layer_field&quot;.&quot;layer_id&quot; IS &#x27;图层ID&#x27;;</span><br><span class="line">COMMENT ON COLUMN &quot;public&quot;.&quot;data_update_layer_field&quot;.&quot;name&quot; IS &#x27;字段名称&#x27;;</span><br><span class="line">COMMENT ON COLUMN &quot;public&quot;.&quot;data_update_layer_field&quot;.&quot;alias&quot; IS &#x27;字段别名&#x27;;</span><br><span class="line">COMMENT ON COLUMN &quot;public&quot;.&quot;data_update_layer_field&quot;.&quot;type&quot; IS &#x27;字段类型，值包括：String、SmallInteger、Integer、Single、Double、Date、Blob&#x27;;</span><br><span class="line">COMMENT ON COLUMN &quot;public&quot;.&quot;data_update_layer_field&quot;.&quot;length&quot; IS &#x27;字段长度&#x27;;</span><br><span class="line">COMMENT ON COLUMN &quot;public&quot;.&quot;data_update_layer_field&quot;.&quot;nullable&quot; IS &#x27;是否可为空值&#x27;;</span><br><span class="line">COMMENT ON COLUMN &quot;public&quot;.&quot;data_update_layer_field&quot;.&quot;pk&quot; IS &#x27;是否为主键&#x27;;</span><br><span class="line">COMMENT ON COLUMN &quot;public&quot;.&quot;data_update_layer_field&quot;.&quot;sort&quot; IS &#x27;显示顺序&#x27;;</span><br><span class="line">COMMENT ON COLUMN &quot;public&quot;.&quot;data_update_layer_field&quot;.&quot;create_time&quot; IS &#x27;记录创建时间&#x27;;</span><br><span class="line">COMMENT ON COLUMN &quot;public&quot;.&quot;data_update_layer_field&quot;.&quot;update_time&quot; IS &#x27;记录更新时间&#x27;;</span><br><span class="line">COMMENT ON TABLE &quot;public&quot;.&quot;data_update_layer_field&quot; IS &#x27;图层字段信息表&#x27;;</span><br><span class="line"></span><br><span class="line">-- ----------------------------</span><br><span class="line">-- Table structure for data_update_project</span><br><span class="line">-- ----------------------------</span><br><span class="line">DROP TABLE IF EXISTS &quot;public&quot;.&quot;data_update_project&quot;;</span><br><span class="line">CREATE TABLE &quot;public&quot;.&quot;data_update_project&quot; (</span><br><span class="line">  &quot;id&quot; varchar(50) COLLATE &quot;pg_catalog&quot;.&quot;default&quot; NOT NULL,</span><br><span class="line">  &quot;name&quot; varchar(255) COLLATE &quot;pg_catalog&quot;.&quot;default&quot; NOT NULL,</span><br><span class="line">  &quot;lastest_data_source_id&quot; varchar(50) COLLATE &quot;pg_catalog&quot;.&quot;default&quot; NOT NULL,</span><br><span class="line">  &quot;process_data_source_id&quot; varchar(50) COLLATE &quot;pg_catalog&quot;.&quot;default&quot; NOT NULL,</span><br><span class="line">  &quot;history_data_source_id&quot; varchar(50) COLLATE &quot;pg_catalog&quot;.&quot;default&quot; NOT NULL,</span><br><span class="line">  &quot;layer_store_type&quot; int4 NOT NULL,</span><br><span class="line">  &quot;push_type&quot; int4 NOT NULL,</span><br><span class="line">  &quot;push_data_source_id&quot; varchar(50) COLLATE &quot;pg_catalog&quot;.&quot;default&quot;,</span><br><span class="line">  &quot;push_layer_name&quot; varchar(255) COLLATE &quot;pg_catalog&quot;.&quot;default&quot;,</span><br><span class="line">  &quot;deleted&quot; bool NOT NULL DEFAULT false,</span><br><span class="line">  &quot;create_time&quot; &quot;sys&quot;.&quot;date&quot; NOT NULL,</span><br><span class="line">  &quot;update_time&quot; &quot;sys&quot;.&quot;date&quot; NOT NULL</span><br><span class="line">)</span><br><span class="line">;</span><br><span class="line">COMMENT ON COLUMN &quot;public&quot;.&quot;data_update_project&quot;.&quot;id&quot; IS &#x27;数据更新方案ID&#x27;;</span><br><span class="line">COMMENT ON COLUMN &quot;public&quot;.&quot;data_update_project&quot;.&quot;name&quot; IS &#x27;数据更新方案名称&#x27;;</span><br><span class="line">COMMENT ON COLUMN &quot;public&quot;.&quot;data_update_project&quot;.&quot;lastest_data_source_id&quot; IS &#x27;最新库数据源Id&#x27;;</span><br><span class="line">COMMENT ON COLUMN &quot;public&quot;.&quot;data_update_project&quot;.&quot;process_data_source_id&quot; IS &#x27;更新过程库数据源Id&#x27;;</span><br><span class="line">COMMENT ON COLUMN &quot;public&quot;.&quot;data_update_project&quot;.&quot;history_data_source_id&quot; IS &#x27;历史库数据源Id&#x27;;</span><br><span class="line">COMMENT ON COLUMN &quot;public&quot;.&quot;data_update_project&quot;.&quot;layer_store_type&quot; IS &#x27;图层存放方式，值可为：1（分区县存放与省级汇总）、2（单图层）&#x27;;</span><br><span class="line">COMMENT ON COLUMN &quot;public&quot;.&quot;data_update_project&quot;.&quot;push_type&quot; IS &#x27;数据推送方式，值可为：1（无）、2（更新后立即推送）、3（手动推送）&#x27;;</span><br><span class="line">COMMENT ON COLUMN &quot;public&quot;.&quot;data_update_project&quot;.&quot;push_data_source_id&quot; IS &#x27;推送目标图层所在数据源Id&#x27;;</span><br><span class="line">COMMENT ON COLUMN &quot;public&quot;.&quot;data_update_project&quot;.&quot;push_layer_name&quot; IS &#x27;推送目标图层名称&#x27;;</span><br><span class="line">COMMENT ON COLUMN &quot;public&quot;.&quot;data_update_project&quot;.&quot;deleted&quot; IS &#x27;是否已删除，默认为false&#x27;;</span><br><span class="line">COMMENT ON COLUMN &quot;public&quot;.&quot;data_update_project&quot;.&quot;create_time&quot; IS &#x27;记录创建时间&#x27;;</span><br><span class="line">COMMENT ON COLUMN &quot;public&quot;.&quot;data_update_project&quot;.&quot;update_time&quot; IS &#x27;记录更新时间&#x27;;</span><br><span class="line">COMMENT ON TABLE &quot;public&quot;.&quot;data_update_project&quot; IS &#x27;数据更新方案表&#x27;;</span><br><span class="line"></span><br><span class="line">-- ----------------------------</span><br><span class="line">-- Table structure for data_update_task</span><br><span class="line">-- ----------------------------</span><br><span class="line">DROP TABLE IF EXISTS &quot;public&quot;.&quot;data_update_task&quot;;</span><br><span class="line">CREATE TABLE &quot;public&quot;.&quot;data_update_task&quot; (</span><br><span class="line">  &quot;id&quot; varchar(50) COLLATE &quot;pg_catalog&quot;.&quot;default&quot; NOT NULL,</span><br><span class="line">  &quot;name&quot; varchar(50) COLLATE &quot;pg_catalog&quot;.&quot;default&quot;,</span><br><span class="line">  &quot;project_id&quot; varchar(50) COLLATE &quot;pg_catalog&quot;.&quot;default&quot; NOT NULL,</span><br><span class="line">  &quot;version_id&quot; varchar(50) COLLATE &quot;pg_catalog&quot;.&quot;default&quot; NOT NULL,</span><br><span class="line">  &quot;type&quot; int4 NOT NULL,</span><br><span class="line">  &quot;status&quot; int4 NOT NULL,</span><br><span class="line">  &quot;jszx_taskid&quot; varchar(50) COLLATE &quot;pg_catalog&quot;.&quot;default&quot;,</span><br><span class="line">  &quot;weight&quot; int4,</span><br><span class="line">  &quot;create_time&quot; &quot;sys&quot;.&quot;date&quot; NOT NULL,</span><br><span class="line">  &quot;update_time&quot; &quot;sys&quot;.&quot;date&quot; NOT NULL</span><br><span class="line">)</span><br><span class="line">;</span><br><span class="line">COMMENT ON COLUMN &quot;public&quot;.&quot;data_update_task&quot;.&quot;id&quot; IS &#x27;任务ID&#x27;;</span><br><span class="line">COMMENT ON COLUMN &quot;public&quot;.&quot;data_update_task&quot;.&quot;name&quot; IS &#x27;任务名称&#x27;;</span><br><span class="line">COMMENT ON COLUMN &quot;public&quot;.&quot;data_update_task&quot;.&quot;project_id&quot; IS &#x27;数据更新方案Id&#x27;;</span><br><span class="line">COMMENT ON COLUMN &quot;public&quot;.&quot;data_update_task&quot;.&quot;version_id&quot; IS &#x27;版本号&#x27;;</span><br><span class="line">COMMENT ON COLUMN &quot;public&quot;.&quot;data_update_task&quot;.&quot;type&quot; IS &#x27;任务类型，值可为：11（更新）、12（更新回滚）、13（更新回退）、14（更新回退回滚）、21（推送）、22（推送回滚）、23（推送回退）、24（推送回退回滚）&#x27;;</span><br><span class="line">COMMENT ON COLUMN &quot;public&quot;.&quot;data_update_task&quot;.&quot;status&quot; IS &#x27;任务状态，值可为：1（排队中）、2（执行中）、3（执行成功）、4（执行失败）&#x27;;</span><br><span class="line">COMMENT ON COLUMN &quot;public&quot;.&quot;data_update_task&quot;.&quot;jszx_taskid&quot; IS &#x27;计算中心任务Id&#x27;;</span><br><span class="line">COMMENT ON COLUMN &quot;public&quot;.&quot;data_update_task&quot;.&quot;weight&quot; IS &#x27;任务执行权重，用于控制排队任务执行优先级，值越大越优先执行。回滚类型的任务优先级最高&#x27;;</span><br><span class="line">COMMENT ON COLUMN &quot;public&quot;.&quot;data_update_task&quot;.&quot;create_time&quot; IS &#x27;记录创建时间&#x27;;</span><br><span class="line">COMMENT ON COLUMN &quot;public&quot;.&quot;data_update_task&quot;.&quot;update_time&quot; IS &#x27;记录创建时间&#x27;;</span><br><span class="line">COMMENT ON TABLE &quot;public&quot;.&quot;data_update_task&quot; IS &#x27;数据更新任务表&#x27;;</span><br><span class="line"></span><br><span class="line">-- ----------------------------</span><br><span class="line">-- Table structure for data_update_version_status_log</span><br><span class="line">-- ----------------------------</span><br><span class="line">DROP TABLE IF EXISTS &quot;public&quot;.&quot;data_update_version_status_log&quot;;</span><br><span class="line">CREATE TABLE &quot;public&quot;.&quot;data_update_version_status_log&quot; (</span><br><span class="line">  &quot;id&quot; varchar(50) COLLATE &quot;pg_catalog&quot;.&quot;default&quot; NOT NULL,</span><br><span class="line">  &quot;version_id&quot; varchar(50) COLLATE &quot;pg_catalog&quot;.&quot;default&quot; NOT NULL,</span><br><span class="line">  &quot;status_type&quot; int4 NOT NULL,</span><br><span class="line">  &quot;status&quot; int4 NOT NULL,</span><br><span class="line">  &quot;remark&quot; varchar(1000) COLLATE &quot;pg_catalog&quot;.&quot;default&quot;,</span><br><span class="line">  &quot;create_time&quot; &quot;sys&quot;.&quot;date&quot; NOT NULL</span><br><span class="line">)</span><br><span class="line">;</span><br><span class="line">COMMENT ON COLUMN &quot;public&quot;.&quot;data_update_version_status_log&quot;.&quot;id&quot; IS &#x27;日志ID&#x27;;</span><br><span class="line">COMMENT ON COLUMN &quot;public&quot;.&quot;data_update_version_status_log&quot;.&quot;version_id&quot; IS &#x27;版本号&#x27;;</span><br><span class="line">COMMENT ON COLUMN &quot;public&quot;.&quot;data_update_version_status_log&quot;.&quot;status_type&quot; IS &#x27;版本类型，1为更新状态，2为推送状态&#x27;;</span><br><span class="line">COMMENT ON COLUMN &quot;public&quot;.&quot;data_update_version_status_log&quot;.&quot;status&quot; IS &#x27;具体状态，根据status_type不同，对应更新状态或者推送状态具体值&#x27;;</span><br><span class="line">COMMENT ON COLUMN &quot;public&quot;.&quot;data_update_version_status_log&quot;.&quot;remark&quot; IS &#x27;状态变化说明&#x27;;</span><br><span class="line">COMMENT ON COLUMN &quot;public&quot;.&quot;data_update_version_status_log&quot;.&quot;create_time&quot; IS &#x27;记录创建时间&#x27;;</span><br><span class="line">COMMENT ON TABLE &quot;public&quot;.&quot;data_update_version_status_log&quot; IS &#x27;数据版本状态变化日志表&#x27;;</span><br><span class="line"></span><br><span class="line">-- ----------------------------</span><br><span class="line">-- Indexes structure for table data_update_layer</span><br><span class="line">-- ----------------------------</span><br><span class="line">CREATE INDEX &quot;layer_project_id_idx&quot; ON &quot;public&quot;.&quot;data_update_layer&quot; USING btree (</span><br><span class="line">  &quot;project_id&quot; COLLATE &quot;pg_catalog&quot;.&quot;default&quot; &quot;pg_catalog&quot;.&quot;text_ops&quot; ASC NULLS LAST</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line">-- ----------------------------</span><br><span class="line">-- Primary Key structure for table data_update_layer</span><br><span class="line">-- ----------------------------</span><br><span class="line">ALTER TABLE &quot;public&quot;.&quot;data_update_layer&quot; ADD CONSTRAINT &quot;data_update_layer_pkey&quot; PRIMARY KEY (&quot;id&quot;);</span><br><span class="line"></span><br><span class="line">-- ----------------------------</span><br><span class="line">-- Indexes structure for table data_update_layer_field</span><br><span class="line">-- ----------------------------</span><br><span class="line">CREATE INDEX &quot;layer_field_layer_id_idx&quot; ON &quot;public&quot;.&quot;data_update_layer_field&quot; USING btree (</span><br><span class="line">  &quot;layer_id&quot; COLLATE &quot;pg_catalog&quot;.&quot;default&quot; &quot;pg_catalog&quot;.&quot;text_ops&quot; ASC NULLS LAST</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line">-- ----------------------------</span><br><span class="line">-- Primary Key structure for table data_update_layer_field</span><br><span class="line">-- ----------------------------</span><br><span class="line">ALTER TABLE &quot;public&quot;.&quot;data_update_layer_field&quot; ADD CONSTRAINT &quot;data_update_layer_field_pkey&quot; PRIMARY KEY (&quot;id&quot;);</span><br><span class="line"></span><br><span class="line">-- ----------------------------</span><br><span class="line">-- Primary Key structure for table data_update_project</span><br><span class="line">-- ----------------------------</span><br><span class="line">ALTER TABLE &quot;public&quot;.&quot;data_update_project&quot; ADD CONSTRAINT &quot;data_update_project_pkey&quot; PRIMARY KEY (&quot;id&quot;);</span><br><span class="line"></span><br><span class="line">-- ----------------------------</span><br><span class="line">-- Indexes structure for table data_update_task</span><br><span class="line">-- ----------------------------</span><br><span class="line">CREATE INDEX &quot;task_project_id_idx&quot; ON &quot;public&quot;.&quot;data_update_task&quot; USING btree (</span><br><span class="line">  &quot;project_id&quot; COLLATE &quot;pg_catalog&quot;.&quot;default&quot; &quot;pg_catalog&quot;.&quot;text_ops&quot; ASC NULLS LAST</span><br><span class="line">);</span><br><span class="line">CREATE INDEX &quot;task_version_id_idx&quot; ON &quot;public&quot;.&quot;data_update_task&quot; USING btree (</span><br><span class="line">  &quot;version_id&quot; COLLATE &quot;pg_catalog&quot;.&quot;default&quot; &quot;pg_catalog&quot;.&quot;text_ops&quot; ASC NULLS LAST</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line">-- ----------------------------</span><br><span class="line">-- Primary Key structure for table data_update_task</span><br><span class="line">-- ----------------------------</span><br><span class="line">ALTER TABLE &quot;public&quot;.&quot;data_update_task&quot; ADD CONSTRAINT &quot;data_update_task_pkey&quot; PRIMARY KEY (&quot;id&quot;);</span><br><span class="line"></span><br><span class="line">-- ----------------------------</span><br><span class="line">-- Indexes structure for table data_update_version_status_log</span><br><span class="line">-- ----------------------------</span><br><span class="line">CREATE INDEX &quot;version_status_log_version_id&quot; ON &quot;public&quot;.&quot;data_update_version_status_log&quot; USING btree (</span><br><span class="line">  &quot;version_id&quot; COLLATE &quot;pg_catalog&quot;.&quot;default&quot; &quot;pg_catalog&quot;.&quot;text_ops&quot; ASC NULLS LAST</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line">-- ----------------------------</span><br><span class="line">-- Primary Key structure for table data_update_version_status_log</span><br><span class="line">-- ----------------------------</span><br><span class="line">ALTER TABLE &quot;public&quot;.&quot;data_update_version_status_log&quot; ADD CONSTRAINT &quot;data_update_version_status_log_pkey&quot; PRIMARY KEY (&quot;id&quot;);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">ALTER TABLE &quot;public&quot;.&quot;process_instance_info&quot; ADD COLUMN &quot;read_flag&quot; char(1) DEFAULT &#x27;N&#x27;;</span><br><span class="line"></span><br><span class="line">COMMENT ON COLUMN &quot;public&quot;.&quot;process_instance_info&quot;.&quot;read_flag&quot; IS &#x27;是否已读（N-否，Y-是）&#x27;;</span><br></pre></td></tr></table></figure>
-
-
-				  
-	  
-      
-	  <!-- 添加打赏 -->
-	  
-	
-	  <!-- 添加版权声明 -->
-      
-	  
-	</div>
-	
-	<!-- 添加置顶 -->
-    <div class="article-info article-info-index">
-      
-        <div class="article-pop-out tagcloud">
-          <i class="icon-tuding"></i>
-          <a class="article-tag-list-link color3">置顶</a>
-        </div>
-      
-	  
-	  <!-- 分类页 -->
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">更新记录</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/更新记录/" class="article-tag-list-link color5">更新记录</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-	  
-	  <!-- 添加展开全文 -->
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/post/49a13fa5.html">展开全文 >></a>
-        </p>
-      
-	  
-	  <!-- 添加分享 -->
-      
-	  
-      <div class="clearfix"></div>
-	  
-    </div>
-  </div>
-</article>
-
-
-
-<!-- 添加回到顶部和文章目录 -->
-<aside class="wrap-side-operation">
-  <div class="mod-side-operation">
-    
-      <div class="jump-container" id="js-jump-container" style="display:none;">
-        <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-          <i class="icon-font icon-back"></i>
-        </a>
-      </div>
-    
-    
-  </div>
-</aside>
-
-<!-- 添加评论 -->
-
-
-<!-- valine评论
-  
-  <section id="comments" style="margin:10px;padding:10px;background:#fff;">
-    <div id="vcomment" class="comment"></div> 
-<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
-<script>
-   var notify = 'true' == true ? true : false;
-   var verify = 'true' == true ? true : false;
-    window.onload = function() {
-        new Valine({
-            el: '.comment',
-            notify: notify,
-            verify: verify,
-            app_id: "oaNIM7WrQSG7UOdJT8sGT8Ap-gzGzoHsz",
-            app_key: "CnYOpc2uW5oBwt6wgLB1ggYh",
-            placeholder: "ヾﾉ≧∀≦)o来啊，快活啊!",
-            avatar:"wavatar"
-        });
-    }
-</script>
-  </section>
-
--->
-<!-- valine评论 -->
-
-
-
-
-<!-- 文章页添加mathjax公式 -->
-
-  
-
-<!-- 文章页添加mathjax公式 -->
-
-
-  
-    <article id="post-2024-06-03-日常使用工具软件" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h2 itemprop="name">
-      <a class="article-title_code_ant" href="/post/39fefd66.html">日常使用工具软件</a>
-    </h2>
-  
-
-        
-		
-		  <a href="/post/39fefd66.html" class="archive-article-date">
-  	<time datetime="2024-06-03T18:17:51.000Z" itemprop="datePublished">
-	<!-- <i class="icon-calendar icon"></i> -->
-
-	<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
-	&nbsp;
-	2024-06-03</time>
-	
-	<!-- busuanzi阅读量统计
-	
-	-->
-	<!-- busuanzi阅读量统计 -->
-	
-	
-	
-    <!-- waline阅读量统计 
-	
-	-->
-</a>
-
-
-        
-		
-		
-		  <!-- 添加标题栏文字统计效果 -->
-<div class="word-count">
-	
-	
-    <span class="post-time">
-      <span class="post-meta-item-icon">
-	    <i class="fa fa-bar-chart" aria-hidden="true"></i>
-        <!-- <i class="fa fa-keyboard-o" aria-hidden="true"></i> -->
-        <span class="post-meta-item-text">字数统计: </span>
-        <span class="post-count">39字</span>
-      </span>
-    </span>
-
-    <span class="post-time">
-      &nbsp; | &nbsp;
-      <span class="post-meta-item-icon">
-	    <i class="fa fa-pagelines" aria-hidden="true"></i>
-        <span class="post-meta-item-text">阅读时长: </span>
-        <span class="post-count">1min</span>
-      </span>
-    </span>
-	
-
-</div>
-<!-- 添加标题栏文字统计效果结束 -->
-		
-      </header>
-    
-	
-    <div class="article-entry" itemprop="articleBody">
-	  <!-- 添加分类与标签 -->
-	  
-		  
-			<h2 id="谷歌翻译IP扫描（GoogleTranslate-IPFinder）"><a href="#谷歌翻译IP扫描（GoogleTranslate-IPFinder）" class="headerlink" title="谷歌翻译IP扫描（GoogleTranslate_IPFinder）"></a>谷歌翻译IP扫描（GoogleTranslate_IPFinder）</h2><p>​	谷歌翻译 API 服务器（<code>translate.googleapis.com</code>）在中国大陆的 IP 地址扫描、测速工具。</p>
-<p>​	<a href="https://github.com/GoodCoder666/GoogleTranslate_IPFinder">https://github.com/GoodCoder666/GoogleTranslate_IPFinder</a></p>
+<table>
+<thead>
+<tr>
+<th>布局</th>
+<th>路径</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>post</td>
+<td>source&#x2F;_posts</td>
+</tr>
+<tr>
+<td>page</td>
+<td>source</td>
+</tr>
+<tr>
+<td>draft</td>
+<td>source&#x2F;_drafts</td>
+</tr>
+</tbody></table>
 		  
 				  
 	  
@@ -642,7 +434,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">Windows</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
         		</li>
       		
 		</ul>
@@ -654,7 +446,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/Windows/" class="article-tag-list-link color3">Windows</a>
+        			<a href="/categories/博客/" class="article-tag-list-link color3">博客</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/博客/hexo/" class="article-tag-list-link color5">hexo</a>
         		</li>
       		
 		</ul>
@@ -665,7 +461,7 @@
 	  <!-- 添加展开全文 -->
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/post/39fefd66.html">展开全文 >></a>
+          <a class="article-more-a" href="/post/f431f6d.html">展开全文 >></a>
         </p>
       
 	  
@@ -928,26 +724,26 @@
 
 
   
-    <article id="post-2024-04-02-hexo使用笔记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-2024-06-03-日常使用工具软件" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h2 itemprop="name">
-      <a class="article-title_code_ant" href="/post/f431f6d.html">hexo使用笔记</a>
+      <a class="article-title_code_ant" href="/post/39fefd66.html">日常使用工具软件</a>
     </h2>
   
 
         
 		
-		  <a href="/post/f431f6d.html" class="archive-article-date">
-  	<time datetime="2024-04-02T10:45:50.000Z" itemprop="datePublished">
+		  <a href="/post/39fefd66.html" class="archive-article-date">
+  	<time datetime="2024-06-03T18:17:51.000Z" itemprop="datePublished">
 	<!-- <i class="icon-calendar icon"></i> -->
 
 	<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
 	&nbsp;
-	2024-04-02</time>
+	2024-06-03</time>
 	
 	<!-- busuanzi阅读量统计
 	
@@ -974,7 +770,7 @@
 	    <i class="fa fa-bar-chart" aria-hidden="true"></i>
         <!-- <i class="fa fa-keyboard-o" aria-hidden="true"></i> -->
         <span class="post-meta-item-text">字数统计: </span>
-        <span class="post-count">8.5k字</span>
+        <span class="post-count">39字</span>
       </span>
     </span>
 
@@ -983,7 +779,7 @@
       <span class="post-meta-item-icon">
 	    <i class="fa fa-pagelines" aria-hidden="true"></i>
         <span class="post-meta-item-text">阅读时长: </span>
-        <span class="post-count">35min</span>
+        <span class="post-count">1min</span>
       </span>
     </span>
 	
@@ -998,32 +794,8 @@
 	  <!-- 添加分类与标签 -->
 	  
 		  
-			<h2 id="按照模版创建-md"><a href="#按照模版创建-md" class="headerlink" title="按照模版创建 md"></a>按照模版创建 md</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>layout 是文章的布局，在 scaffolds 中，默认为 post，可以先不写，其他的有 page、draft 等</li>
-<li>Hexo 有三种默认布局：<code>post</code>、<code>page</code> 和 <code>draft</code> 在创建者三种不同类型的文件时，它们将会被保存到不同的路径。</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>布局</th>
-<th>路径</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>post</td>
-<td>source&#x2F;_posts</td>
-</tr>
-<tr>
-<td>page</td>
-<td>source</td>
-</tr>
-<tr>
-<td>draft</td>
-<td>source&#x2F;_drafts</td>
-</tr>
-</tbody></table>
+			<h2 id="谷歌翻译IP扫描（GoogleTranslate-IPFinder）"><a href="#谷歌翻译IP扫描（GoogleTranslate-IPFinder）" class="headerlink" title="谷歌翻译IP扫描（GoogleTranslate_IPFinder）"></a>谷歌翻译IP扫描（GoogleTranslate_IPFinder）</h2><p>​	谷歌翻译 API 服务器（<code>translate.googleapis.com</code>）在中国大陆的 IP 地址扫描、测速工具。</p>
+<p>​	<a href="https://github.com/GoodCoder666/GoogleTranslate_IPFinder">https://github.com/GoodCoder666/GoogleTranslate_IPFinder</a></p>
 		  
 				  
 	  
@@ -1052,7 +824,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">Windows</a>
         		</li>
       		
 		</ul>
@@ -1064,11 +836,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/博客/" class="article-tag-list-link color3">博客</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/博客/hexo/" class="article-tag-list-link color5">hexo</a>
+        			<a href="/categories/Windows/" class="article-tag-list-link color3">Windows</a>
         		</li>
       		
 		</ul>
@@ -1079,7 +847,208 @@
 	  <!-- 添加展开全文 -->
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/post/f431f6d.html">展开全文 >></a>
+          <a class="article-more-a" href="/post/39fefd66.html">展开全文 >></a>
+        </p>
+      
+	  
+	  <!-- 添加分享 -->
+      
+	  
+      <div class="clearfix"></div>
+	  
+    </div>
+  </div>
+</article>
+
+
+
+<!-- 添加回到顶部和文章目录 -->
+<aside class="wrap-side-operation">
+  <div class="mod-side-operation">
+    
+      <div class="jump-container" id="js-jump-container" style="display:none;">
+        <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+          <i class="icon-font icon-back"></i>
+        </a>
+      </div>
+    
+    
+  </div>
+</aside>
+
+<!-- 添加评论 -->
+
+
+<!-- valine评论
+  
+  <section id="comments" style="margin:10px;padding:10px;background:#fff;">
+    <div id="vcomment" class="comment"></div> 
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+   var notify = 'true' == true ? true : false;
+   var verify = 'true' == true ? true : false;
+    window.onload = function() {
+        new Valine({
+            el: '.comment',
+            notify: notify,
+            verify: verify,
+            app_id: "oaNIM7WrQSG7UOdJT8sGT8Ap-gzGzoHsz",
+            app_key: "CnYOpc2uW5oBwt6wgLB1ggYh",
+            placeholder: "ヾﾉ≧∀≦)o来啊，快活啊!",
+            avatar:"wavatar"
+        });
+    }
+</script>
+  </section>
+
+-->
+<!-- valine评论 -->
+
+
+
+
+<!-- 文章页添加mathjax公式 -->
+
+  
+
+<!-- 文章页添加mathjax公式 -->
+
+
+  
+    <article id="post-2024-04-31-日常更新记录" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h2 itemprop="name">
+      <a class="article-title_code_ant" href="/post/49a13fa5.html">日常更新记录</a>
+    </h2>
+  
+
+        
+		
+		  <a href="/post/49a13fa5.html" class="archive-article-date">
+  	<time datetime="2024-05-01T09:52:15.000Z" itemprop="datePublished">
+	<!-- <i class="icon-calendar icon"></i> -->
+
+	<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+	&nbsp;
+	2024-05-01</time>
+	
+	<!-- busuanzi阅读量统计
+	
+	-->
+	<!-- busuanzi阅读量统计 -->
+	
+	
+	
+    <!-- waline阅读量统计 
+	
+	-->
+</a>
+
+
+        
+		
+		
+		  <!-- 添加标题栏文字统计效果 -->
+<div class="word-count">
+	
+	
+    <span class="post-time">
+      <span class="post-meta-item-icon">
+	    <i class="fa fa-bar-chart" aria-hidden="true"></i>
+        <!-- <i class="fa fa-keyboard-o" aria-hidden="true"></i> -->
+        <span class="post-meta-item-text">字数统计: </span>
+        <span class="post-count">3k字</span>
+      </span>
+    </span>
+
+    <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+	    <i class="fa fa-pagelines" aria-hidden="true"></i>
+        <span class="post-meta-item-text">阅读时长: </span>
+        <span class="post-count">16min</span>
+      </span>
+    </span>
+	
+
+</div>
+<!-- 添加标题栏文字统计效果结束 -->
+		
+      </header>
+    
+	
+    <div class="article-entry" itemprop="articleBody">
+	  <!-- 添加分类与标签 -->
+	  
+		  
+			<h2 id="2024年"><a href="#2024年" class="headerlink" title="2024年"></a>2024年</h2><h3 id="5月"><a href="#5月" class="headerlink" title="5月"></a>5月</h3><h4 id="2024年5月31日"><a href="#2024年5月31日" class="headerlink" title="2024年5月31日"></a>2024年5月31日</h4><ul>
+<li><input checked="" disabled="" type="checkbox"> 1、办公流程粤政易消息模版整改（禅道5969）</li>
+<li><input checked="" disabled="" type="checkbox"> 2、办公管理之荣誉奖项需求调整（禅道5970）</li>
+<li><input checked="" disabled="" type="checkbox"> 3、管理制度增加文件名称查重功能（禅道5971）</li>
+<li><input checked="" disabled="" type="checkbox"> 4、《数据提取备案申请》数据详情字段信息问题修复（禅道6011）</li>
+<li><input disabled="" type="checkbox"> 5、OA流程我的已办新增《台账导出》功能（禅道5972）–&gt;自己发给自己，会导出（待办+已办+抄送）</li>
+<li><input checked="" disabled="" type="checkbox"> 6、待办箱和抄送箱信息完善【区分已阅和未阅】（禅道5883）</li>
+<li><input checked="" disabled="" type="checkbox"> 7、数据提取备案数据内容表单项输入方式变更为文本域类型</li>
+<li><input disabled="" type="checkbox"> 8、数据质检报告，错误明细excel与gdb增加时间戳。</li>
+<li><input disabled="" type="checkbox"> 9、图层数据更新功能（数据中台）</li>
+</ul>
+		  
+				  
+	  
+      
+	  <!-- 添加打赏 -->
+	  
+	
+	  <!-- 添加版权声明 -->
+      
+	  
+	</div>
+	
+	<!-- 添加置顶 -->
+    <div class="article-info article-info-index">
+      
+        <div class="article-pop-out tagcloud">
+          <i class="icon-tuding"></i>
+          <a class="article-tag-list-link color3">置顶</a>
+        </div>
+      
+	  
+	  <!-- 分类页 -->
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">更新记录</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/更新记录/" class="article-tag-list-link color5">更新记录</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+	  
+	  <!-- 添加展开全文 -->
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/post/49a13fa5.html">展开全文 >></a>
         </p>
       
 	  

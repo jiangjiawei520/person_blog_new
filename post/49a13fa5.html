@@ -19,7 +19,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://github.com/imgs/image-20240531183133323.png">
 <meta property="article:published_time" content="2024-05-01T09:52:15.000Z">
-<meta property="article:modified_time" content="2024-06-06T07:27:14.070Z">
+<meta property="article:modified_time" content="2024-06-06T08:07:38.512Z">
 <meta property="article:author" content="JiaWei Jiang">
 <meta property="article:tag" content="更新记录">
 <meta name="twitter:card" content="summary">
@@ -417,6 +417,8 @@
 <li><input disabled="" type="checkbox"> 8、数据质检报告，错误明细excel与gdb增加时间戳。</li>
 <li><input disabled="" type="checkbox"> 9、图层数据更新功能（数据中台）</li>
 </ul>
+<span id="more"></span>
+
 <h5 id="办公流程粤政易消息模版整改"><a href="#办公流程粤政易消息模版整改" class="headerlink" title="办公流程粤政易消息模版整改"></a><strong>办公流程粤政易消息模版整改</strong></h5><h6 id="配置文件修改"><a href="#配置文件修改" class="headerlink" title="配置文件修改"></a>配置文件修改</h6><p>需要再apollo放开端口，否没有权限401</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># geo-zhglpt-springboot-1.0.0.jar的application.properties</span><br><span class="line"># 配置文件添加配置（测试环境ip172.16.2.68，生产ip172.16.2.75）</span><br><span class="line"># 综管平台用戶接口</span><br><span class="line">userSystem.getOauthidUrl = http://172.16.2.75:9000/user/user-system/secUser/selectOauthidByUserId</span><br><span class="line"># 粤政易模版接口</span><br><span class="line">newPortal.templateUrl =http://172.16.2.75:9000/findApp/commonApply/getMsgTemplate</span><br></pre></td></tr></table></figure>
 
