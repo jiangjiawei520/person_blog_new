@@ -20,7 +20,7 @@
 <meta property="og:image" content="https://github.com/imgs/2022062810410290.jpg">
 <meta property="og:image" content="https://github.com/imgs/2022062810410391.png">
 <meta property="article:published_time" content="2024-04-10T10:47:01.000Z">
-<meta property="article:modified_time" content="2025-09-17T01:02:45.934Z">
+<meta property="article:modified_time" content="2025-09-17T01:14:47.532Z">
 <meta property="article:author" content="JiaWei Jiang">
 <meta property="article:tag" content="oracle">
 <meta name="twitter:card" content="summary">
@@ -430,7 +430,7 @@
 
 <h3 id="2-4备份数据库"><a href="#2-4备份数据库" class="headerlink" title="2.4备份数据库"></a>2.4备份数据库</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@]$ expdp dbuser/passwd@192.168.110.9:1521/orcl dumpfile=dbback.dmp log=log.log directory=back_dir schemas=cbyxy</span><br></pre></td></tr></table></figure>
 
-<p>exedp有很多参数，这里是用到的一些解释<br>dbuser&#x2F;<a href="mailto:&#x70;&#x61;&#x73;&#115;&#x77;&#100;&#x40;&#x31;&#x39;&#50;&#x2e;&#x31;&#54;&#56;&#x2e;&#49;&#x31;&#x30;&#x2e;&#x39;">&#x70;&#x61;&#x73;&#115;&#x77;&#100;&#x40;&#x31;&#x39;&#50;&#x2e;&#x31;&#54;&#56;&#x2e;&#49;&#x31;&#x30;&#x2e;&#x39;</a>:1521&#x2F;orcl #导出用户名&#x2F;密码@数据库IP&#x2F;数据库SID<br>dumpfile&#x3D;导出的文件名.dmp<br>log&#x3D;导出过程的日志名.log<br>directory&#x3D;备份放的路径名,用的之前的逻辑目录名<br>schemas&#x3D;要备份的数据库用户名字<br>FULL&#x3D;y #加上意思为导出整个数据库就不需要schemas参数了<br>也可以按表空间导出TABLESPACES&#x3D;<br>表名导出TABLES&#x3D;<br>等等还有很多参数自行了解</p>
+<p>exedp有很多参数，这里是用到的一些解释<br>dbuser&#x2F;<a href="mailto:&#x70;&#x61;&#x73;&#x73;&#119;&#x64;&#64;&#x31;&#x39;&#50;&#46;&#49;&#x36;&#x38;&#x2e;&#49;&#49;&#48;&#x2e;&#x39;">&#x70;&#x61;&#x73;&#x73;&#119;&#x64;&#64;&#x31;&#x39;&#50;&#46;&#49;&#x36;&#x38;&#x2e;&#49;&#49;&#48;&#x2e;&#x39;</a>:1521&#x2F;orcl #导出用户名&#x2F;密码@数据库IP&#x2F;数据库SID<br>dumpfile&#x3D;导出的文件名.dmp<br>log&#x3D;导出过程的日志名.log<br>directory&#x3D;备份放的路径名,用的之前的逻辑目录名<br>schemas&#x3D;要备份的数据库用户名字<br>FULL&#x3D;y #加上意思为导出整个数据库就不需要schemas参数了<br>也可以按表空间导出TABLESPACES&#x3D;<br>表名导出TABLES&#x3D;<br>等等还有很多参数自行了解</p>
 <h2 id="3-shell脚本实现自动备份"><a href="#3-shell脚本实现自动备份" class="headerlink" title="3.shell脚本实现自动备份"></a>3.shell脚本实现自动备份</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">#!/bin/bash</span><br><span class="line">#导入环境变量，根据具自己实际情况填写</span><br><span class="line">export ORACLE_BASE=/home/oracle/app</span><br><span class="line">export ORACLE_HOME=$ORACLE_BASE/oracle/product/11.2.0/dbhome_1</span><br><span class="line">export PATH=$ORACLE_HOME/bin:$PATH</span><br><span class="line">export LOCAL_IP=192.168.110.183:1521</span><br><span class="line">export BACKUP_USER_IP_DIR=root@192.168.110.187:/opt/   #备份服务器的用户，ip，保存地址</span><br><span class="line">export ORACLE_USER_NAME=system #数据库的用户密码根据实际情况填写，备份整个库最好使用system或sys管理员用户</span><br><span class="line">export ORACLE_USER_PASSWD=Abc123556..</span><br><span class="line">export ORACLE_SID=orcl #不知道可以使用Oracle用户执行echo $ORACLE_SID，或者SQL&gt; SELECT instance_name FROM v$instance</span><br><span class="line">export DATA_DIR=/opt/backup   #与数据库中的逻辑地址相同,用来储存备份文件</span><br><span class="line">export DELTIME=`date -d &quot;7 days ago&quot; +%Y%m%d` # -d &quot;7 days ago&quot; 为获取七天前的日期,以日期命名方便任务自动删&gt;除</span><br><span class="line">export BAKUPTIME=`date +%Y%m%d` #备份日期年月日</span><br><span class="line">export NLS_LANG=AMERICAN_AMERICA.ZHS16GBK #定义语言地域和字符集属性的环境变量，根据自己数据库情况修改</span><br><span class="line">mkdir -p $DATA_DIR</span><br><span class="line">echo &quot;Starting bakup...&quot;</span><br><span class="line">echo &quot;Backup file path $DATA_DIR/$BAKUPTIME.dmp&quot;</span><br><span class="line">expdp $ORACLE_USER_NAME/$ORACLE_USER_PASSWD@$LOCAL_IP/$ORACLE_SID dumpfile=$BAKUPTIME.dmp log=$BAKUPTIME.log directory=expdp full=y</span><br><span class="line">echo &quot;backup file success...&quot;</span><br><span class="line">tar -zcvPf $DATA_DIR/$BAKUPTIME.tar.gz $DATA_DIR/$BAKUPTIME.dmp --remove-files ##-P：指定绝对路径 --remove-files :打包后删除原文件</span><br><span class="line">echo &quot;tar the file backup successfully&quot;</span><br><span class="line">echo &quot;scp to&quot;:$BACKUP_IP</span><br><span class="line">scp $DATA_DIR/$BAKUPTIME.tar.gz $BACKUP_USER_IP_DIR #远程服务器防火墙有限制scp端口需要加：-P 端口号</span><br><span class="line">rm -f $DATA_DIR/$DELTIME.log #删除之前的备份</span><br><span class="line">echo &quot;Bakup completed.&quot;</span><br></pre></td></tr></table></figure>
 
 <p><img src="/imgs/2022062810410391.png"></p>
@@ -643,10 +643,10 @@
 	  <br>
 	  <div class="footer-center">
 	    <i class="fa fa-file-word-o" aria-hidden="true"></i>
-		<span> 58 篇</span>
+		<span> 59 篇</span>
 		<span class="post-meta-divider">|</span>
 		<i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-		<span> <span class="post-count">91.8k</span></span>
+		<span> <span class="post-count">91.9k</span></span>
       </div>
 	  
 	  <!-- 添加不蒜子统计 -->
@@ -883,19 +883,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">日记本</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">其他</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">git</a>
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+                <a href="javascript:void(0)" class="js-tag color4">日记本</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -907,10 +907,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">实施运维</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">Postgresql</a>
               </li>
              
@@ -919,15 +915,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">实施运维</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Typora</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">工具</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">网站</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Typora</a>
               </li>
              
               <li class="article-tag-list-item">

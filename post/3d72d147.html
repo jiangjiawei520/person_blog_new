@@ -7,47 +7,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <meta http-equiv="Content-Language" content="zh-cn">
   <link rel="dns-prefetch" href="https://github.com/jiangjiawei520">
-  <title>等保测评漏洞修复 | 蒋家威的博客</title>
+  <title>在个人博客中新增文章步骤记录 | 蒋家威的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta name="description" content="1.服务器密码限制等保测评检测问题：未对身份鉴别信息复杂度进行检查，未强制要求定期更换口令。 解决方法： Win+R键打开运行，输入 secpol.msc，打开本地安全策略   打开“计算机管理” 打开cmd面板，输入compmgmt.msc，打开 将密码永不过期设置为不勾选">
+  <meta name="description" content="使用cmd窗口或者vscode新增文章1hexo new 时间戳[如，2025-09-17]-文章名  调整文章的tag和categories用于分类和归档修改文章title，去除时间戳[如，2025-09-17-]书写文章发布到源码，源码仓库自动同步到网站代码1hexo b">
 <meta property="og:type" content="article">
-<meta property="og:title" content="等保测评漏洞修复">
-<meta property="og:url" content="https://github.com/jiangjiawei520/post/ece3b4be.html">
+<meta property="og:title" content="在个人博客中新增文章步骤记录">
+<meta property="og:url" content="https://github.com/jiangjiawei520/post/3d72d147.html">
 <meta property="og:site_name" content="蒋家威的博客">
-<meta property="og:description" content="1.服务器密码限制等保测评检测问题：未对身份鉴别信息复杂度进行检查，未强制要求定期更换口令。 解决方法： Win+R键打开运行，输入 secpol.msc，打开本地安全策略   打开“计算机管理” 打开cmd面板，输入compmgmt.msc，打开 将密码永不过期设置为不勾选">
+<meta property="og:description" content="使用cmd窗口或者vscode新增文章1hexo new 时间戳[如，2025-09-17]-文章名  调整文章的tag和categories用于分类和归档修改文章title，去除时间戳[如，2025-09-17-]书写文章发布到源码，源码仓库自动同步到网站代码1hexo b">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://github.com/imgs/2034e349deaa4234b56d9c0f6f0158b8.png">
-<meta property="og:image" content="https://github.com/imgs/188f81be44dc48918ec39cca3146ec13.png">
-<meta property="og:image" content="https://github.com/imgs/344128a169134f5395a313dd32abaa10.png">
-<meta property="og:image" content="https://github.com/imgs/a095240649bf4f8cab59ab736c66c22f.png">
-<meta property="og:image" content="https://github.com/imgs/7f70113eee4142ada0043d4b215ceb95.png">
-<meta property="og:image" content="https://github.com/imgs/aacb35725ef54d7d8aba745c2b42e935.png">
-<meta property="og:image" content="https://github.com/imgs/ce98b879f7ef421e8ed67f7bc935b38c.png">
-<meta property="og:image" content="https://github.com/imgs/dae63cade8a647949ae6f8016d9a13ef.png">
-<meta property="og:image" content="https://github.com/imgs/e8c09c0c081c4ccca69ddb3793cdec20.png">
-<meta property="og:image" content="https://github.com/imgs/a919ca9d97884d63ad2a5f5ec4d9dd21.png">
-<meta property="og:image" content="https://github.com/imgs/f20b6cd84c8048b18341588a79d1bad7.png">
-<meta property="og:image" content="https://github.com/imgs/076360b2259e4e2dbeb36737c9b3f95b.png">
-<meta property="og:image" content="https://github.com/imgs/8484a7a5d8164e5b9ff27096d4119b9f.png">
-<meta property="og:image" content="https://github.com/imgs/58da02ca520c4b04a00d0d7adda8911f.png">
-<meta property="og:image" content="https://github.com/imgs/fce374678dbe47a1a71f215fb6ede963.png">
-<meta property="og:image" content="https://github.com/imgs/96070d47772343ce88090d0e1c855817.png">
-<meta property="og:image" content="https://github.com/imgs/b1a52c0cdef643d9b6aeb2cf0efdaa3b.png">
-<meta property="og:image" content="https://github.com/imgs/855b837ba8fa4168a21807ad07161cd5.png">
-<meta property="og:image" content="https://github.com/imgs/990e1104382f4662b5492d001c28c415.png">
-<meta property="og:image" content="https://github.com/imgs/8d7b2a68d5234893b54049d30a77c9be.png">
-<meta property="og:image" content="https://github.com/imgs/f2b50f0d82bc4171b9eeab4ced1c459f.png">
-<meta property="og:image" content="https://github.com/imgs/2b5699ef986d462ba469bf74ba1f0f4e.png">
-<meta property="og:image" content="https://github.com/imgs/08883023b60c4ee49a6f1ce211784633.png">
-<meta property="og:image" content="https://github.com/imgs/3a85d3149ee34be783051f38048ecf36.png">
-<meta property="og:image" content="https://github.com/imgs/ca625247ddbe45b483d31c9fe5dc923c.png">
-<meta property="article:published_time" content="2024-03-29T00:00:00.000Z">
-<meta property="article:modified_time" content="2025-09-17T01:14:47.531Z">
+<meta property="article:published_time" content="2025-09-17T09:05:33.000Z">
+<meta property="article:modified_time" content="2025-09-17T01:14:47.533Z">
 <meta property="article:author" content="JiaWei Jiang">
-<meta property="article:tag" content="漏洞修复">
+<meta property="article:tag" content="hexo">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://github.com/imgs/2034e349deaa4234b56d9c0f6f0158b8.png">
   
   
   
@@ -339,26 +313,26 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-2024-03-29-等保测评漏洞修复" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-2025-09-17-在个人博客中新增文章步骤记录" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title_code_ant" itemprop="name">
-	  <a href="/post/ece3b4be.html">等保测评漏洞修复</a>
+	  <a href="/post/3d72d147.html">在个人博客中新增文章步骤记录</a>
 	</h1>
   
 
         
 		
-		  <a href="/post/ece3b4be.html" class="archive-article-date">
-  	<time datetime="2024-03-29T00:00:00.000Z" itemprop="datePublished">
+		  <a href="/post/3d72d147.html" class="archive-article-date">
+  	<time datetime="2025-09-17T09:05:33.000Z" itemprop="datePublished">
 	<!-- <i class="icon-calendar icon"></i> -->
 
 	<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
 	&nbsp;
-	2024-03-29</time>
+	2025-09-17</time>
 	
 	<!-- busuanzi阅读量统计
 	
@@ -387,7 +361,7 @@
 		&nbsp; &nbsp; &nbsp;
 		<i class="fa fa-eye" aria-hidden="true"></i>
 		&nbsp;
-		<span class="waline-pageview-count" data-path="/post/ece3b4be.html"><i class="fa fa-spinner fa-spin"></i></span>
+		<span class="waline-pageview-count" data-path="/post/3d72d147.html"><i class="fa fa-spinner fa-spin"></i></span>
 	</span>
 	
 	-->
@@ -406,7 +380,7 @@
 	    <i class="fa fa-bar-chart" aria-hidden="true"></i>
         <!-- <i class="fa fa-keyboard-o" aria-hidden="true"></i> -->
         <span class="post-meta-item-text">字数统计: </span>
-        <span class="post-count">1.8k字</span>
+        <span class="post-count">73字</span>
       </span>
     </span>
 
@@ -415,7 +389,7 @@
       <span class="post-meta-item-icon">
 	    <i class="fa fa-pagelines" aria-hidden="true"></i>
         <span class="post-meta-item-text">阅读时长: </span>
-        <span class="post-count">8min</span>
+        <span class="post-count">1min</span>
       </span>
     </span>
 	
@@ -430,83 +404,11 @@
 	  <!-- 添加分类与标签 -->
 	  
 		  
-		  <h2 id="1-服务器密码限制"><a href="#1-服务器密码限制" class="headerlink" title="1.服务器密码限制"></a>1.服务器密码限制</h2><p><strong>等保测评检测问题：</strong>未对身份鉴别信息复杂度进行检查，未强制要求定期更换口令。</p>
-<p><strong>解决方法：</strong></p>
-<p>Win+R键打开运行，输入 secpol.msc，打开本地安全策略</p>
-<p><img src="/imgs/2034e349deaa4234b56d9c0f6f0158b8.png"></p>
-<p><img src="/imgs/188f81be44dc48918ec39cca3146ec13.png"></p>
-<p>打开“计算机管理”</p>
-<p>打开cmd面板，输入compmgmt.msc，打开</p>
-<p>将密码永不过期设置为不勾选</p>
-<p><img src="/imgs/344128a169134f5395a313dd32abaa10.png"></p>
+		  <h2 id="使用cmd窗口或者vscode新增文章"><a href="#使用cmd窗口或者vscode新增文章" class="headerlink" title="使用cmd窗口或者vscode新增文章"></a>使用cmd窗口或者vscode新增文章</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new 时间戳[如，2025-09-17]-文章名</span><br></pre></td></tr></table></figure>
+
+<h2 id="调整文章的tag和categories用于分类和归档"><a href="#调整文章的tag和categories用于分类和归档" class="headerlink" title="调整文章的tag和categories用于分类和归档"></a>调整文章的tag和categories用于分类和归档</h2><h2 id="修改文章title，去除时间戳-如，2025-09-17"><a href="#修改文章title，去除时间戳-如，2025-09-17" class="headerlink" title="修改文章title，去除时间戳[如，2025-09-17-]"></a>修改文章title，去除时间戳[如，2025-09-17-]</h2><h2 id="书写文章"><a href="#书写文章" class="headerlink" title="书写文章"></a>书写文章</h2><h2 id="发布到源码，源码仓库自动同步到网站代码"><a href="#发布到源码，源码仓库自动同步到网站代码" class="headerlink" title="发布到源码，源码仓库自动同步到网站代码"></a>发布到源码，源码仓库自动同步到网站代码</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo b</span><br></pre></td></tr></table></figure>
+
 <span id="more"></span>
-
-<h2 id="2-服务远程管理"><a href="#2-服务远程管理" class="headerlink" title="2.服务远程管理"></a>2.服务远程管理</h2><p><strong>等保测评检测问题：</strong>未采用加密措施等安全方式对系统进行远程管理；</p>
-<p><strong>解决方法：</strong></p>
-<p>Win+R键打开运行，输入 gpedit.msc，打开本地组策略编辑器</p>
-<p>【计算机配置】—【管理模板】—【windows组件】—【远程桌面服务】—【远程桌面会话主机】—【安全】</p>
-<p>双击“设置客户端连接加密级别”选项，配置为已启动，加密级别配置为“客户端兼容”</p>
-<p><img src="/imgs/a095240649bf4f8cab59ab736c66c22f.png"></p>
-<p>双击“远程（RDP）连接要求使用指定的安全层”选项，配置为已启动，安全层配置为“协商”</p>
-<p><img src="/imgs/7f70113eee4142ada0043d4b215ceb95.png"></p>
-<p><img src="/imgs/aacb35725ef54d7d8aba745c2b42e935.png"></p>
-<h2 id="3-开启日志功能"><a href="#3-开启日志功能" class="headerlink" title="3.开启日志功能"></a>3.开启日志功能</h2><p><strong>等保测评检测问题：</strong>未开启日志功能，无法对审计记录进行保护</p>
-<p><strong>解决方法：</strong></p>
-<p>Win+R键打开运行，输入 secpol.msc，打开本地安全策略</p>
-<p><img src="/imgs/ce98b879f7ef421e8ed67f7bc935b38c.png"></p>
-<p>Win+R键打开运行，输入“eventvwr”，打开事件查看器</p>
-<p>应用程序、安全、设置、系统分别进行设置</p>
-<p><img src="/imgs/dae63cade8a647949ae6f8016d9a13ef.png"></p>
-<h2 id="4-清除身份鉴别信息"><a href="#4-清除身份鉴别信息" class="headerlink" title="4.清除身份鉴别信息"></a>4.清除身份鉴别信息</h2><p><strong>等保测评检测问题：</strong>未及时清除身份鉴别信息或身份鉴别信息释放或清除机制存在安全隐患</p>
-<p><strong>解决方法：</strong></p>
-<p>Win+R键打开运行，输入 secpol.msc，打开本地安全策略</p>
-<p><img src="/imgs/e8c09c0c081c4ccca69ddb3793cdec20.png"></p>
-<h2 id="5-SSL-TLS协议信息泄露"><a href="#5-SSL-TLS协议信息泄露" class="headerlink" title="5.SSL&#x2F;TLS协议信息泄露"></a>5.SSL&#x2F;TLS协议信息泄露</h2><p><strong>等保测评检测问题：</strong> SSL&#x2F;TLS协议信息泄露漏洞(CVE-2016-2183)【原理扫描】</p>
-<p><strong>解决方法：</strong></p>
-<p>Win+R键打开运行，输入 gpedit.msc，打开本地策略编辑器</p>
-<p><img src="/imgs/a919ca9d97884d63ad2a5f5ec4d9dd21.png"></p>
-<p><img src="/imgs/f20b6cd84c8048b18341588a79d1bad7.png"></p>
-<p>将下面密码替换到：SSL密码套件中</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256_P256,TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256_P384,TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256_P521,TLS_ECDHE_ECDSA,WITH_AES_256_GCM_SHA384_P384,TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384_P521,TLS_RSA_WITH_AES_128_CBC_SHA256,TLS_RSA_WITH_AES_256_CBC_SHA256,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P384,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P521,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P256,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P384,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P521,TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256_P256,TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256_P384,TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256_P521,TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384_P384,TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384_P521,TLS_DHE_DSS_WITH_AES_128_CBC_SHA256,TLS_DHE_DSS_WITH_AES_256_CBC_SHA256,TLS_RSA_WITH_NULL_SHA,TLS_RSA_WITH_AES_128_CBC_SHA,TLS_DHE_DSS_WITH_AES_128_CBC_SHA</span><br></pre></td></tr></table></figure>
-
-<h3 id="5-1-tomcat禁用3DES和DES算法："><a href="#5-1-tomcat禁用3DES和DES算法：" class="headerlink" title="5.1.tomcat禁用3DES和DES算法："></a>5.1.tomcat禁用3DES和DES算法：</h3><p>在tomcat&#x2F;conf&#x2F;server.xml中找到端口配置，添加Ciphers&#x3D;””，此处添加支持的算法，不支持的算法请勿加入其中！如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Ciphers=&quot;TLS_DHE_RSA_WITH_AES_128_CBC_SHA ,TLS_DHE_RSA_WITH_AES_128_CBC_SHA256,TLS_DHE_RSA_WITH_AES_128_GCM_SHA256,TLS_DHE_RSA_WITH_AES_256_CBC_SHA,TLS_DHE_RSA_WITH_AES_256_CBC_SHA256,TLS_DHE_RSA_WITH_AES_256_GCM_SHA384,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256,TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA ,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384,TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384&quot;</span><br></pre></td></tr></table></figure>
-
-<p><img src="/imgs/076360b2259e4e2dbeb36737c9b3f95b.png"></p>
-<p>重新启动Tomcat</p>
-<h3 id="5-2-nginx禁用3DES和DES算法："><a href="#5-2-nginx禁用3DES和DES算法：" class="headerlink" title="5.2.nginx禁用3DES和DES算法："></a>5.2.nginx禁用3DES和DES算法：</h3><p>在nginx&#x2F;conf&#x2F;nginx.conf文件中添加如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ssl_protocols TLSv1 TLSv1.1 TLSv1.2;</span><br><span class="line">	#只允许TLS协议</span><br><span class="line"> </span><br><span class="line">	ssl_ciphers &quot;ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-SHA384:ECDHE-RSA-AES128-SHA256:ECDHE-RSA-AES256-SHA:ECDHE-RSA-AES128-SHA:DHE-RSA-AES256-SHA256:DHE-RSA-AES128-SHA256:DHE-RSA-AES256-SHA:DHE-RSA-AES128-SHA:ECDHE-RSA-DES-CBC3-SHA:EDH-RSA-DES-CBC3-SHA:AES256-GCM-SHA384:AES128-GCM-SHA256:AES256-SHA256:AES128-SHA256:AES256-SHA:AES128-SHA:DES-CBC3-SHA:HIGH:!aNULL:!eNULL:!EXPORT:!DES:!MD5:!PSK:!RC4&quot;;</span><br><span class="line">	#加密套件,这里用了CloudFlares Internet facing SSL cipher configuration</span><br></pre></td></tr></table></figure>
-
-<h2 id="6-终端服务未使用网络级别身份验证-NLA"><a href="#6-终端服务未使用网络级别身份验证-NLA" class="headerlink" title="6.终端服务未使用网络级别身份验证 (NLA)"></a>6.终端服务未使用网络级别身份验证 (NLA)</h2><p><strong>等保测评检测问题：</strong></p>
-<p><img src="/imgs/8484a7a5d8164e5b9ff27096d4119b9f.png"></p>
-<p><strong>解决方法：</strong></p>
-<p>（1）选择【我的电脑】右键选择【属性】，打开系统和安全设置</p>
-<p><img src="/imgs/58da02ca520c4b04a00d0d7adda8911f.png"></p>
-<p>（2）选择【远程设置】</p>
-<p><img src="/imgs/fce374678dbe47a1a71f215fb6ede963.png"></p>
-<p>（3）勾选【允许远程连接此计算机】【仅允许运行使用网络级别身份验证的远程桌面的计算机连接(建议)】</p>
-<p><img src="/imgs/96070d47772343ce88090d0e1c855817.png"></p>
-<h2 id="7-Microsoft-Windows远程桌面协议服务程序密钥泄露漏洞-CVE-2005-1794"><a href="#7-Microsoft-Windows远程桌面协议服务程序密钥泄露漏洞-CVE-2005-1794" class="headerlink" title="7.Microsoft Windows远程桌面协议服务程序密钥泄露漏洞(CVE-2005-1794)"></a>7.Microsoft Windows远程桌面协议服务程序密钥泄露漏洞(CVE-2005-1794)</h2><p><strong>等保测评检测问题：</strong></p>
-<p><img src="/imgs/b1a52c0cdef643d9b6aeb2cf0efdaa3b.png"></p>
-<p><strong>解决方法：</strong></p>
-<p>（1）选择【我的电脑】右键选择【属性】，打开系统和安全设置</p>
-<p><img src="/imgs/855b837ba8fa4168a21807ad07161cd5.png"></p>
-<p>（2）【高级系统设置】</p>
-<p><img src="/imgs/990e1104382f4662b5492d001c28c415.png"></p>
-<p>（2）设置如下，如已操作过【远程设置】无需再次操作</p>
-<p><img src="/imgs/8d7b2a68d5234893b54049d30a77c9be.png"></p>
-<h2 id="8-响应头安全漏洞"><a href="#8-响应头安全漏洞" class="headerlink" title="8.响应头安全漏洞"></a>8.响应头安全漏洞</h2><p><strong>等保测评检测问题：</strong></p>
-<p><img src="/imgs/f2b50f0d82bc4171b9eeab4ced1c459f.png"></p>
-<p><img src="/imgs/2b5699ef986d462ba469bf74ba1f0f4e.png"></p>
-<p><img src="/imgs/08883023b60c4ee49a6f1ce211784633.png"></p>
-<h3 id="8-1-未设置Strict-Transport-Security响应头"><a href="#8-1-未设置Strict-Transport-Security响应头" class="headerlink" title="8.1 未设置Strict-Transport-Security响应头"></a>8.1 未设置Strict-Transport-Security响应头</h3><h3 id="8-2-未设置X-Download-Options响应头"><a href="#8-2-未设置X-Download-Options响应头" class="headerlink" title="8.2 未设置X-Download-Options响应头"></a>8.2 未设置X-Download-Options响应头</h3><h3 id="8-3-未设置X-Permitted-Cross-Domain-Policies响应头"><a href="#8-3-未设置X-Permitted-Cross-Domain-Policies响应头" class="headerlink" title="8.3 未设置X-Permitted-Cross-Domain-Policies响应头"></a>8.3 未设置X-Permitted-Cross-Domain-Policies响应头</h3><h3 id="8-4-未设置Referrer-Policy响应头"><a href="#8-4-未设置Referrer-Policy响应头" class="headerlink" title="8.4 未设置Referrer-Policy响应头"></a>8.4 未设置Referrer-Policy响应头</h3><h3 id="8-5-未设置X-XSS-Protection响应头"><a href="#8-5-未设置X-XSS-Protection响应头" class="headerlink" title="8.5 未设置X-XSS-Protection响应头"></a>8.5 未设置X-XSS-Protection响应头</h3><h3 id="8-6-点击劫持-无X-Frame-Options头信息"><a href="#8-6-点击劫持-无X-Frame-Options头信息" class="headerlink" title="8.6 点击劫持:无X-Frame-Options头信息"></a>8.6 点击劫持:无X-Frame-Options头信息</h3><h3 id="8-7-未设置X-Content-Type-Options响应头"><a href="#8-7-未设置X-Content-Type-Options响应头" class="headerlink" title="8.7 未设置X-Content-Type-Options响应头"></a>8.7 未设置X-Content-Type-Options响应头</h3><p><strong>解决方法：</strong></p>
-<p>在nginx.conf配置文件中添加如下配置：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"># 相关安全漏洞响应头    </span><br><span class="line"># 检测到目标 X-Content-Type-Options响应头缺失 这个暂时不开启，不然部分banner无法使用    </span><br><span class="line">#add_header X-Content-Type-Options &quot;nosniff&quot;;    </span><br><span class="line"># 检测到目标 Content-Security-Policy响应头缺失  这个暂时不开启，不然会导致Cesium无法使用    </span><br><span class="line">#add_header Content-Security-Policy &quot;default-src &#x27;self&#x27; http: https://* data: blob: &#x27;unsafe-eval&#x27; &#x27;unsafe-inline&#x27;;child-src &#x27;self&#x27;;worker-src &#x27;self&#x27; data:&quot; always;</span><br><span class="line"></span><br><span class="line"> # 相关安全漏洞响应头    </span><br><span class="line"> # 检测到目标 X-XSS-Protection响应头缺失    </span><br><span class="line"> add_header X-XSS-Protection &quot;1; mode=block&quot;;    </span><br><span class="line"> # 检测到目标 Referrer-Policy响应头缺失    </span><br><span class="line"> add_header Referrer-Policy &quot;no-referrer-when-downgrade&quot; always;    </span><br><span class="line"> # 检测到目标 X-Permitted-Cross-Domain-Policies响应头缺失    </span><br><span class="line"> add_header X-Permitted-Cross-Domain-Policies none;    </span><br><span class="line"> # 检测到目标 X-Download-Options响应头缺失    </span><br><span class="line"> add_header X-Download-Options noopen;    </span><br><span class="line"> # 检测到目标 Strict-Transport-Security响应头缺失    </span><br><span class="line"> add_header Strict-Transport-Security &quot;max-age=63072000; includeSubdomains; preload&quot;;</span><br><span class="line">#点击劫持：X-Frame-Options未配置</span><br><span class="line">add_header X-Frame-Options SAMEORIGIN;</span><br><span class="line">#检测到目标 X-Content-Type-Options响应头缺失  开启后部分banner无法使用  不影像我们系统使用 可开启   </span><br><span class="line">add_header X-Content-Type-Options &quot;nosniff&quot;;    </span><br></pre></td></tr></table></figure>
-
-<h3 id=""><a href="#" class="headerlink" title=""></a><img src="/imgs/3a85d3149ee34be783051f38048ecf36.png"></h3><p>配置后重新nginx即可</p>
-<p>如果配置后出现如下问题Cesium无法使用，nginx不配置Content-Security-Policy即可，不影响漏扫，上面配置是已注释掉Content-Security-Policy的，可直接复制使用</p>
-<p><img src="/imgs/ca625247ddbe45b483d31c9fe5dc923c.png"></p>
-<h2 id="9-完整nginx-conf文件内容："><a href="#9-完整nginx-conf文件内容：" class="headerlink" title="9.完整nginx.conf文件内容："></a>9.完整nginx.conf文件内容：</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">#user  nobody;</span><br><span class="line">worker_processes  1;</span><br><span class="line"></span><br><span class="line">#error_log  logs/error.log;</span><br><span class="line">#error_log  logs/error.log  notice;</span><br><span class="line">#error_log  logs/error.log  info;</span><br><span class="line"></span><br><span class="line">#pid        logs/nginx.pid;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">events &#123;</span><br><span class="line">    worker_connections  1024;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">http &#123;</span><br><span class="line">    include       mime.types;</span><br><span class="line">    default_type  application/octet-stream;</span><br><span class="line"></span><br><span class="line">     server &#123;</span><br><span class="line">        listen 8080  ssl;</span><br><span class="line">        server_name  www.aaa.cn;</span><br><span class="line"></span><br><span class="line">	client_max_body_size 300m;         #主要是这个参数，限制了上传文件大大小</span><br><span class="line"></span><br><span class="line">	ssl_certificate          www.aaa.cn_bundle.pem;</span><br><span class="line">        ssl_certificate_key      www.aaa.cn.key;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">	ssl_protocols TLSv1 TLSv1.1 TLSv1.2;</span><br><span class="line">	#只允许TLS协议</span><br><span class="line"> </span><br><span class="line">	ssl_ciphers &quot;ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-SHA384:ECDHE-RSA-AES128-SHA256:ECDHE-RSA-AES256-SHA:ECDHE-RSA-AES128-SHA:DHE-RSA-AES256-SHA256:DHE-RSA-AES128-SHA256:DHE-RSA-AES256-SHA:DHE-RSA-AES128-SHA:ECDHE-RSA-DES-CBC3-SHA:EDH-RSA-DES-CBC3-SHA:AES256-GCM-SHA384:AES128-GCM-SHA256:AES256-SHA256:AES128-SHA256:AES256-SHA:AES128-SHA:DES-CBC3-SHA:HIGH:!aNULL:!eNULL:!EXPORT:!DES:!MD5:!PSK:!RC4&quot;;</span><br><span class="line">	#加密套件,这里用了CloudFlares Internet facing SSL cipher configuration</span><br><span class="line"> </span><br><span class="line">	ssl_prefer_server_ciphers on;</span><br><span class="line">	#由服务器协商最佳的加密算法</span><br><span class="line"></span><br><span class="line">      # 相关安全漏洞响应头    </span><br><span class="line">      # 检测到目标 X-XSS-Protection响应头缺失    </span><br><span class="line">      add_header X-XSS-Protection &quot;1; mode=block&quot;;    </span><br><span class="line">      # 检测到目标 Referrer-Policy响应头缺失    </span><br><span class="line">      add_header Referrer-Policy &quot;no-referrer-when-downgrade&quot; always;    </span><br><span class="line">      # 检测到目标 X-Permitted-Cross-Domain-Policies响应头缺失    </span><br><span class="line">      add_header X-Permitted-Cross-Domain-Policies none;    </span><br><span class="line">      # 检测到目标 X-Download-Options响应头缺失    </span><br><span class="line">      add_header X-Download-Options noopen;    </span><br><span class="line">      # 检测到目标 Strict-Transport-Security响应头缺失    </span><br><span class="line">      add_header Strict-Transport-Security &quot;max-age=63072000; includeSubdomains; preload&quot;;</span><br><span class="line">      #点击劫持：X-Frame-Options未配置</span><br><span class="line">      add_header X-Frame-Options SAMEORIGIN;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        location /ak_hwrl &#123;</span><br><span class="line">            proxy_pass http://192.168.100.10:8012;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        location /sys-api &#123; </span><br><span class="line">            proxy_pass http://192.168.100.10:9999;</span><br><span class="line">        &#125;</span><br><span class="line">	 </span><br><span class="line">	location /manage-api &#123; </span><br><span class="line">	    proxy_pass http://192.168.100.10:9999;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">	location /hangjingsoft &#123; </span><br><span class="line">	    proxy_pass http://192.168.100.10:8012;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	location /excel &#123; </span><br><span class="line">	    proxy_pass http://192.168.100.10:8012;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	location /ryjl &#123; </span><br><span class="line">	    proxy_pass http://192.168.100.10:8012;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	location /ueditor &#123; </span><br><span class="line">	    proxy_pass http://192.168.100.10:8012;</span><br><span class="line">	&#125;</span><br><span class="line">        </span><br><span class="line">	location / &#123;</span><br><span class="line">            root   html;</span><br><span class="line">            index  index.html index.htm;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 				  
 	  
       
@@ -529,7 +431,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">漏洞修复</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
         		</li>
       		
 		</ul>
@@ -541,7 +443,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/漏洞修复/" class="article-tag-list-link color5">漏洞修复</a>
+        			<a href="/categories/博客/" class="article-tag-list-link color3">博客</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/博客/hexo/" class="article-tag-list-link color5">hexo</a>
         		</li>
       		
 		</ul>
@@ -565,18 +471,9 @@
   
 <nav id="article-nav">
   
-    <a href="/post/a8dc1525.html" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          hexo 插件hexo-git-backup实现对文章的备份
-        
-      </div>
-    </a>
   
-  
-    <a href="/post/bf358e81.html" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">系统开机自启动程序设置</div>
+    <a href="/post/ef37248d.html" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">2025-09-17-MySQL的安装和配置</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -602,7 +499,7 @@
           <span class="tooltip-content">
 			<span style="font-size: 20px;font-weight: bold;">目录</span>
             <div class="toc-article">
-              <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AF%86%E7%A0%81%E9%99%90%E5%88%B6"><span class="toc-number">1.</span> <span class="toc-text">1.服务器密码限制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E6%9C%8D%E5%8A%A1%E8%BF%9C%E7%A8%8B%E7%AE%A1%E7%90%86"><span class="toc-number">2.</span> <span class="toc-text">2.服务远程管理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E5%BC%80%E5%90%AF%E6%97%A5%E5%BF%97%E5%8A%9F%E8%83%BD"><span class="toc-number">3.</span> <span class="toc-text">3.开启日志功能</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E6%B8%85%E9%99%A4%E8%BA%AB%E4%BB%BD%E9%89%B4%E5%88%AB%E4%BF%A1%E6%81%AF"><span class="toc-number">4.</span> <span class="toc-text">4.清除身份鉴别信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-SSL-TLS%E5%8D%8F%E8%AE%AE%E4%BF%A1%E6%81%AF%E6%B3%84%E9%9C%B2"><span class="toc-number">5.</span> <span class="toc-text">5.SSL&#x2F;TLS协议信息泄露</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#5-1-tomcat%E7%A6%81%E7%94%A83DES%E5%92%8CDES%E7%AE%97%E6%B3%95%EF%BC%9A"><span class="toc-number">5.1.</span> <span class="toc-text">5.1.tomcat禁用3DES和DES算法：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-2-nginx%E7%A6%81%E7%94%A83DES%E5%92%8CDES%E7%AE%97%E6%B3%95%EF%BC%9A"><span class="toc-number">5.2.</span> <span class="toc-text">5.2.nginx禁用3DES和DES算法：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-%E7%BB%88%E7%AB%AF%E6%9C%8D%E5%8A%A1%E6%9C%AA%E4%BD%BF%E7%94%A8%E7%BD%91%E7%BB%9C%E7%BA%A7%E5%88%AB%E8%BA%AB%E4%BB%BD%E9%AA%8C%E8%AF%81-NLA"><span class="toc-number">6.</span> <span class="toc-text">6.终端服务未使用网络级别身份验证 (NLA)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-Microsoft-Windows%E8%BF%9C%E7%A8%8B%E6%A1%8C%E9%9D%A2%E5%8D%8F%E8%AE%AE%E6%9C%8D%E5%8A%A1%E7%A8%8B%E5%BA%8F%E5%AF%86%E9%92%A5%E6%B3%84%E9%9C%B2%E6%BC%8F%E6%B4%9E-CVE-2005-1794"><span class="toc-number">7.</span> <span class="toc-text">7.Microsoft Windows远程桌面协议服务程序密钥泄露漏洞(CVE-2005-1794)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-%E5%93%8D%E5%BA%94%E5%A4%B4%E5%AE%89%E5%85%A8%E6%BC%8F%E6%B4%9E"><span class="toc-number">8.</span> <span class="toc-text">8.响应头安全漏洞</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#8-1-%E6%9C%AA%E8%AE%BE%E7%BD%AEStrict-Transport-Security%E5%93%8D%E5%BA%94%E5%A4%B4"><span class="toc-number">8.1.</span> <span class="toc-text">8.1 未设置Strict-Transport-Security响应头</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-2-%E6%9C%AA%E8%AE%BE%E7%BD%AEX-Download-Options%E5%93%8D%E5%BA%94%E5%A4%B4"><span class="toc-number">8.2.</span> <span class="toc-text">8.2 未设置X-Download-Options响应头</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-3-%E6%9C%AA%E8%AE%BE%E7%BD%AEX-Permitted-Cross-Domain-Policies%E5%93%8D%E5%BA%94%E5%A4%B4"><span class="toc-number">8.3.</span> <span class="toc-text">8.3 未设置X-Permitted-Cross-Domain-Policies响应头</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-4-%E6%9C%AA%E8%AE%BE%E7%BD%AEReferrer-Policy%E5%93%8D%E5%BA%94%E5%A4%B4"><span class="toc-number">8.4.</span> <span class="toc-text">8.4 未设置Referrer-Policy响应头</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-5-%E6%9C%AA%E8%AE%BE%E7%BD%AEX-XSS-Protection%E5%93%8D%E5%BA%94%E5%A4%B4"><span class="toc-number">8.5.</span> <span class="toc-text">8.5 未设置X-XSS-Protection响应头</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-6-%E7%82%B9%E5%87%BB%E5%8A%AB%E6%8C%81-%E6%97%A0X-Frame-Options%E5%A4%B4%E4%BF%A1%E6%81%AF"><span class="toc-number">8.6.</span> <span class="toc-text">8.6 点击劫持:无X-Frame-Options头信息</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-7-%E6%9C%AA%E8%AE%BE%E7%BD%AEX-Content-Type-Options%E5%93%8D%E5%BA%94%E5%A4%B4"><span class="toc-number">8.7.</span> <span class="toc-text">8.7 未设置X-Content-Type-Options响应头</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">8.8.</span> <span class="toc-text"></span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#9-%E5%AE%8C%E6%95%B4nginx-conf%E6%96%87%E4%BB%B6%E5%86%85%E5%AE%B9%EF%BC%9A"><span class="toc-number">9.</span> <span class="toc-text">9.完整nginx.conf文件内容：</span></a></li></ol>
+              <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8cmd%E7%AA%97%E5%8F%A3%E6%88%96%E8%80%85vscode%E6%96%B0%E5%A2%9E%E6%96%87%E7%AB%A0"><span class="toc-number">1.</span> <span class="toc-text">使用cmd窗口或者vscode新增文章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B0%83%E6%95%B4%E6%96%87%E7%AB%A0%E7%9A%84tag%E5%92%8Ccategories%E7%94%A8%E4%BA%8E%E5%88%86%E7%B1%BB%E5%92%8C%E5%BD%92%E6%A1%A3"><span class="toc-number">2.</span> <span class="toc-text">调整文章的tag和categories用于分类和归档</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9%E6%96%87%E7%AB%A0title%EF%BC%8C%E5%8E%BB%E9%99%A4%E6%97%B6%E9%97%B4%E6%88%B3-%E5%A6%82%EF%BC%8C2025-09-17"><span class="toc-number">3.</span> <span class="toc-text">修改文章title，去除时间戳[如，2025-09-17-]</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B9%A6%E5%86%99%E6%96%87%E7%AB%A0"><span class="toc-number">4.</span> <span class="toc-text">书写文章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%91%E5%B8%83%E5%88%B0%E6%BA%90%E7%A0%81%EF%BC%8C%E6%BA%90%E7%A0%81%E4%BB%93%E5%BA%93%E8%87%AA%E5%8A%A8%E5%90%8C%E6%AD%A5%E5%88%B0%E7%BD%91%E7%AB%99%E4%BB%A3%E7%A0%81"><span class="toc-number">5.</span> <span class="toc-text">发布到源码，源码仓库自动同步到网站代码</span></a></li></ol>
             </div>
           </span>
         </div>
