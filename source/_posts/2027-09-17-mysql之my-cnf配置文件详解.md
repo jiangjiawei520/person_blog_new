@@ -1,5 +1,5 @@
 ---
-title: 2027-09-17-mysql之my.cnf配置文件详解
+title: mysql之my.cnf配置文件详解
 tag:
   - windows
 categories:
