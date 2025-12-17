@@ -33,6 +33,8 @@ top:
 
 >  [root@localhost~]# wget http://mirrors.tuna.tsinghua.edu.cn/apache/tomcat/tomcat-9/v9.0.11/bin/apache-tomcat-9.0.11.tar.gz
 
+<!--more-->
+
 ## 安装Tomcat
 
 1、新建tomcat存放的目录
@@ -372,4 +374,3 @@ ROOT.xml 文件添加以下内容:
 
 在 /home/sam/share/upload 存放共享资源 a.jpg
 
-<!--more-->
