@@ -7,19 +7,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <meta http-equiv="Content-Language" content="zh-cn">
   <link rel="dns-prefetch" href="https://github.com/jiangjiawei520">
-  <title>2025-12-08-解决禁止向GitHub仓库推送任何大于100MB的单个文件问题 | 蒋家威的博客</title>
+  <title>解决禁止向GitHub仓库推送任何大于100MB的单个文件问题 | 蒋家威的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta name="description" content="🚫 GitHub 文件大小限制说明 硬性限制：GitHub 仓库禁止推送任何大于 100 MB 的单个文件。 警告限制：大于 50 MB 的文件会收到警告，因为推荐使用 Git LFS。 历史提交中的大文件：如果你的仓库历史中曾经提交过大文件（即使后来删除了），这个“历史记录”本身也会导致推送失败。解决这类问题需要使用特殊命令清理历史。  🔧 解决方案（根据你的目标选择）请根据你对这个大文件的">
+  <meta name="description" content="🚫 GitHub 文件大小限制说明 硬性限制：GitHub 仓库禁止推送任何大于 100 MB 的单个文件。 警告限制：大于 50 MB 的文件会收到警告，因为推荐使用 Git LFS。 历史提交中的大文件：如果你的仓库历史中曾经提交过大文件（即使后来删除了），这个“历史记录”本身也会导致推送失败。解决这类问题需要使用特殊命令清理历史。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="2025-12-08-解决禁止向GitHub仓库推送任何大于100MB的单个文件问题">
-<meta property="og:url" content="https://github.com/jiangjiawei520/post/fcc83ec0.html">
+<meta property="og:title" content="解决禁止向GitHub仓库推送任何大于100MB的单个文件问题">
+<meta property="og:url" content="https://github.com/jiangjiawei520/post/c364220f.html">
 <meta property="og:site_name" content="蒋家威的博客">
-<meta property="og:description" content="🚫 GitHub 文件大小限制说明 硬性限制：GitHub 仓库禁止推送任何大于 100 MB 的单个文件。 警告限制：大于 50 MB 的文件会收到警告，因为推荐使用 Git LFS。 历史提交中的大文件：如果你的仓库历史中曾经提交过大文件（即使后来删除了），这个“历史记录”本身也会导致推送失败。解决这类问题需要使用特殊命令清理历史。  🔧 解决方案（根据你的目标选择）请根据你对这个大文件的">
+<meta property="og:description" content="🚫 GitHub 文件大小限制说明 硬性限制：GitHub 仓库禁止推送任何大于 100 MB 的单个文件。 警告限制：大于 50 MB 的文件会收到警告，因为推荐使用 Git LFS。 历史提交中的大文件：如果你的仓库历史中曾经提交过大文件（即使后来删除了），这个“历史记录”本身也会导致推送失败。解决这类问题需要使用特殊命令清理历史。">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://github.com/imgs/deepseek_mermaid_20251208_afeeff.png">
 <meta property="article:published_time" content="2025-12-08T14:36:29.000Z">
-<meta property="article:modified_time" content="2025-12-17T03:33:13.258Z">
+<meta property="article:modified_time" content="2025-12-17T03:41:53.160Z">
 <meta property="article:author" content="JiaWei Jiang">
 <meta property="article:tag" content="git">
 <meta name="twitter:card" content="summary">
@@ -322,13 +322,13 @@
         
   
     <h1 class="article-title_code_ant" itemprop="name">
-	  <a href="/post/fcc83ec0.html">2025-12-08-解决禁止向GitHub仓库推送任何大于100MB的单个文件问题</a>
+	  <a href="/post/c364220f.html">解决禁止向GitHub仓库推送任何大于100MB的单个文件问题</a>
 	</h1>
   
 
         
 		
-		  <a href="/post/fcc83ec0.html" class="archive-article-date">
+		  <a href="/post/c364220f.html" class="archive-article-date">
   	<time datetime="2025-12-08T14:36:29.000Z" itemprop="datePublished">
 	<!-- <i class="icon-calendar icon"></i> -->
 
@@ -363,7 +363,7 @@
 		&nbsp; &nbsp; &nbsp;
 		<i class="fa fa-eye" aria-hidden="true"></i>
 		&nbsp;
-		<span class="waline-pageview-count" data-path="/post/fcc83ec0.html"><i class="fa fa-spinner fa-spin"></i></span>
+		<span class="waline-pageview-count" data-path="/post/c364220f.html"><i class="fa fa-spinner fa-spin"></i></span>
 	</span>
 	
 	-->
@@ -411,11 +411,11 @@
 <li><strong>警告限制</strong>：大于 <strong>50 MB</strong> 的文件会收到警告，因为推荐使用 Git LFS。</li>
 <li><strong>历史提交中的大文件</strong>：如果你的仓库历史中<strong>曾经提交过</strong>大文件（即使后来删除了），这个“历史记录”本身也会导致推送失败。解决这类问题需要使用特殊命令清理历史。</li>
 </ul>
+<span id="more"></span>
+
 <h3 id="🔧-解决方案（根据你的目标选择）"><a href="#🔧-解决方案（根据你的目标选择）" class="headerlink" title="🔧 解决方案（根据你的目标选择）"></a>🔧 解决方案（根据你的目标选择）</h3><p>请根据你对这个大文件的需求，选择以下最适合你的路径：</p>
 <p><img src="/imgs/deepseek_mermaid_20251208_afeeff.png" alt="deepseek_mermaid_20251208_afeeff"></p>
 <p><svg id="mermaid-svg-25" width="100%" xmlns="http://www.w3.org/2000/svg" class="flowchart mermaid-svg" viewBox="-40.800000000000004 -40.800000000000004 897.5999999999999 1207.6" role="graphics-document document" height="100%" style="max-width: 100%; transform-origin: 0px 0px; user-select: none; transform: translate(171.075px, 0px) scale(0.545014);"><g><marker id="mermaid-svg-25_flowchart-v2-pointEnd" class="marker flowchart-v2" viewBox="0 0 10 10" refX="5" refY="5" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowMarkerPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker><marker id="mermaid-svg-25_flowchart-v2-pointStart" class="marker flowchart-v2" viewBox="0 0 10 10" refX="4.5" refY="5" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto"><path d="M 0 5 L 10 10 L 10 0 z" class="arrowMarkerPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker><marker id="mermaid-svg-25_flowchart-v2-circleEnd" class="marker flowchart-v2" viewBox="0 0 10 10" refX="11" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><circle cx="5" cy="5" r="5" class="arrowMarkerPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></circle></marker><marker id="mermaid-svg-25_flowchart-v2-circleStart" class="marker flowchart-v2" viewBox="0 0 10 10" refX="-1" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><circle cx="5" cy="5" r="5" class="arrowMarkerPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></circle></marker><marker id="mermaid-svg-25_flowchart-v2-crossEnd" class="marker cross flowchart-v2" viewBox="0 0 11 11" refX="12" refY="5.2" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><path d="M 1,1 l 9,9 M 10,1 l -9,9" class="arrowMarkerPath" style="stroke-width: 2; stroke-dasharray: 1, 0;"></path></marker><marker id="mermaid-svg-25_flowchart-v2-crossStart" class="marker cross flowchart-v2" viewBox="0 0 11 11" refX="-1" refY="5.2" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><path d="M 1,1 l 9,9 M 10,1 l -9,9" class="arrowMarkerPath" style="stroke-width: 2; stroke-dasharray: 1, 0;"></path></marker><g class="root"><g class="clusters"></g><g class="edgePaths"><path d="M414,62L414,66.167C414,70.333,414,78.667,414.07,86.417C414.141,94.167,414.281,101.334,414.351,104.917L414.422,108.501" id="L_A_B_0" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" style="" marker-end="url(#mermaid-svg-25_flowchart-v2-pointEnd)"></path><path d="M361.549,281.549L347.791,296.458C334.033,311.366,306.516,341.183,292.833,361.675C279.149,382.167,279.298,393.334,279.372,398.917L279.447,404.5" id="L_B_C_0" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" style="" marker-end="url(#mermaid-svg-25_flowchart-v2-pointEnd)"></path><path d="M214.786,645.786L201.988,662.655C189.19,679.524,163.595,713.262,150.798,735.631C138,758,138,769,138,774.5L138,780" id="L_C_D_0" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" style="" marker-end="url(#mermaid-svg-25_flowchart-v2-pointEnd)"></path><path d="M344.214,645.786L356.845,662.655C369.476,679.524,394.738,713.262,407.369,737.631C420,762,420,777,420,784.5L420,792" id="L_C_E_0" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" style="" marker-end="url(#mermaid-svg-25_flowchart-v2-pointEnd)"></path><path d="M486.755,262.245L520.629,280.371C554.503,298.497,622.252,334.748,656.126,384.208C690,433.667,690,496.333,690,559C690,621.667,690,684.333,690,723.167C690,762,690,777,690,784.5L690,792" id="L_B_F_0" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" style="" marker-end="url(#mermaid-svg-25_flowchart-v2-pointEnd)"></path><path d="M138,886L138,890.167C138,894.333,138,902.667,138,912.333C138,922,138,933,138,938.5L138,944" id="L_D_G_0" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" style="" marker-end="url(#mermaid-svg-25_flowchart-v2-pointEnd)"></path><path d="M690,874L690,880.167C690,886.333,690,898.667,690,908.333C690,918,690,925,690,928.5L690,932" id="L_F_H_0" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" style="" marker-end="url(#mermaid-svg-25_flowchart-v2-pointEnd)"></path><path d="M138,1002L138,1008.167C138,1014.333,138,1026.667,173.012,1039.43C208.023,1052.193,278.046,1065.385,313.058,1071.982L348.069,1078.578" id="L_G_I_0" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" style="" marker-end="url(#mermaid-svg-25_flowchart-v2-pointEnd)"></path><path d="M690,1014L690,1018.167C690,1022.333,690,1030.667,654.988,1041.43C619.977,1052.193,549.954,1065.385,514.942,1071.982L479.931,1078.578" id="L_H_I_0" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" style="" marker-end="url(#mermaid-svg-25_flowchart-v2-pointEnd)"></path></g><g class="edgeLabels"><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="background-color: rgba(232, 232, 232, 0.5); display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel" style="fill: rgb(51, 51, 51); color: rgb(51, 51, 51); background-color: rgba(232, 232, 232, 0.8); text-align: center;"></span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(279, 371)"><g class="label" transform="translate(-48, -12)"><foreignObject width="96" height="24"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="background-color: rgba(232, 232, 232, 0.5); display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel" style="fill: rgb(51, 51, 51); color: rgb(51, 51, 51); background-color: rgba(232, 232, 232, 0.8); text-align: center;"><p style="margin: 0px; background-color: rgba(232, 232, 232, 0.8);">是，必须保留</p></span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(138, 747)"><g class="label" transform="translate(-8, -12)"><foreignObject width="16" height="24"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="background-color: rgba(232, 232, 232, 0.5); display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel" style="fill: rgb(51, 51, 51); color: rgb(51, 51, 51); background-color: rgba(232, 232, 232, 0.8); text-align: center;"><p style="margin: 0px; background-color: rgba(232, 232, 232, 0.8);">是</p></span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(420, 747)"><g class="label" transform="translate(-84.1953125, -12)"><foreignObject width="168.390625" height="24"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="background-color: rgba(232, 232, 232, 0.5); display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel" style="fill: rgb(51, 51, 51); color: rgb(51, 51, 51); background-color: rgba(232, 232, 232, 0.8); text-align: center;"><p style="margin: 0px; background-color: rgba(232, 232, 232, 0.8);">否（如大型文本&#x2F;日志）</p></span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(690, 559)"><g class="label" transform="translate(-48, -12)"><foreignObject width="96" height="24"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="background-color: rgba(232, 232, 232, 0.5); display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel" style="fill: rgb(51, 51, 51); color: rgb(51, 51, 51); background-color: rgba(232, 232, 232, 0.8); text-align: center;"><p style="margin: 0px; background-color: rgba(232, 232, 232, 0.8);">否，可以删除</p></span></div></foreignObject></g></g><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="background-color: rgba(232, 232, 232, 0.5); display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel" style="fill: rgb(51, 51, 51); color: rgb(51, 51, 51); background-color: rgba(232, 232, 232, 0.8); text-align: center;"></span></div></foreignObject></g></g><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="background-color: rgba(232, 232, 232, 0.5); display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel" style="fill: rgb(51, 51, 51); color: rgb(51, 51, 51); background-color: rgba(232, 232, 232, 0.8); text-align: center;"></span></div></foreignObject></g></g><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="background-color: rgba(232, 232, 232, 0.5); display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel" style="fill: rgb(51, 51, 51); color: rgb(51, 51, 51); background-color: rgba(232, 232, 232, 0.8); text-align: center;"></span></div></foreignObject></g></g><g class="edgeLabel"><g class="label" transform="translate(0, 0)"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="background-color: rgba(232, 232, 232, 0.5); display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel" style="fill: rgb(51, 51, 51); color: rgb(51, 51, 51); background-color: rgba(232, 232, 232, 0.8); text-align: center;"></span></div></foreignObject></g></g></g><g class="nodes"><g class="node default" id="flowchart-A-0" transform="translate(414, 35)"><rect class="basic label-container" style="" x="-108.7890625" y="-27" width="217.578125" height="54"></rect><g class="label" style="" transform="translate(-78.7890625, -12)"><rect></rect><foreignObject width="157.578125" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel" style="fill: rgb(51, 51, 51); color: rgb(51, 51, 51);"><p style="margin: 0px;">遇到文件超100MB错误</p></span></div></foreignObject></g></g><g class="node default" id="flowchart-B-1" transform="translate(414, 223)"><polygon points="111,0 222,-111 111,-222 0,-111" class="label-container" transform="translate(-110.5, 111)"></polygon><g class="label" style="" transform="translate(-72, -24)"><rect></rect><foreignObject width="144" height="48"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel" style="fill: rgb(51, 51, 51); color: rgb(51, 51, 51);"><p style="margin: 0px;">这个大文件是否必须<br>保留在版本控制中？</p></span></div></foreignObject></g></g><g class="node default" id="flowchart-C-3" transform="translate(279, 559)"><polygon points="151,0 302,-151 151,-302 0,-151" class="label-container" transform="translate(-150.5, 151)"></polygon><g class="label" style="" transform="translate(-100, -36)"><rect></rect><foreignObject width="200" height="72"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table; white-space: break-spaces; line-height: 1.5; max-width: 200px; text-align: center; width: 200px;"><span class="nodeLabel" style="fill: rgb(51, 51, 51); color: rgb(51, 51, 51);"><p style="margin: 0px;">是否为二进制文件<br>（如图像、模型、数据集等）？</p></span></div></foreignObject></g></g><g class="node default" id="flowchart-D-5" transform="translate(138, 835)"><rect class="basic label-container" style="" x="-130" y="-51" width="260" height="102"></rect><g class="label" style="" transform="translate(-100, -36)"><rect></rect><foreignObject width="200" height="72"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table; white-space: break-spaces; line-height: 1.5; max-width: 200px; text-align: center; width: 200px;"><span class="nodeLabel" style="fill: rgb(51, 51, 51); color: rgb(51, 51, 51);"><p style="margin: 0px;">方案一：使用 Git LFS<br>（官方推荐，用于跟踪大文件）</p></span></div></foreignObject></g></g><g class="node default" id="flowchart-E-7" transform="translate(420, 835)"><rect class="basic label-container" style="" x="-102" y="-39" width="204" height="78"></rect><g class="label" style="" transform="translate(-72, -24)"><rect></rect><foreignObject width="144" height="48"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel" style="fill: rgb(51, 51, 51); color: rgb(51, 51, 51);"><p style="margin: 0px;">考虑分割文件或<br>检查是否为必要文件</p></span></div></foreignObject></g></g><g class="node default" id="flowchart-F-9" transform="translate(690, 835)"><rect class="basic label-container" style="" x="-118" y="-39" width="236" height="78"></rect><g class="label" style="" transform="translate(-88, -24)"><rect></rect><foreignObject width="176" height="48"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel" style="fill: rgb(51, 51, 51); color: rgb(51, 51, 51);"><p style="margin: 0px;">方案二：彻底移除大文件<br>（清理Git历史）</p></span></div></foreignObject></g></g><g class="node default" id="flowchart-G-11" transform="translate(138, 975)"><rect class="basic label-container" style="" x="-90.1015625" y="-27" width="180.203125" height="54"></rect><g class="label" style="" transform="translate(-60.1015625, -12)"><rect></rect><foreignObject width="120.203125" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel" style="fill: rgb(51, 51, 51); color: rgb(51, 51, 51);"><p style="margin: 0px;">按照LFS流程操作</p></span></div></foreignObject></g></g><g class="node default" id="flowchart-H-13" transform="translate(690, 975)"><rect class="basic label-container" style="" x="-97.6953125" y="-39" width="195.390625" height="78"></rect><g class="label" style="" transform="translate(-67.6953125, -24)"><rect></rect><foreignObject width="135.390625" height="48"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel" style="fill: rgb(51, 51, 51); color: rgb(51, 51, 51);"><p style="margin: 0px;">使用 git filter-repo<br>等工具清理历史</p></span></div></foreignObject></g></g><g class="node default" id="flowchart-I-16" transform="translate(414, 1091)"><rect class="basic label-container" style="" x="-62" y="-27" width="124" height="54"></rect><g class="label" style="" transform="translate(-32, -12)"><rect></rect><foreignObject width="64" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel" style="fill: rgb(51, 51, 51); color: rgb(51, 51, 51);"><p style="margin: 0px;">成功推送</p></span></div></foreignObject></g></g></g></g></g></svg></p>
-<span id="more"></span>
-
 <p>提供一个从零开始的、完整的操作步骤指南。请严格按照顺序执行：</p>
 <h3 id="🧰-第一步：安装-Git-LFS"><a href="#🧰-第一步：安装-Git-LFS" class="headerlink" title="🧰 第一步：安装 Git LFS"></a>🧰 第一步：安装 Git LFS</h3><p>这是前提，你的本地环境必须安装 LFS 客户端。</p>
 <ol>
@@ -774,7 +774,7 @@
 		<span> 63 篇</span>
 		<span class="post-meta-divider">|</span>
 		<i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-		<span> <span class="post-count">101.9k</span></span>
+		<span> <span class="post-count">102.1k</span></span>
       </div>
 	  
 	  <!-- 添加不蒜子统计 -->
@@ -1011,11 +1011,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">其他</a>
+                <a href="javascript:void(0)" class="js-tag color3">测试</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">测试</a>
+                <a href="javascript:void(0)" class="js-tag color3">其他</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1087,10 +1087,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">七牛云</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">MobaXterm</a>
               </li>
              
@@ -1099,11 +1095,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">github</a>
+                <a href="javascript:void(0)" class="js-tag color4">七牛云</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">docker</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">github</a>
               </li>
              
               <li class="article-tag-list-item">
