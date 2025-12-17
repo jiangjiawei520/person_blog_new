@@ -1,5 +1,5 @@
 ---
-title: 2025-12-11-解决国内github.com打不开的最最最准确方法
+title: 解决国内github.com打不开的最最最准确方法
 tag:
   - Windows
   - github
