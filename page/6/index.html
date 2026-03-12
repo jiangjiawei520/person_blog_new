@@ -310,6 +310,283 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-2024-03-15-Postgresql 12.2 + PostGIS 3.0.1 安装部署" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h2 itemprop="name">
+      <a class="article-title_code_ant" href="/post/fa3a8078.html">Postgresql 12.2 + PostGIS 3.0.1 安装部署</a>
+    </h2>
+  
+
+        
+		
+		  <a href="/post/fa3a8078.html" class="archive-article-date">
+  	<time datetime="2024-03-15T00:00:00.000Z" itemprop="datePublished">
+	<!-- <i class="icon-calendar icon"></i> -->
+
+	<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+	&nbsp;
+	2024-03-15</time>
+	
+	<!-- busuanzi阅读量统计
+	
+	-->
+	<!-- busuanzi阅读量统计 -->
+	
+	
+	
+    <!-- waline阅读量统计 
+	
+	-->
+</a>
+
+
+        
+		
+		
+		  <!-- 添加标题栏文字统计效果 -->
+<div class="word-count">
+	
+	
+    <span class="post-time">
+      <span class="post-meta-item-icon">
+	    <i class="fa fa-bar-chart" aria-hidden="true"></i>
+        <!-- <i class="fa fa-keyboard-o" aria-hidden="true"></i> -->
+        <span class="post-meta-item-text">字数统计: </span>
+        <span class="post-count">2.5k字</span>
+      </span>
+    </span>
+
+    <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+	    <i class="fa fa-pagelines" aria-hidden="true"></i>
+        <span class="post-meta-item-text">阅读时长: </span>
+        <span class="post-count">11min</span>
+      </span>
+    </span>
+	
+
+</div>
+<!-- 添加标题栏文字统计效果结束 -->
+		
+      </header>
+    
+	
+    <div class="article-entry" itemprop="articleBody">
+	  <!-- 添加分类与标签 -->
+	  
+		  
+			<h3 id="环境说明"><a href="#环境说明" class="headerlink" title="环境说明"></a>环境说明</h3><p>该套环境是用来适配ArcGIS 10.8.1 和 ArcGIS Pro 2.6。</p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>版本</th>
+<th>相关依赖</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>操作系统</td>
+<td>centos7.6</td>
+<td></td>
+</tr>
+<tr>
+<td>postgresql</td>
+<td>12.2</td>
+<td>zlib-devel readline-devel</td>
+</tr>
+<tr>
+<td>postgis</td>
+<td>3.0.1</td>
+<td>gcc g++</td>
+</tr>
+<tr>
+<td>GEOS</td>
+<td>3.8.0</td>
+<td></td>
+</tr>
+<tr>
+<td>sqlite3</td>
+<td>3.32.2</td>
+<td></td>
+</tr>
+<tr>
+<td>PROJ</td>
+<td>6.3.1</td>
+<td></td>
+</tr>
+<tr>
+<td>protubuf</td>
+<td>3.15.3</td>
+<td></td>
+</tr>
+<tr>
+<td>protubuf-c</td>
+<td>1.3.3</td>
+<td></td>
+</tr>
+<tr>
+<td>json-c</td>
+<td>0.13.1</td>
+<td></td>
+</tr>
+<tr>
+<td>CMake</td>
+<td>3.16.8</td>
+<td>openssl openssl-devel</td>
+</tr>
+<tr>
+<td>CGAL</td>
+<td>4.14.3</td>
+<td>gmp-devel boost-devel mpfr-devel zlib-devel libxml2-devel</td>
+</tr>
+<tr>
+<td>SFCGAL</td>
+<td>1.3.7</td>
+<td></td>
+</tr>
+<tr>
+<td>GDAL</td>
+<td>3.0.4</td>
+<td></td>
+</tr>
+<tr>
+<td>pcre</td>
+<td>8.45</td>
+<td></td>
+</tr>
+</tbody></table>
+		  
+				  
+	  
+      
+	  <!-- 添加打赏 -->
+	  
+	
+	  <!-- 添加版权声明 -->
+      
+	  
+	</div>
+	
+	<!-- 添加置顶 -->
+    <div class="article-info article-info-index">
+      
+	  
+	  <!-- 分类页 -->
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Postgresql</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">PostGIS</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/linux/" class="article-tag-list-link color1">linux</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/linux/Postgresql/" class="article-tag-list-link color1">Postgresql</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/linux/PostGIS/" class="article-tag-list-link color3">PostGIS</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+	  
+	  <!-- 添加展开全文 -->
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/post/fa3a8078.html">展开全文 >></a>
+        </p>
+      
+	  
+	  <!-- 添加分享 -->
+      
+	  
+      <div class="clearfix"></div>
+	  
+    </div>
+  </div>
+</article>
+
+
+
+<!-- 添加回到顶部和文章目录 -->
+<aside class="wrap-side-operation">
+  <div class="mod-side-operation">
+    
+      <div class="jump-container" id="js-jump-container" style="display:none;">
+        <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+          <i class="icon-font icon-back"></i>
+        </a>
+      </div>
+    
+    
+  </div>
+</aside>
+
+<!-- 添加评论 -->
+
+
+<!-- valine评论
+  
+  <section id="comments" style="margin:10px;padding:10px;background:#fff;">
+    <div id="vcomment" class="comment"></div> 
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+   var notify = 'true' == true ? true : false;
+   var verify = 'true' == true ? true : false;
+    window.onload = function() {
+        new Valine({
+            el: '.comment',
+            notify: notify,
+            verify: verify,
+            app_id: "oaNIM7WrQSG7UOdJT8sGT8Ap-gzGzoHsz",
+            app_key: "CnYOpc2uW5oBwt6wgLB1ggYh",
+            placeholder: "ヾﾉ≧∀≦)o来啊，快活啊!",
+            avatar:"wavatar"
+        });
+    }
+</script>
+  </section>
+
+-->
+<!-- valine评论 -->
+
+
+
+
+<!-- 文章页添加mathjax公式 -->
+
+  
+
+<!-- 文章页添加mathjax公式 -->
+
+
+  
     <article id="post-2024-03-14-程序某个端口的进程连接情况查询" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -1675,6 +1952,192 @@
 
 
   
+    <article id="post-2020-08-27-Markdown Cheat sheet" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h2 itemprop="name">
+      <a class="article-title_code_ant" href="/post/a904f437.html">markdown备忘表</a>
+    </h2>
+  
+
+        
+		
+		  <a href="/post/a904f437.html" class="archive-article-date">
+  	<time datetime="2020-08-27T00:00:00.000Z" itemprop="datePublished">
+	<!-- <i class="icon-calendar icon"></i> -->
+
+	<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+	&nbsp;
+	2020-08-27</time>
+	
+	<!-- busuanzi阅读量统计
+	
+	-->
+	<!-- busuanzi阅读量统计 -->
+	
+	
+	
+    <!-- waline阅读量统计 
+	
+	-->
+</a>
+
+
+        
+		
+		
+		  <!-- 添加标题栏文字统计效果 -->
+<div class="word-count">
+	
+	
+    <span class="post-time">
+      <span class="post-meta-item-icon">
+	    <i class="fa fa-bar-chart" aria-hidden="true"></i>
+        <!-- <i class="fa fa-keyboard-o" aria-hidden="true"></i> -->
+        <span class="post-meta-item-text">字数统计: </span>
+        <span class="post-count">270字</span>
+      </span>
+    </span>
+
+    <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+	    <i class="fa fa-pagelines" aria-hidden="true"></i>
+        <span class="post-meta-item-text">阅读时长: </span>
+        <span class="post-count">1min</span>
+      </span>
+    </span>
+	
+
+</div>
+<!-- 添加标题栏文字统计效果结束 -->
+		
+      </header>
+    
+	
+    <div class="article-entry" itemprop="articleBody">
+	  <!-- 添加分类与标签 -->
+	  
+		  
+			<h2 id="总览"><a href="#总览" class="headerlink" title="总览"></a>总览</h2><p>该Markdown备忘单提供了所有Markdown语法元素的快速概述。它无法涵盖所有的极端情况，因此，如果您需要有关这些元素中任何一个的更多信息，请参阅我们的参考指南以获取<a target="_blank" rel="noopener" href="http://markdown.p2hp.com/basic-syntax">基本语法</a>和<a target="_blank" rel="noopener" href="http://markdown.p2hp.com/extended-syntax">扩展语法</a>。</p>
+		  
+				  
+	  
+      
+	  <!-- 添加打赏 -->
+	  
+	
+	  <!-- 添加版权声明 -->
+      
+	  
+	</div>
+	
+	<!-- 添加置顶 -->
+    <div class="article-info article-info-index">
+      
+	  
+	  <!-- 分类页 -->
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">技术分享</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/技术分享/" class="article-tag-list-link color5">技术分享</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+	  
+	  <!-- 添加展开全文 -->
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/post/a904f437.html">展开全文 >></a>
+        </p>
+      
+	  
+	  <!-- 添加分享 -->
+      
+	  
+      <div class="clearfix"></div>
+	  
+    </div>
+  </div>
+</article>
+
+
+
+<!-- 添加回到顶部和文章目录 -->
+<aside class="wrap-side-operation">
+  <div class="mod-side-operation">
+    
+      <div class="jump-container" id="js-jump-container" style="display:none;">
+        <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+          <i class="icon-font icon-back"></i>
+        </a>
+      </div>
+    
+    
+  </div>
+</aside>
+
+<!-- 添加评论 -->
+
+
+<!-- valine评论
+  
+  <section id="comments" style="margin:10px;padding:10px;background:#fff;">
+    <div id="vcomment" class="comment"></div> 
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+   var notify = 'true' == true ? true : false;
+   var verify = 'true' == true ? true : false;
+    window.onload = function() {
+        new Valine({
+            el: '.comment',
+            notify: notify,
+            verify: verify,
+            app_id: "oaNIM7WrQSG7UOdJT8sGT8Ap-gzGzoHsz",
+            app_key: "CnYOpc2uW5oBwt6wgLB1ggYh",
+            placeholder: "ヾﾉ≧∀≦)o来啊，快活啊!",
+            avatar:"wavatar"
+        });
+    }
+</script>
+  </section>
+
+-->
+<!-- valine评论 -->
+
+
+
+
+<!-- 文章页添加mathjax公式 -->
+
+  
+
+<!-- 文章页添加mathjax公式 -->
+
+
+  
     <article id="post-2020-08-27-Markdown Basic grammar" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -1900,379 +2363,6 @@
 
 
   
-    <article id="post-2020-08-27-Markdown Cheat sheet" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h2 itemprop="name">
-      <a class="article-title_code_ant" href="/post/a904f437.html">markdown备忘表</a>
-    </h2>
-  
-
-        
-		
-		  <a href="/post/a904f437.html" class="archive-article-date">
-  	<time datetime="2020-08-27T00:00:00.000Z" itemprop="datePublished">
-	<!-- <i class="icon-calendar icon"></i> -->
-
-	<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
-	&nbsp;
-	2020-08-27</time>
-	
-	<!-- busuanzi阅读量统计
-	
-	-->
-	<!-- busuanzi阅读量统计 -->
-	
-	
-	
-    <!-- waline阅读量统计 
-	
-	-->
-</a>
-
-
-        
-		
-		
-		  <!-- 添加标题栏文字统计效果 -->
-<div class="word-count">
-	
-	
-    <span class="post-time">
-      <span class="post-meta-item-icon">
-	    <i class="fa fa-bar-chart" aria-hidden="true"></i>
-        <!-- <i class="fa fa-keyboard-o" aria-hidden="true"></i> -->
-        <span class="post-meta-item-text">字数统计: </span>
-        <span class="post-count">270字</span>
-      </span>
-    </span>
-
-    <span class="post-time">
-      &nbsp; | &nbsp;
-      <span class="post-meta-item-icon">
-	    <i class="fa fa-pagelines" aria-hidden="true"></i>
-        <span class="post-meta-item-text">阅读时长: </span>
-        <span class="post-count">1min</span>
-      </span>
-    </span>
-	
-
-</div>
-<!-- 添加标题栏文字统计效果结束 -->
-		
-      </header>
-    
-	
-    <div class="article-entry" itemprop="articleBody">
-	  <!-- 添加分类与标签 -->
-	  
-		  
-			<h2 id="总览"><a href="#总览" class="headerlink" title="总览"></a>总览</h2><p>该Markdown备忘单提供了所有Markdown语法元素的快速概述。它无法涵盖所有的极端情况，因此，如果您需要有关这些元素中任何一个的更多信息，请参阅我们的参考指南以获取<a target="_blank" rel="noopener" href="http://markdown.p2hp.com/basic-syntax">基本语法</a>和<a target="_blank" rel="noopener" href="http://markdown.p2hp.com/extended-syntax">扩展语法</a>。</p>
-		  
-				  
-	  
-      
-	  <!-- 添加打赏 -->
-	  
-	
-	  <!-- 添加版权声明 -->
-      
-	  
-	</div>
-	
-	<!-- 添加置顶 -->
-    <div class="article-info article-info-index">
-      
-	  
-	  <!-- 分类页 -->
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">技术分享</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/技术分享/" class="article-tag-list-link color5">技术分享</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-	  
-	  <!-- 添加展开全文 -->
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/post/a904f437.html">展开全文 >></a>
-        </p>
-      
-	  
-	  <!-- 添加分享 -->
-      
-	  
-      <div class="clearfix"></div>
-	  
-    </div>
-  </div>
-</article>
-
-
-
-<!-- 添加回到顶部和文章目录 -->
-<aside class="wrap-side-operation">
-  <div class="mod-side-operation">
-    
-      <div class="jump-container" id="js-jump-container" style="display:none;">
-        <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-          <i class="icon-font icon-back"></i>
-        </a>
-      </div>
-    
-    
-  </div>
-</aside>
-
-<!-- 添加评论 -->
-
-
-<!-- valine评论
-  
-  <section id="comments" style="margin:10px;padding:10px;background:#fff;">
-    <div id="vcomment" class="comment"></div> 
-<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
-<script>
-   var notify = 'true' == true ? true : false;
-   var verify = 'true' == true ? true : false;
-    window.onload = function() {
-        new Valine({
-            el: '.comment',
-            notify: notify,
-            verify: verify,
-            app_id: "oaNIM7WrQSG7UOdJT8sGT8Ap-gzGzoHsz",
-            app_key: "CnYOpc2uW5oBwt6wgLB1ggYh",
-            placeholder: "ヾﾉ≧∀≦)o来啊，快活啊!",
-            avatar:"wavatar"
-        });
-    }
-</script>
-  </section>
-
--->
-<!-- valine评论 -->
-
-
-
-
-<!-- 文章页添加mathjax公式 -->
-
-  
-
-<!-- 文章页添加mathjax公式 -->
-
-
-  
-    <article id="post-2020-08-24-home" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h2 itemprop="name">
-      <a class="article-title_code_ant" href="/post/5c941858.html">家，一扇展开岁月的门</a>
-    </h2>
-  
-
-        
-		
-		  <a href="/post/5c941858.html" class="archive-article-date">
-  	<time datetime="2020-08-24T00:00:00.000Z" itemprop="datePublished">
-	<!-- <i class="icon-calendar icon"></i> -->
-
-	<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
-	&nbsp;
-	2020-08-24</time>
-	
-	<!-- busuanzi阅读量统计
-	
-	-->
-	<!-- busuanzi阅读量统计 -->
-	
-	
-	
-    <!-- waline阅读量统计 
-	
-	-->
-</a>
-
-
-        
-		
-		
-		  <!-- 添加标题栏文字统计效果 -->
-<div class="word-count">
-	
-	
-    <span class="post-time">
-      <span class="post-meta-item-icon">
-	    <i class="fa fa-bar-chart" aria-hidden="true"></i>
-        <!-- <i class="fa fa-keyboard-o" aria-hidden="true"></i> -->
-        <span class="post-meta-item-text">字数统计: </span>
-        <span class="post-count">1k字</span>
-      </span>
-    </span>
-
-    <span class="post-time">
-      &nbsp; | &nbsp;
-      <span class="post-meta-item-icon">
-	    <i class="fa fa-pagelines" aria-hidden="true"></i>
-        <span class="post-meta-item-text">阅读时长: </span>
-        <span class="post-count">3min</span>
-      </span>
-    </span>
-	
-
-</div>
-<!-- 添加标题栏文字统计效果结束 -->
-		
-      </header>
-    
-	
-    <div class="article-entry" itemprop="articleBody">
-	  <!-- 添加分类与标签 -->
-	  
-		  
-			<p>​	每逢春节和中秋的假日，人们都喜欢赶回家与家人团聚，交通运输的任务也会突然繁忙起来。来自四面八方的人朝着自己的家奔赶去，无论列车多么拥挤，路途多么遥远，路上有多么辛苦 ，回家的信念却是十分的强烈。望着熙熙攘攘往家赶的人群，我的心中对家有种强烈的特别感觉，家，这个词在人们的心中是多么具有吸引力，父母，家人，这个词在人们心中显得是那么有人情味，家，在人们心中的份量又是多么的重。</p>
-<p>
-		  
-				  
-	  
-      
-	  <!-- 添加打赏 -->
-	  
-	
-	  <!-- 添加版权声明 -->
-      
-	  
-	</div>
-	
-	<!-- 添加置顶 -->
-    <div class="article-info article-info-index">
-      
-	  
-	  <!-- 分类页 -->
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">心情随笔</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/心情随笔/" class="article-tag-list-link color5">心情随笔</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-	  
-	  <!-- 添加展开全文 -->
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/post/5c941858.html">展开全文 >></a>
-        </p>
-      
-	  
-	  <!-- 添加分享 -->
-      
-	  
-      <div class="clearfix"></div>
-	  
-    </div>
-  </div>
-</article>
-
-
-
-<!-- 添加回到顶部和文章目录 -->
-<aside class="wrap-side-operation">
-  <div class="mod-side-operation">
-    
-      <div class="jump-container" id="js-jump-container" style="display:none;">
-        <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-          <i class="icon-font icon-back"></i>
-        </a>
-      </div>
-    
-    
-  </div>
-</aside>
-
-<!-- 添加评论 -->
-
-
-<!-- valine评论
-  
-  <section id="comments" style="margin:10px;padding:10px;background:#fff;">
-    <div id="vcomment" class="comment"></div> 
-<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
-<script>
-   var notify = 'true' == true ? true : false;
-   var verify = 'true' == true ? true : false;
-    window.onload = function() {
-        new Valine({
-            el: '.comment',
-            notify: notify,
-            verify: verify,
-            app_id: "oaNIM7WrQSG7UOdJT8sGT8Ap-gzGzoHsz",
-            app_key: "CnYOpc2uW5oBwt6wgLB1ggYh",
-            placeholder: "ヾﾉ≧∀≦)o来啊，快活啊!",
-            avatar:"wavatar"
-        });
-    }
-</script>
-  </section>
-
--->
-<!-- valine评论 -->
-
-
-
-
-<!-- 文章页添加mathjax公式 -->
-
-  
-
-<!-- 文章页添加mathjax公式 -->
-
-
-  
   
     <nav id="page-nav">
       <a class="extend prev" rel="prev" href="/page/5/">&lt;&lt; 上一页</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><span class="page-number current">6</span><a class="page-number" href="/page/7/">7</a><a class="extend next" rel="next" href="/page/7/">下一页 &gt;&gt;</a>
@@ -2327,10 +2417,10 @@ window.MathJax = {
 	  <br>
 	  <div class="footer-center">
 	    <i class="fa fa-file-word-o" aria-hidden="true"></i>
-		<span> 67 篇</span>
+		<span> 68 篇</span>
 		<span class="post-meta-divider">|</span>
 		<i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-		<span> <span class="post-count">107.3k</span></span>
+		<span> <span class="post-count">107.6k</span></span>
       </div>
 	  
 	  <!-- 添加不蒜子统计 -->
@@ -2659,11 +2749,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">docker</a>
+                <a href="javascript:void(0)" class="js-tag color2">python</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">python</a>
+                <a href="javascript:void(0)" class="js-tag color2">docker</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2676,6 +2766,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">centos</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">AI</a>
               </li>
             
             <div class="clearfix"></div>
