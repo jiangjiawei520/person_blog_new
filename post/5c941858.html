@@ -18,7 +18,7 @@
 <meta property="og:description" content="每逢春节和中秋的假日，人们都喜欢赶回家与家人团聚，交通运输的任务也会突然繁忙起来。来自四面八方的人朝着自己的家奔赶去，无论列车多么拥挤，路途多么遥远，路上有多么辛苦 ，回家的信念却是十分的强烈。望着熙熙攘攘往家赶的人群，我的心中对家有种强烈的特别感觉，家，这个词在人们的心中是多么具有吸引力，父母，家人，这个词在人们心中显得是那么有人情味，家，在人们心中的份量又是多么的重。">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-06-16T00:00:00.000Z">
-<meta property="article:modified_time" content="2026-03-13T09:20:49.505Z">
+<meta property="article:modified_time" content="2026-03-13T09:45:19.318Z">
 <meta property="article:author" content="JiaWei Jiang">
 <meta property="article:tag" content="心情随笔">
 <meta name="twitter:card" content="summary">
@@ -515,6 +515,62 @@
 <!-- 添加评论 -->
 
 
+  
+  <script src='//unpkg.com/@waline/client@v2/dist/waline.js'></script>
+<link href='//unpkg.com/@waline/client@v2/dist/waline.css' rel='stylesheet' />
+
+<div id="waline"></div>
+<script>
+	// 中文默认
+	const locale = {
+	  nick: ' 昵称: ',
+	  nickError: '昵称不能少于3个字符',
+	  mail: '邮箱: ',
+	  mailError: '请填写正确的邮件地址',
+	  link: '网址: ',
+	  placeholder: ' 客官留个言吧(◕ˇ∀ˇ◕)',
+	  sofa: '评论区空空荡荡，客官快来评论吧~',
+	  submit: '提交',
+	  reply: '回复',
+	  cancelReply: '取消回复',
+	  comment: '评论',
+	  more: '加载更多...',
+	  preview: '预览',
+	  emoji: '表情',
+	  uploadImage: '上传图片',
+	  seconds: '秒前',
+	  minutes: '分钟前',
+	  hours: '小时前',
+	  days: '天前',
+	  now: '刚刚',
+	  uploading: '正在上传',
+	  login: '登录',
+	  logout: '退出',
+	  admin: '博主',
+	  word: '字',
+	  wordHint: '评论字数应在 $0 到 $1 字之间！\n当前字数：$2',
+	};
+
+	Waline.init({
+	  el: '#waline',
+	  serverURL: 'https://comment.jiangjiawei.eu.cc/',
+	  locale,
+	  login: 'enable',
+	  lang: 'zh-CN ',
+	  dark: '',
+	  // 设置 emoji 为微博与哔哩哔哩
+	  emoji: [
+		'https://unpkg.com/@waline/emojis@1.1.0/weibo',
+		'https://unpkg.com/@waline/emojis@1.1.0/bilibili',
+	  ],
+	  wordLimit: 0,
+	  pageSize: 10,
+	  imageUploader: false,
+	  pageview: true,
+	  meta: ['nick', 'mail', 'link'],  //评论者相关属性，默认['nick', 'mail', 'link'],
+	  requiredMeta: ['nick'], //设置评论者属性必填项，默认[]（即匿名）
+	});
+</script>
   
   
   
