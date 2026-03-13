@@ -204,7 +204,7 @@ declare:
 # 
 waline:
   enable: false
-  server_url: 'https://comment.jiangjiawei.love'  #https://person-blog-new-comment-k0xzkxrci-jiangjiawei520s-projects.vercel.app/经过域名映射，否则会有跨域问题，无法使用（需要梯子，不然无法使用，未解决，不使用）
+  server_url: 'https://comment.jiangjiawei.eu.cc'  #https://person-blog-new-comment-k0xzkxrci-jiangjiawei520s-projects.vercel.app/经过域名映射，否则会有跨域问题，无法使用（需要梯子，不然无法使用，未解决，不使用）
   login: 'enable'       # 'enable': 启用登录 (默认) 'disable': 禁用登录，用户只能填写信息评论 'force': 强制登录，用户必须注册并登录才可发布评论
   lang: 'zh-CN '        # 语言，默认'zh-CN', 'en'/ 'jp'可选
   dark: ''              # 设置 'auto' 会根据设备暗黑模式自适应。
