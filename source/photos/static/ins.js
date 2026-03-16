@@ -116,8 +116,8 @@
         var data = res.list[j].arr;
         var liTmpl = "";
         for (var i = 0, len = data.link.length; i < len; i++) {
-          var minSrc = 'https://ghproxy.net/https://raw.githubusercontent.com/jiangjiawei520/person_blog_new/master/photos/min_photos/' + data.link[i];
-          var src = 'https://ghproxy.net/https://raw.githubusercontent.com/jiangjiawei520/person_blog_new/master/photos/min_photos/' + data.link[i];
+          var minSrc = 'https://gh-proxy.jiangjiawei.eu.cc/https://raw.githubusercontent.com/jiangjiawei520/person_blog_new/master/photos/min_photos/' + data.link[i];
+          var src = 'https://gh-proxy.jiangjiawei.eu.cc/https://raw.githubusercontent.com/jiangjiawei520/person_blog_new/master/photos/min_photos/' + data.link[i];
           var type = data.type[i];
           var target = src + (type === 'video' ? '.mp4' : '.jpg');
           src += '';
