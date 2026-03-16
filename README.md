@@ -45,7 +45,7 @@ git pull github backup:backup #github为远程主机名
 #git pull gitee backup:backup  
 ```
 
-进行同步更新。
+进行同步更新
 
 ## 目录结构梳理
 
