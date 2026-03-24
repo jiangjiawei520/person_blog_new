@@ -1,4 +1,7 @@
 options:
-  lineNumbers: false
+  lineNumbers: true
+  spellcheck: true
 editor:
-  lineNumbers: false
+  lineNumbers: true
+  inputStyle: contenteditable
+  spellcheck: true

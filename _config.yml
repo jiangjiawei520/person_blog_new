@@ -257,7 +257,8 @@ admin:
   username: jiangjiawei
   password_hash: $2a$10$MoLoom5mz76rmQNI0./t/OLJhFDd8QkRUWJR8IazdebvUL8rxVYDe
   secret: $2a$10$UNZyJR.bXmV5hEpUdrSxXuA/VB5.0Yp9VbY7WW2xgdZBB5/cH4Ime
-  deployCommand: '.\\tools\\hexo-deploy.bat'
+  #deployCommand: '.\\tools\\hexo-deploy.bat'
+  deployCommand: 'cmd'
 
 # hexo-neat 静态资源压缩
 # 博文压缩
