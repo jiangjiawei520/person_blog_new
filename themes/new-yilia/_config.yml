@@ -158,12 +158,8 @@ mathjax: true
 article_type: false
 
 # 是否在新窗口打开链接
-#open_in_new: true
-# Open link in a new tab | 是否在新窗口打开链接
-open_in_new:
-  article: true   # 文章链接
-  menu: false     # 设置为 false，所有导航菜单（包括 menu 和 smart_menu）都在当前页面打开
-  subNav: true
+open_in_new: true
+
 
 # 打赏
 reward:
