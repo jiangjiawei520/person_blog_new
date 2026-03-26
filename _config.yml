@@ -54,7 +54,7 @@ external_link:
 filename_case: 0
 render_drafts: false
 # 自动为文章中的图片提供绝对路径，比如新建一片博客名为 hexo-plugin，那么在创建文章 md 文件的同时会创建一个 hexo-plugin 的目录，文章对应的图片放入这个目录就行，Typora 可以将图像设为 ./${filename} 便可自动适配
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
@@ -69,7 +69,10 @@ prismjs:
   preprocess: true
   line_number: true
   tab_replace: ''
-
+  
+asset:
+  img_path: imgs  # 指定图片存放路径
+  
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
