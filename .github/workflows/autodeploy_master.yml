@@ -29,3 +29,4 @@ jobs:
         BRANCH: master
         FOLDER: public        
         SSH_PRIVATE_KEY: ${{ secrets.ACCESS_TOKEN_SOURCE }}
+        FORCE: true
