@@ -24,15 +24,9 @@ jobs:
 
     - name: publish
       uses: s0/git-publish-subdir-action@master
-#      env:
-#        REPO: git@github.com:jiangjiawei520/person_blog_new.git
-#        BRANCH: master
-#        FOLDER: public        
-#        SSH_PRIVATE_KEY: ${{ secrets.ACCESS_TOKEN_SOURCE }}
-#        FORCE: true
-      with:
-        repo: git@github.com:jiangjiawei520/person_blog_new.git
-        branch: master
-        folder: public
-        ssh-private-key: ${{ secrets.ACCESS_TOKEN_SOURCE }}
-        force: true   # 强制推送
+      env:
+        REPO: git@github.com:jiangjiawei520/person_blog_new.git
+        BRANCH: master
+        FOLDER: public        
+        SSH_PRIVATE_KEY: ${{ secrets.ACCESS_TOKEN_SOURCE }}
+        FORCE: true
