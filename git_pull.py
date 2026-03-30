@@ -136,14 +136,8 @@ def retry_pull(remote, branch, max_retries=3):
     print("  4. 尝试 'git fetch' 单独拉取远程数据")
     return False
 
-def pull_from_remote():
-    """从用户选择的远程仓库拉取，包含重试机制和冲突处理"""
-    # 选择远程仓库
-    remote = select_remote()
-    if not remote:
-        print("无法继续，没有可用的远程仓库。")
-        return False
-
+def pull_from_remote(remote):
+    """从指定的远程仓库拉取，包含重试机制和冲突处理"""
     # 获取当前分支
     branch_result = run_command("git branch --show-current", show_output=False)
     branch = branch_result.stdout.strip()
@@ -217,11 +211,12 @@ def run_simple_pull():
     print("\n2. 获取远程分支信息...")
     run_command("git fetch --all")
 
-    # 3. 显示差异（基于第一个远程或用户选择）
+    # 3. 选择远程仓库（只选一次）
     remote = select_remote()
     if not remote:
         return
 
+    # 4. 显示差异
     branch_result = run_command("git branch --show-current", show_output=False)
     branch = branch_result.stdout.strip()
     if not branch:
@@ -232,12 +227,12 @@ def run_simple_pull():
     print("\n本地与远程的差异:")
     run_command(f"git log {branch}..{remote}/{branch} --oneline", show_output=True)
 
-    # 4. 询问是否拉取
+    # 5. 询问是否拉取
     print("\n3. 是否从远程拉取最新代码?")
     pull_choice = input("拉取? (y/N): ").strip().lower()
 
     if pull_choice == 'y':
-        pull_from_remote()
+        pull_from_remote(remote)   # 传入已选择的远程名
     else:
         print("跳过拉取")
 
