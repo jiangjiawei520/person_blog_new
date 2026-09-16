@@ -16,8 +16,8 @@
 <meta property="og:site_name" content="蒋家威的博客">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://qiniu.findn.cn/blog/photos/article/music-2.jpg">
-<meta property="article:published_time" content="2026-04-17T09:40:28.992Z">
-<meta property="article:modified_time" content="2026-04-17T09:40:28.992Z">
+<meta property="article:published_time" content="2026-09-16T06:51:12.330Z">
+<meta property="article:modified_time" content="2026-09-16T06:51:12.330Z">
 <meta property="article:author" content="JiaWei Jiang">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://qiniu.findn.cn/blog/photos/article/music-2.jpg">
@@ -354,8 +354,9 @@
 <script src="https://fastly.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
 <!-- require MetingJS -->
 
-<script src="https://fastly.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
-
+<!-- 原有js中的https://api.i-meto.com/meting/api/ 访问异常，调整为使用本地js，替换为了https://api.injahow.cn/meting/ -->
+<!-- <script src="https://fastly.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>  -->
+<script src="Meting.min.js"></script>
 <!-- 歌单 替换id即可 -->
 <p><meting-js style="margin-top: 1.5rem;width: auto;height: auto"
     server="netease"
