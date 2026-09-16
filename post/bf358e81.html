@@ -25,7 +25,7 @@
 <meta property="og:image" content="https://github.com/imgs/2529681-20230601220252995-1642239706-1711094906161-5.png">
 <meta property="og:image" content="https://github.com/imgs/2529681-20230601221007190-886504275-1711094906161-7.png">
 <meta property="article:published_time" content="2024-03-22T00:00:00.000Z">
-<meta property="article:modified_time" content="2026-09-16T06:51:12.071Z">
+<meta property="article:modified_time" content="2026-09-16T07:01:07.641Z">
 <meta property="article:author" content="JiaWei Jiang">
 <meta property="article:tag" content="CentOS7">
 <meta property="article:tag" content="Windows">
@@ -543,7 +543,7 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">/bin/bash</span><br><span class="line"><span class="comment"># kingbase_start.sh</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 启动人大金仓数据库的命令，这个命令可能需要根据你的安装路径和配置进行调整</span></span><br><span class="line">/opt/Kingbase/ES/V8/bin/kingbase -D /opt/Kingbase/ES/V8/data &amp;</span><br><span class="line"> </span><br><span class="line"><span class="comment"># 确保数据库服务器已经启动</span></span><br><span class="line"><span class="keyword">if</span> ps -ef | grep -v grep | grep kingbase &gt; /dev/null</span><br><span class="line"><span class="keyword">then</span></span><br><span class="line">    <span class="built_in">echo</span> <span class="string">&quot;KingbaseES is running...&quot;</span></span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">    <span class="built_in">echo</span> <span class="string">&quot;KingbaseES failed to start.&quot;</span></span><br><span class="line"><span class="keyword">fi</span></span><br></pre></td></tr></table></figure>
 
 <p>要使这个脚本在启动时运行，你可以将其放置在 <code>/etc/init.d/</code> 目录下，并使用 <code>chkconfig</code> 命令来配置它：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">将脚本复制到 init.d 目录下</span><br><span class="line">sudo <span class="built_in">cp</span> kingbase_start.sh /etc/init.d/kingbase</span><br><span class="line"> </span><br><span class="line"><span class="comment"># 设置为可执行文件</span></span><br><span class="line">sudo <span class="built_in">chmod</span> +x /etc/init.d/kingbase</span><br><span class="line"> </span><br><span class="line"><span class="comment"># 添加到启动脚本</span></span><br><span class="line">sudo chkconfig --add kingbase</span><br><span class="line"> </span><br><span class="line"><span class="comment"># 设置为开机自启</span></span><br><span class="line">sudo chkconfig kingbase on</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">将脚本复制到 init.d 目录下</span><br><span class="line"><span class="built_in">sudo</span> <span class="built_in">cp</span> kingbase_start.sh /etc/init.d/kingbase</span><br><span class="line"> </span><br><span class="line"><span class="comment"># 设置为可执行文件</span></span><br><span class="line"><span class="built_in">sudo</span> <span class="built_in">chmod</span> +x /etc/init.d/kingbase</span><br><span class="line"> </span><br><span class="line"><span class="comment"># 添加到启动脚本</span></span><br><span class="line"><span class="built_in">sudo</span> chkconfig --add kingbase</span><br><span class="line"> </span><br><span class="line"><span class="comment"># 设置为开机自启</span></span><br><span class="line"><span class="built_in">sudo</span> chkconfig kingbase on</span><br></pre></td></tr></table></figure>
 
 <p>确保你的人大金仓数据库安装路径和启动参数是正确的，否则启动脚本可能无法正常工作。</p>
 <h3 id="3-Centos7-通过-systemctl-配置-kibana-服务自启动"><a href="#3-Centos7-通过-systemctl-配置-kibana-服务自启动" class="headerlink" title="3. Centos7 通过 systemctl 配置 kibana 服务自启动"></a><strong>3. Centos7 通过 systemctl 配置 kibana 服务自启动</strong></h3><p>在 Centos7 后，更推荐通过 systemctl 来控制服务。</p>
@@ -1049,19 +1049,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">心情随笔</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">技术分享</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">测试</a>
+                <a href="javascript:void(0)" class="js-tag color5">心情随笔</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">日记本</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">测试</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1097,15 +1097,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Typora</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">工具</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">网站</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Typora</a>
               </li>
              
               <li class="article-tag-list-item">
